@@ -1,0 +1,222 @@
+2020-11-25 15:15:52,050 - custodian.policy - DEBUG - Running policy:Alarms resource:aws.alarm region:us-east-1 c7n:0.9.8
+2020-11-25 15:15:52,052 - custodian.cache - DEBUG - Using cache file /Users/noah/.cache/cloud-custodian.cache
+2020-11-25 15:15:52,861 - custodian.resources.alarm - DEBUG - Filtered from 18 to 0 alarm
+2020-11-25 15:15:52,862 - custodian.policy - INFO - policy:Alarms resource:aws.alarm region:us-east-1 count:0 time:0.81
+2020-11-25 15:15:52,863 - custodian.output - DEBUG - metric:ResourceCount Count:0 policy:alarms restype:aws.alarm scope:policy
+2020-11-25 15:15:52,863 - custodian.output - DEBUG - metric:ApiCalls Count:1 policy:alarms restype:aws.alarm
+2020-11-25 15:16:38,908 - custodian.policy - DEBUG - Running policy:Alarms resource:aws.alarm region:us-east-1 c7n:0.9.8
+2020-11-25 15:16:38,909 - custodian.cache - DEBUG - Using cache file /Users/noah/.cache/cloud-custodian.cache
+2020-11-25 15:16:38,909 - custodian.resources.alarm - DEBUG - Using cached c7n.resources.cw.Alarm: 18
+2020-11-25 15:16:38,910 - custodian.resources.alarm - DEBUG - Filtered from 18 to 0 alarm
+2020-11-25 15:16:38,910 - custodian.policy - INFO - policy:Alarms resource:aws.alarm region:us-east-1 count:0 time:0.00
+2020-11-25 15:16:38,911 - custodian.output - DEBUG - metric:ResourceCount Count:0 policy:alarms restype:aws.alarm scope:policy
+2020-11-25 15:16:38,911 - custodian.output - DEBUG - metric:ApiCalls Count:0 policy:alarms restype:aws.alarm
+2020-11-25 16:00:01,840 - custodian.policy - DEBUG - Running policy:Alarms resource:aws.alarm region:us-east-1 c7n:0.9.8
+2020-11-25 16:00:01,842 - custodian.cache - DEBUG - Using cache file /Users/noah/.cache/cloud-custodian.cache
+2020-11-25 16:00:02,599 - custodian.resources.alarm - DEBUG - Filtered from 18 to 0 alarm
+2020-11-25 16:00:02,599 - custodian.policy - INFO - policy:Alarms resource:aws.alarm region:us-east-1 count:0 time:0.76
+2020-11-25 16:00:02,600 - custodian.output - DEBUG - metric:ResourceCount Count:0 policy:alarms restype:aws.alarm scope:policy
+2020-11-25 16:00:02,600 - custodian.output - DEBUG - metric:ApiCalls Count:1 policy:alarms restype:aws.alarm
+2020-11-25 16:01:14,178 - custodian.policy - DEBUG - Running policy:Alarms resource:aws.alarm region:us-east-1 c7n:0.9.8
+2020-11-25 16:01:14,179 - custodian.cache - DEBUG - Using cache file /Users/noah/.cache/cloud-custodian.cache
+2020-11-25 16:01:14,179 - custodian.resources.alarm - DEBUG - Using cached c7n.resources.cw.Alarm: 18
+2020-11-25 16:01:14,179 - custodian.resources.alarm - DEBUG - Filtered from 18 to 0 alarm
+2020-11-25 16:01:14,179 - custodian.policy - INFO - policy:Alarms resource:aws.alarm region:us-east-1 count:0 time:0.00
+2020-11-25 16:01:14,180 - custodian.output - DEBUG - metric:ResourceCount Count:0 policy:alarms restype:aws.alarm scope:policy
+2020-11-25 16:01:14,180 - custodian.output - DEBUG - metric:ApiCalls Count:0 policy:alarms restype:aws.alarm
+2020-11-25 16:02:47,133 - custodian.policy - DEBUG - Running policy:Alarms resource:aws.alarm region:us-east-1 c7n:0.9.8
+2020-11-25 16:02:47,135 - custodian.cache - DEBUG - Using cache file /Users/noah/.cache/cloud-custodian.cache
+2020-11-25 16:02:47,135 - custodian.resources.alarm - DEBUG - Using cached c7n.resources.cw.Alarm: 18
+2020-11-25 16:02:47,135 - custodian.resources.alarm - DEBUG - Filtered from 18 to 0 alarm
+2020-11-25 16:02:47,136 - custodian.policy - INFO - policy:Alarms resource:aws.alarm region:us-east-1 count:0 time:0.00
+2020-11-25 16:02:47,137 - custodian.output - DEBUG - metric:ResourceCount Count:0 policy:alarms restype:aws.alarm scope:policy
+2020-11-25 16:02:47,137 - custodian.output - DEBUG - metric:ApiCalls Count:0 policy:alarms restype:aws.alarm
+2020-11-25 16:04:29,427 - custodian.policy - DEBUG - Running policy:Alarms resource:aws.alarm region:us-east-1 c7n:0.9.8
+2020-11-25 16:04:29,428 - custodian.cache - DEBUG - Using cache file /Users/noah/.cache/cloud-custodian.cache
+2020-11-25 16:04:29,428 - custodian.resources.alarm - DEBUG - Using cached c7n.resources.cw.Alarm: 18
+2020-11-25 16:04:29,428 - custodian.resources.alarm - DEBUG - Filtered from 18 to 0 alarm
+2020-11-25 16:04:29,428 - custodian.policy - INFO - policy:Alarms resource:aws.alarm region:us-east-1 count:0 time:0.00
+2020-11-25 16:04:29,429 - custodian.output - DEBUG - metric:ResourceCount Count:0 policy:alarms restype:aws.alarm scope:policy
+2020-11-25 16:04:29,429 - custodian.output - DEBUG - metric:ApiCalls Count:0 policy:alarms restype:aws.alarm
+2020-11-25 16:05:27,360 - custodian.policy - DEBUG - Running policy:Alarms resource:aws.alarm region:us-east-1 c7n:0.9.8
+2020-11-25 16:05:27,362 - custodian.cache - DEBUG - Using cache file /Users/noah/.cache/cloud-custodian.cache
+2020-11-25 16:05:27,362 - custodian.resources.alarm - DEBUG - Using cached c7n.resources.cw.Alarm: 18
+2020-11-25 16:05:27,362 - custodian.resources.alarm - DEBUG - Filtered from 18 to 0 alarm
+2020-11-25 16:05:27,362 - custodian.policy - INFO - policy:Alarms resource:aws.alarm region:us-east-1 count:0 time:0.00
+2020-11-25 16:05:27,363 - custodian.output - DEBUG - metric:ResourceCount Count:0 policy:alarms restype:aws.alarm scope:policy
+2020-11-25 16:05:27,363 - custodian.output - DEBUG - metric:ApiCalls Count:0 policy:alarms restype:aws.alarm
+2020-11-25 16:07:25,643 - custodian.policy - DEBUG - Running policy:Alarms resource:aws.alarm region:us-east-1 c7n:0.9.8
+2020-11-25 16:07:25,644 - custodian.cache - DEBUG - Using cache file /Users/noah/.cache/cloud-custodian.cache
+2020-11-25 16:07:25,644 - custodian.resources.alarm - DEBUG - Using cached c7n.resources.cw.Alarm: 18
+2020-11-25 16:07:25,644 - custodian.resources.alarm - DEBUG - Filtered from 18 to 0 alarm
+2020-11-25 16:07:25,644 - custodian.policy - INFO - policy:Alarms resource:aws.alarm region:us-east-1 count:0 time:0.00
+2020-11-25 16:07:25,645 - custodian.output - DEBUG - metric:ResourceCount Count:0 policy:alarms restype:aws.alarm scope:policy
+2020-11-25 16:07:25,645 - custodian.output - DEBUG - metric:ApiCalls Count:0 policy:alarms restype:aws.alarm
+2020-11-25 16:10:39,287 - custodian.policy - DEBUG - Running policy:Alarms resource:aws.alarm region:us-east-1 c7n:0.9.8
+2020-11-25 16:10:39,288 - custodian.cache - DEBUG - Using cache file /Users/noah/.cache/cloud-custodian.cache
+2020-11-25 16:10:39,288 - custodian.resources.alarm - DEBUG - Using cached c7n.resources.cw.Alarm: 18
+2020-11-25 16:10:39,288 - custodian.resources.alarm - DEBUG - Filtered from 18 to 0 alarm
+2020-11-25 16:10:39,289 - custodian.policy - INFO - policy:Alarms resource:aws.alarm region:us-east-1 count:0 time:0.00
+2020-11-25 16:10:39,289 - custodian.output - DEBUG - metric:ResourceCount Count:0 policy:alarms restype:aws.alarm scope:policy
+2020-11-25 16:10:39,290 - custodian.output - DEBUG - metric:ApiCalls Count:0 policy:alarms restype:aws.alarm
+2020-11-25 16:13:19,100 - custodian.policy - DEBUG - Running policy:Alarms resource:aws.alarm region:us-east-1 c7n:0.9.8
+2020-11-25 16:13:19,101 - custodian.cache - DEBUG - Using cache file /Users/noah/.cache/cloud-custodian.cache
+2020-11-25 16:13:19,101 - custodian.resources.alarm - DEBUG - Using cached c7n.resources.cw.Alarm: 18
+2020-11-25 16:13:19,102 - custodian.resources.alarm - DEBUG - Filtered from 18 to 0 alarm
+2020-11-25 16:13:19,102 - custodian.policy - INFO - policy:Alarms resource:aws.alarm region:us-east-1 count:0 time:0.00
+2020-11-25 16:13:19,103 - custodian.output - DEBUG - metric:ResourceCount Count:0 policy:alarms restype:aws.alarm scope:policy
+2020-11-25 16:13:19,103 - custodian.output - DEBUG - metric:ApiCalls Count:0 policy:alarms restype:aws.alarm
+2020-11-25 16:14:26,470 - custodian.policy - DEBUG - Running policy:Alarms resource:aws.alarm region:us-east-1 c7n:0.9.8
+2020-11-25 16:14:26,472 - custodian.cache - DEBUG - Using cache file /Users/noah/.cache/cloud-custodian.cache
+2020-11-25 16:14:26,472 - custodian.resources.alarm - DEBUG - Using cached c7n.resources.cw.Alarm: 18
+2020-11-25 16:14:26,472 - custodian.resources.alarm - DEBUG - Filtered from 18 to 0 alarm
+2020-11-25 16:14:26,472 - custodian.policy - INFO - policy:Alarms resource:aws.alarm region:us-east-1 count:0 time:0.00
+2020-11-25 16:14:26,473 - custodian.output - DEBUG - metric:ResourceCount Count:0 policy:alarms restype:aws.alarm scope:policy
+2020-11-25 16:14:26,473 - custodian.output - DEBUG - metric:ApiCalls Count:0 policy:alarms restype:aws.alarm
+2020-11-25 16:30:10,502 - custodian.policy - DEBUG - Running policy:Alarms resource:aws.alarm region:us-east-1 c7n:0.9.8
+2020-11-25 16:30:10,504 - custodian.cache - DEBUG - Using cache file /Users/noah/.cache/cloud-custodian.cache
+2020-11-25 16:30:11,196 - custodian.resources.alarm - DEBUG - Filtered from 18 to 0 alarm
+2020-11-25 16:30:11,197 - custodian.policy - INFO - policy:Alarms resource:aws.alarm region:us-east-1 count:0 time:0.69
+2020-11-25 16:30:11,198 - custodian.output - DEBUG - metric:ResourceCount Count:0 policy:alarms restype:aws.alarm scope:policy
+2020-11-25 16:30:11,198 - custodian.output - DEBUG - metric:ApiCalls Count:1 policy:alarms restype:aws.alarm
+2020-11-25 17:18:19,846 - custodian.policy - DEBUG - Running policy:Alarms resource:aws.alarm region:us-east-1 c7n:0.9.8
+2020-11-25 17:18:19,847 - custodian.cache - DEBUG - Using cache file /Users/noah/.cache/cloud-custodian.cache
+2020-11-25 17:18:20,567 - custodian.resources.alarm - DEBUG - Filtered from 18 to 0 alarm
+2020-11-25 17:18:20,567 - custodian.policy - INFO - policy:Alarms resource:aws.alarm region:us-east-1 count:0 time:0.72
+2020-11-25 17:18:20,569 - custodian.output - DEBUG - metric:ResourceCount Count:0 policy:alarms restype:aws.alarm scope:policy
+2020-11-25 17:18:20,569 - custodian.output - DEBUG - metric:ApiCalls Count:1 policy:alarms restype:aws.alarm
+2020-11-25 17:20:08,113 - custodian.policy - DEBUG - Running policy:Alarms resource:aws.alarm region:us-east-1 c7n:0.9.8
+2020-11-25 17:20:08,115 - custodian.cache - DEBUG - Using cache file /Users/noah/.cache/cloud-custodian.cache
+2020-11-25 17:20:08,115 - custodian.resources.alarm - DEBUG - Using cached c7n.resources.cw.Alarm: 18
+2020-11-25 17:20:08,116 - custodian.output - DEBUG - metric:PolicyException Count:1 policy:alarms restype:aws.alarm
+2020-11-25 17:20:08,116 - custodian.output - DEBUG - metric:ApiCalls Count:0 policy:alarms restype:aws.alarm
+2020-11-25 17:20:33,346 - custodian.policy - DEBUG - Running policy:Alarms resource:aws.alarm region:us-east-1 c7n:0.9.8
+2020-11-25 17:20:33,346 - custodian.cache - DEBUG - Using cache file /Users/noah/.cache/cloud-custodian.cache
+2020-11-25 17:20:33,347 - custodian.resources.alarm - DEBUG - Using cached c7n.resources.cw.Alarm: 18
+2020-11-25 17:20:33,347 - custodian.output - DEBUG - metric:PolicyException Count:1 policy:alarms restype:aws.alarm
+2020-11-25 17:20:33,348 - custodian.output - DEBUG - metric:ApiCalls Count:0 policy:alarms restype:aws.alarm
+2020-11-25 17:21:40,626 - custodian.policy - DEBUG - Running policy:Alarms resource:aws.alarm region:us-east-1 c7n:0.9.8
+2020-11-25 17:21:40,627 - custodian.cache - DEBUG - Using cache file /Users/noah/.cache/cloud-custodian.cache
+2020-11-25 17:21:40,627 - custodian.resources.alarm - DEBUG - Using cached c7n.resources.cw.Alarm: 18
+2020-11-25 17:21:40,628 - custodian.resources.alarm - DEBUG - Filtered from 18 to 0 alarm
+2020-11-25 17:21:40,628 - custodian.policy - INFO - policy:Alarms resource:aws.alarm region:us-east-1 count:0 time:0.00
+2020-11-25 17:21:40,630 - custodian.output - DEBUG - metric:ResourceCount Count:0 policy:alarms restype:aws.alarm scope:policy
+2020-11-25 17:21:40,630 - custodian.output - DEBUG - metric:ApiCalls Count:0 policy:alarms restype:aws.alarm
+2020-11-25 17:22:33,191 - custodian.policy - DEBUG - Running policy:Alarms resource:aws.alarm region:us-east-1 c7n:0.9.8
+2020-11-25 17:22:33,191 - custodian.cache - DEBUG - Using cache file /Users/noah/.cache/cloud-custodian.cache
+2020-11-25 17:22:33,192 - custodian.resources.alarm - DEBUG - Using cached c7n.resources.cw.Alarm: 18
+2020-11-25 17:22:33,192 - custodian.resources.alarm - DEBUG - Filtered from 18 to 1 alarm
+2020-11-25 17:22:33,192 - custodian.policy - INFO - policy:Alarms resource:aws.alarm region:us-east-1 count:1 time:0.00
+2020-11-25 17:22:33,193 - custodian.output - DEBUG - metric:ResourceCount Count:1 policy:alarms restype:aws.alarm scope:policy
+2020-11-25 17:22:33,193 - custodian.output - DEBUG - metric:ApiCalls Count:0 policy:alarms restype:aws.alarm
+2020-11-25 17:24:07,895 - custodian.policy - DEBUG - Running policy:Alarms resource:aws.alarm region:us-east-1 c7n:0.9.8
+2020-11-25 17:24:07,896 - custodian.cache - DEBUG - Using cache file /Users/noah/.cache/cloud-custodian.cache
+2020-11-25 17:24:07,896 - custodian.resources.alarm - DEBUG - Using cached c7n.resources.cw.Alarm: 18
+2020-11-25 17:24:07,896 - custodian.resources.alarm - DEBUG - Filtered from 18 to 0 alarm
+2020-11-25 17:24:07,896 - custodian.policy - INFO - policy:Alarms resource:aws.alarm region:us-east-1 count:0 time:0.00
+2020-11-25 17:24:07,898 - custodian.output - DEBUG - metric:ResourceCount Count:0 policy:alarms restype:aws.alarm scope:policy
+2020-11-25 17:24:07,898 - custodian.output - DEBUG - metric:ApiCalls Count:0 policy:alarms restype:aws.alarm
+2020-11-25 17:25:27,912 - custodian.policy - DEBUG - Running policy:Alarms resource:aws.alarm region:us-east-1 c7n:0.9.8
+2020-11-25 17:25:27,912 - custodian.cache - DEBUG - Using cache file /Users/noah/.cache/cloud-custodian.cache
+2020-11-25 17:25:27,912 - custodian.resources.alarm - DEBUG - Using cached c7n.resources.cw.Alarm: 18
+2020-11-25 17:25:27,913 - custodian.resources.alarm - DEBUG - Filtered from 18 to 1 alarm
+2020-11-25 17:25:27,913 - custodian.policy - INFO - policy:Alarms resource:aws.alarm region:us-east-1 count:1 time:0.00
+2020-11-25 17:25:27,914 - custodian.output - DEBUG - metric:ResourceCount Count:1 policy:alarms restype:aws.alarm scope:policy
+2020-11-25 17:25:27,914 - custodian.output - DEBUG - metric:ApiCalls Count:0 policy:alarms restype:aws.alarm
+2020-11-25 17:25:49,752 - custodian.policy - DEBUG - Running policy:Alarms resource:aws.alarm region:us-east-1 c7n:0.9.8
+2020-11-25 17:25:49,753 - custodian.cache - DEBUG - Using cache file /Users/noah/.cache/cloud-custodian.cache
+2020-11-25 17:25:49,753 - custodian.resources.alarm - DEBUG - Using cached c7n.resources.cw.Alarm: 18
+2020-11-25 17:25:49,753 - custodian.resources.alarm - DEBUG - Filtered from 18 to 0 alarm
+2020-11-25 17:25:49,753 - custodian.policy - INFO - policy:Alarms resource:aws.alarm region:us-east-1 count:0 time:0.00
+2020-11-25 17:25:49,754 - custodian.output - DEBUG - metric:ResourceCount Count:0 policy:alarms restype:aws.alarm scope:policy
+2020-11-25 17:25:49,754 - custodian.output - DEBUG - metric:ApiCalls Count:0 policy:alarms restype:aws.alarm
+2020-11-25 17:26:17,924 - custodian.policy - DEBUG - Running policy:Alarms resource:aws.alarm region:us-east-1 c7n:0.9.8
+2020-11-25 17:26:17,925 - custodian.cache - DEBUG - Using cache file /Users/noah/.cache/cloud-custodian.cache
+2020-11-25 17:26:17,925 - custodian.resources.alarm - DEBUG - Using cached c7n.resources.cw.Alarm: 18
+2020-11-25 17:26:17,925 - custodian.resources.alarm - DEBUG - Filtered from 18 to 0 alarm
+2020-11-25 17:26:17,925 - custodian.policy - INFO - policy:Alarms resource:aws.alarm region:us-east-1 count:0 time:0.00
+2020-11-25 17:26:17,926 - custodian.output - DEBUG - metric:ResourceCount Count:0 policy:alarms restype:aws.alarm scope:policy
+2020-11-25 17:26:17,926 - custodian.output - DEBUG - metric:ApiCalls Count:0 policy:alarms restype:aws.alarm
+2020-11-25 17:27:56,383 - custodian.policy - DEBUG - Running policy:Alarms resource:aws.alarm region:us-east-1 c7n:0.9.8
+2020-11-25 17:27:56,383 - custodian.cache - DEBUG - Using cache file /Users/noah/.cache/cloud-custodian.cache
+2020-11-25 17:27:56,383 - custodian.resources.alarm - DEBUG - Using cached c7n.resources.cw.Alarm: 18
+2020-11-25 17:27:56,384 - custodian.resources.alarm - DEBUG - Filtered from 18 to 0 alarm
+2020-11-25 17:27:56,384 - custodian.policy - INFO - policy:Alarms resource:aws.alarm region:us-east-1 count:0 time:0.00
+2020-11-25 17:27:56,385 - custodian.output - DEBUG - metric:ResourceCount Count:0 policy:alarms restype:aws.alarm scope:policy
+2020-11-25 17:27:56,385 - custodian.output - DEBUG - metric:ApiCalls Count:0 policy:alarms restype:aws.alarm
+2020-11-25 17:28:22,540 - custodian.policy - DEBUG - Running policy:Alarms resource:aws.alarm region:us-east-1 c7n:0.9.8
+2020-11-25 17:28:22,541 - custodian.cache - DEBUG - Using cache file /Users/noah/.cache/cloud-custodian.cache
+2020-11-25 17:28:22,541 - custodian.resources.alarm - DEBUG - Using cached c7n.resources.cw.Alarm: 18
+2020-11-25 17:28:22,541 - custodian.resources.alarm - DEBUG - Filtered from 18 to 1 alarm
+2020-11-25 17:28:22,541 - custodian.policy - INFO - policy:Alarms resource:aws.alarm region:us-east-1 count:1 time:0.00
+2020-11-25 17:28:22,542 - custodian.output - DEBUG - metric:ResourceCount Count:1 policy:alarms restype:aws.alarm scope:policy
+2020-11-25 17:28:22,543 - custodian.output - DEBUG - metric:ApiCalls Count:0 policy:alarms restype:aws.alarm
+2020-11-25 17:29:05,960 - custodian.policy - DEBUG - Running policy:Alarms resource:aws.alarm region:us-east-1 c7n:0.9.8
+2020-11-25 17:29:05,961 - custodian.cache - DEBUG - Using cache file /Users/noah/.cache/cloud-custodian.cache
+2020-11-25 17:29:05,961 - custodian.resources.alarm - DEBUG - Using cached c7n.resources.cw.Alarm: 18
+2020-11-25 17:29:05,961 - custodian.resources.alarm - DEBUG - Filtered from 18 to 1 alarm
+2020-11-25 17:29:05,961 - custodian.policy - INFO - policy:Alarms resource:aws.alarm region:us-east-1 count:1 time:0.00
+2020-11-25 17:29:05,962 - custodian.output - DEBUG - metric:ResourceCount Count:1 policy:alarms restype:aws.alarm scope:policy
+2020-11-25 17:29:05,962 - custodian.output - DEBUG - metric:ApiCalls Count:0 policy:alarms restype:aws.alarm
+2020-11-25 17:31:05,156 - custodian.policy - DEBUG - Running policy:Alarms resource:aws.alarm region:us-east-1 c7n:0.9.8
+2020-11-25 17:31:05,157 - custodian.cache - DEBUG - Using cache file /Users/noah/.cache/cloud-custodian.cache
+2020-11-25 17:31:05,157 - custodian.resources.alarm - DEBUG - Using cached c7n.resources.cw.Alarm: 18
+2020-11-25 17:31:05,157 - custodian.resources.alarm - DEBUG - Filtered from 18 to 0 alarm
+2020-11-25 17:31:05,157 - custodian.policy - INFO - policy:Alarms resource:aws.alarm region:us-east-1 count:0 time:0.00
+2020-11-25 17:31:05,158 - custodian.output - DEBUG - metric:ResourceCount Count:0 policy:alarms restype:aws.alarm scope:policy
+2020-11-25 17:31:05,158 - custodian.output - DEBUG - metric:ApiCalls Count:0 policy:alarms restype:aws.alarm
+2020-11-25 17:31:18,409 - custodian.policy - DEBUG - Running policy:Alarms resource:aws.alarm region:us-east-1 c7n:0.9.8
+2020-11-25 17:31:18,410 - custodian.cache - DEBUG - Using cache file /Users/noah/.cache/cloud-custodian.cache
+2020-11-25 17:31:18,410 - custodian.resources.alarm - DEBUG - Using cached c7n.resources.cw.Alarm: 18
+2020-11-25 17:31:18,410 - custodian.resources.alarm - DEBUG - Filtered from 18 to 18 alarm
+2020-11-25 17:31:18,410 - custodian.policy - INFO - policy:Alarms resource:aws.alarm region:us-east-1 count:18 time:0.00
+2020-11-25 17:31:18,412 - custodian.output - DEBUG - metric:ResourceCount Count:18 policy:alarms restype:aws.alarm scope:policy
+2020-11-25 17:31:18,412 - custodian.output - DEBUG - metric:ApiCalls Count:0 policy:alarms restype:aws.alarm
+2020-11-25 17:36:00,583 - custodian.policy - DEBUG - Running policy:Alarms resource:aws.alarm region:us-east-1 c7n:0.9.8
+2020-11-25 17:36:00,584 - custodian.cache - DEBUG - Using cache file /Users/noah/.cache/cloud-custodian.cache
+2020-11-25 17:36:00,585 - custodian.resources.alarm - DEBUG - Using cached c7n.resources.cw.Alarm: 18
+2020-11-25 17:36:00,585 - custodian.resources.alarm - DEBUG - Filtered from 18 to 18 alarm
+2020-11-25 17:36:00,585 - custodian.policy - INFO - policy:Alarms resource:aws.alarm region:us-east-1 count:18 time:0.00
+2020-11-25 17:36:00,587 - custodian.output - DEBUG - metric:ResourceCount Count:18 policy:alarms restype:aws.alarm scope:policy
+2020-11-25 17:36:00,587 - custodian.output - DEBUG - metric:ApiCalls Count:0 policy:alarms restype:aws.alarm
+2020-11-25 17:36:45,655 - custodian.policy - DEBUG - Running policy:Alarms resource:aws.alarm region:us-east-1 c7n:0.9.8
+2020-11-25 17:36:45,657 - custodian.cache - DEBUG - Using cache file /Users/noah/.cache/cloud-custodian.cache
+2020-11-25 17:36:46,304 - custodian.resources.alarm - DEBUG - Filtered from 18 to 18 alarm
+2020-11-25 17:36:46,304 - custodian.policy - INFO - policy:Alarms resource:aws.alarm region:us-east-1 count:18 time:0.65
+2020-11-25 17:36:46,306 - custodian.output - DEBUG - metric:ResourceCount Count:18 policy:alarms restype:aws.alarm scope:policy
+2020-11-25 17:36:46,306 - custodian.output - DEBUG - metric:ApiCalls Count:1 policy:alarms restype:aws.alarm
+2020-11-25 17:37:56,662 - custodian.policy - DEBUG - Running policy:Alarms resource:aws.alarm region:us-east-1 c7n:0.9.8
+2020-11-25 17:37:56,663 - custodian.cache - DEBUG - Using cache file /Users/noah/.cache/cloud-custodian.cache
+2020-11-25 17:37:56,663 - custodian.resources.alarm - DEBUG - Using cached c7n.resources.cw.Alarm: 18
+2020-11-25 17:37:56,663 - custodian.resources.alarm - DEBUG - Filtered from 18 to 18 alarm
+2020-11-25 17:37:56,663 - custodian.policy - INFO - policy:Alarms resource:aws.alarm region:us-east-1 count:18 time:0.00
+2020-11-25 17:37:56,665 - custodian.output - DEBUG - metric:ResourceCount Count:18 policy:alarms restype:aws.alarm scope:policy
+2020-11-25 17:37:56,666 - custodian.output - DEBUG - metric:ApiCalls Count:0 policy:alarms restype:aws.alarm
+2020-11-25 17:38:32,570 - custodian.policy - DEBUG - Running policy:Alarms resource:aws.alarm region:us-east-1 c7n:0.9.8
+2020-11-25 17:38:32,571 - custodian.cache - DEBUG - Using cache file /Users/noah/.cache/cloud-custodian.cache
+2020-11-25 17:38:32,571 - custodian.resources.alarm - DEBUG - Using cached c7n.resources.cw.Alarm: 18
+2020-11-25 17:38:32,580 - custodian.resources.alarm - DEBUG - Filtered from 18 to 1 alarm
+2020-11-25 17:38:32,580 - custodian.policy - INFO - policy:Alarms resource:aws.alarm region:us-east-1 count:1 time:0.01
+2020-11-25 17:38:32,581 - custodian.output - DEBUG - metric:ResourceCount Count:1 policy:alarms restype:aws.alarm scope:policy
+2020-11-25 17:38:32,581 - custodian.output - DEBUG - metric:ApiCalls Count:0 policy:alarms restype:aws.alarm
+2020-11-25 17:39:22,319 - custodian.policy - DEBUG - Running policy:Alarms resource:aws.alarm region:us-east-1 c7n:0.9.8
+2020-11-25 17:39:22,320 - custodian.cache - DEBUG - Using cache file /Users/noah/.cache/cloud-custodian.cache
+2020-11-25 17:39:22,320 - custodian.resources.alarm - DEBUG - Using cached c7n.resources.cw.Alarm: 18
+2020-11-25 17:39:22,320 - custodian.resources.alarm - DEBUG - Filtered from 18 to 1 alarm
+2020-11-25 17:39:22,320 - custodian.policy - INFO - policy:Alarms resource:aws.alarm region:us-east-1 count:1 time:0.00
+2020-11-25 17:39:22,321 - custodian.output - DEBUG - metric:ResourceCount Count:1 policy:alarms restype:aws.alarm scope:policy
+2020-11-25 17:39:22,321 - custodian.output - DEBUG - metric:ApiCalls Count:0 policy:alarms restype:aws.alarm
+2020-11-25 17:40:50,390 - custodian.policy - DEBUG - Running policy:Alarms resource:aws.alarm region:us-east-1 c7n:0.9.8
+2020-11-25 17:40:50,391 - custodian.cache - DEBUG - Using cache file /Users/noah/.cache/cloud-custodian.cache
+2020-11-25 17:40:50,391 - custodian.resources.alarm - DEBUG - Using cached c7n.resources.cw.Alarm: 18
+2020-11-25 17:40:50,392 - custodian.resources.alarm - DEBUG - Filtered from 18 to 1 alarm
+2020-11-25 17:40:50,392 - custodian.policy - INFO - policy:Alarms resource:aws.alarm region:us-east-1 count:1 time:0.00
+2020-11-25 17:40:50,393 - custodian.output - DEBUG - metric:ResourceCount Count:1 policy:alarms restype:aws.alarm scope:policy
+2020-11-25 17:40:50,393 - custodian.output - DEBUG - metric:ApiCalls Count:0 policy:alarms restype:aws.alarm
+2020-11-25 17:44:11,786 - custodian.policy - DEBUG - Running policy:Alarms resource:aws.alarm region:us-east-1 c7n:0.9.8
+2020-11-25 17:44:11,787 - custodian.cache - DEBUG - Using cache file /Users/noah/.cache/cloud-custodian.cache
+2020-11-25 17:44:11,788 - custodian.resources.alarm - DEBUG - Using cached c7n.resources.cw.Alarm: 18
+2020-11-25 17:44:11,788 - custodian.resources.alarm - DEBUG - Filtered from 18 to 1 alarm
+2020-11-25 17:44:11,788 - custodian.policy - INFO - policy:Alarms resource:aws.alarm region:us-east-1 count:1 time:0.00
+2020-11-25 17:44:11,789 - custodian.output - DEBUG - metric:ResourceCount Count:1 policy:alarms restype:aws.alarm scope:policy
+2020-11-25 17:44:11,789 - custodian.output - DEBUG - metric:ApiCalls Count:0 policy:alarms restype:aws.alarm

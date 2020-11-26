@@ -5,7 +5,7 @@ from datetime import datetime, timedelta
 
 from c7n.actions import BaseAction
 from c7n.exceptions import PolicyValidationError
-from c7n.filters import Filter, MetricsFilter
+from c7n.filters import Filter, MetricsFilter, ValueFilter
 from c7n.filters.core import parse_date
 from c7n.filters.iamaccess import CrossAccountAccessFilter
 from c7n.query import QueryResourceManager, ChildResourceManager, TypeInfo
@@ -159,6 +159,40 @@ class LogGroup(QueryResourceManager):
         # apis can use that form, so normalize to standard arn.
         return [r['arn'][:-2] for r in resources]
 
+@LogGroup.filter_registry.register('metric-filters')
+class MetricFilters(ValueFilter):
+    """Filter a cloudwatch log group by its metric filters.
+
+    :Example:
+
+    .. code-block:: yaml
+
+        policies:
+          - name: cloudwatch-metric-filters
+            resource: aws.log-group
+            filters:
+            - type: metric-filters
+              key: metricFilters[0].filterName
+              value: "my_filter"
+    """
+
+    schema = type_schema('metric-filters', rinherit=ValueFilter.schema)
+    schema_alias = False
+    permissions = ('logs:DescribeMetricFilters',)
+    def process(self, resources, event=None):
+        for r in resources:
+            region = self.manager.config.region
+
+            client = local_session(self.manager.session_factory).client(
+                'logs', region_name=region)
+            filters = client.describe_metric_filters(logGroupName=r['logGroupName'])
+            filters.pop('ResponseMetadata')
+
+            r[self.annotation_key] = filters
+        return super(MetricFilters, self).process(resources)
+
+    def __call__(self, r):
+        return self.match(r['MetricFilters'])
 
 @resources.register('insight-rule')
 class InsightRule(QueryResourceManager):

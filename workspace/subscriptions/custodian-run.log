@@ -1,0 +1,67 @@
+2020-11-25 15:15:52,864 - custodian.policy - DEBUG - Running policy:subscriptions resource:aws.sns-subscription region:us-east-1 c7n:0.9.8
+2020-11-25 15:15:52,866 - custodian.cache - DEBUG - Using cache file /Users/noah/.cache/cloud-custodian.cache
+2020-11-25 15:15:53,636 - custodian.output - DEBUG - metric:PolicyException Count:1 policy:subscriptions restype:aws.sns-subscription
+2020-11-25 15:15:53,636 - custodian.output - DEBUG - metric:ApiCalls Count:2 policy:subscriptions restype:aws.sns-subscription
+2020-11-25 16:30:11,199 - custodian.policy - DEBUG - Running policy:Subscriptions resource:aws.sns-subscription region:us-east-1 c7n:0.9.8
+2020-11-25 16:30:11,201 - custodian.cache - DEBUG - Using cache file /Users/noah/.cache/cloud-custodian.cache
+2020-11-25 16:30:11,832 - custodian.resources.snssubscription - DEBUG - Filtered from 51 to 0 snssubscription
+2020-11-25 16:30:11,832 - custodian.policy - INFO - policy:Subscriptions resource:aws.sns-subscription region:us-east-1 count:0 time:0.63
+2020-11-25 16:30:11,834 - custodian.output - DEBUG - metric:ResourceCount Count:0 policy:subscriptions restype:aws.sns-subscription scope:policy
+2020-11-25 16:30:11,834 - custodian.output - DEBUG - metric:ApiCalls Count:2 policy:subscriptions restype:aws.sns-subscription
+2020-11-25 17:18:20,571 - custodian.policy - DEBUG - Running policy:Subscriptions resource:aws.sns-subscription region:us-east-1 c7n:0.9.8
+2020-11-25 17:18:20,573 - custodian.cache - DEBUG - Using cache file /Users/noah/.cache/cloud-custodian.cache
+2020-11-25 17:18:21,259 - custodian.resources.snssubscription - DEBUG - Filtered from 51 to 0 snssubscription
+2020-11-25 17:18:21,259 - custodian.policy - INFO - policy:Subscriptions resource:aws.sns-subscription region:us-east-1 count:0 time:0.69
+2020-11-25 17:18:21,261 - custodian.output - DEBUG - metric:ResourceCount Count:0 policy:subscriptions restype:aws.sns-subscription scope:policy
+2020-11-25 17:18:21,261 - custodian.output - DEBUG - metric:ApiCalls Count:2 policy:subscriptions restype:aws.sns-subscription
+2020-11-25 17:20:08,124 - custodian.policy - DEBUG - Running policy:Subscriptions resource:aws.sns-subscription region:us-east-1 c7n:0.9.8
+2020-11-25 17:20:08,126 - custodian.cache - DEBUG - Using cache file /Users/noah/.cache/cloud-custodian.cache
+2020-11-25 17:20:08,127 - custodian.resources.snssubscription - DEBUG - Using cached c7n.resources.sns.SNSSubscription: 51
+2020-11-25 17:20:08,127 - custodian.resources.snssubscription - DEBUG - Filtered from 51 to 0 snssubscription
+2020-11-25 17:20:08,127 - custodian.policy - INFO - policy:Subscriptions resource:aws.sns-subscription region:us-east-1 count:0 time:0.00
+2020-11-25 17:20:08,128 - custodian.output - DEBUG - metric:ResourceCount Count:0 policy:subscriptions restype:aws.sns-subscription scope:policy
+2020-11-25 17:20:08,128 - custodian.output - DEBUG - metric:ApiCalls Count:0 policy:subscriptions restype:aws.sns-subscription
+2020-11-25 17:20:33,354 - custodian.policy - DEBUG - Running policy:Subscriptions resource:aws.sns-subscription region:us-east-1 c7n:0.9.8
+2020-11-25 17:20:33,355 - custodian.cache - DEBUG - Using cache file /Users/noah/.cache/cloud-custodian.cache
+2020-11-25 17:20:33,355 - custodian.resources.snssubscription - DEBUG - Using cached c7n.resources.sns.SNSSubscription: 51
+2020-11-25 17:20:33,356 - custodian.resources.snssubscription - DEBUG - Filtered from 51 to 0 snssubscription
+2020-11-25 17:20:33,356 - custodian.policy - INFO - policy:Subscriptions resource:aws.sns-subscription region:us-east-1 count:0 time:0.00
+2020-11-25 17:20:33,357 - custodian.output - DEBUG - metric:ResourceCount Count:0 policy:subscriptions restype:aws.sns-subscription scope:policy
+2020-11-25 17:20:33,357 - custodian.output - DEBUG - metric:ApiCalls Count:0 policy:subscriptions restype:aws.sns-subscription
+2020-11-25 17:21:40,631 - custodian.policy - DEBUG - Running policy:Subscriptions resource:aws.sns-subscription region:us-east-1 c7n:0.9.8
+2020-11-25 17:21:40,634 - custodian.cache - DEBUG - Using cache file /Users/noah/.cache/cloud-custodian.cache
+2020-11-25 17:21:40,634 - custodian.resources.snssubscription - DEBUG - Using cached c7n.resources.sns.SNSSubscription: 51
+2020-11-25 17:21:40,634 - custodian.resources.snssubscription - DEBUG - Filtered from 51 to 0 snssubscription
+2020-11-25 17:21:40,634 - custodian.policy - INFO - policy:Subscriptions resource:aws.sns-subscription region:us-east-1 count:0 time:0.00
+2020-11-25 17:21:40,636 - custodian.output - DEBUG - metric:ResourceCount Count:0 policy:subscriptions restype:aws.sns-subscription scope:policy
+2020-11-25 17:21:40,636 - custodian.output - DEBUG - metric:ApiCalls Count:0 policy:subscriptions restype:aws.sns-subscription
+2020-11-25 17:22:33,195 - custodian.policy - DEBUG - Running policy:Subscriptions resource:aws.sns-subscription region:us-east-1 c7n:0.9.8
+2020-11-25 17:22:33,197 - custodian.cache - DEBUG - Using cache file /Users/noah/.cache/cloud-custodian.cache
+2020-11-25 17:22:33,197 - custodian.resources.snssubscription - DEBUG - Using cached c7n.resources.sns.SNSSubscription: 51
+2020-11-25 17:22:33,197 - custodian.resources.snssubscription - DEBUG - Filtered from 51 to 0 snssubscription
+2020-11-25 17:22:33,197 - custodian.policy - INFO - policy:Subscriptions resource:aws.sns-subscription region:us-east-1 count:0 time:0.00
+2020-11-25 17:22:33,198 - custodian.output - DEBUG - metric:ResourceCount Count:0 policy:subscriptions restype:aws.sns-subscription scope:policy
+2020-11-25 17:22:33,198 - custodian.output - DEBUG - metric:ApiCalls Count:0 policy:subscriptions restype:aws.sns-subscription
+2020-11-25 17:24:07,899 - custodian.policy - DEBUG - Running policy:Subscriptions resource:aws.sns-subscription region:us-east-1 c7n:0.9.8
+2020-11-25 17:24:07,900 - custodian.cache - DEBUG - Using cache file /Users/noah/.cache/cloud-custodian.cache
+2020-11-25 17:24:07,900 - custodian.resources.snssubscription - DEBUG - Using cached c7n.resources.sns.SNSSubscription: 51
+2020-11-25 17:24:07,900 - custodian.resources.snssubscription - DEBUG - Filtered from 51 to 0 snssubscription
+2020-11-25 17:24:07,900 - custodian.policy - INFO - policy:Subscriptions resource:aws.sns-subscription region:us-east-1 count:0 time:0.00
+2020-11-25 17:24:07,901 - custodian.output - DEBUG - metric:ResourceCount Count:0 policy:subscriptions restype:aws.sns-subscription scope:policy
+2020-11-25 17:24:07,901 - custodian.output - DEBUG - metric:ApiCalls Count:0 policy:subscriptions restype:aws.sns-subscription
+2020-11-25 17:39:22,322 - custodian.policy - DEBUG - Running policy:Subscriptions resource:aws.sns-subscription region:us-east-1 c7n:0.9.8
+2020-11-25 17:39:22,323 - custodian.cache - DEBUG - Using cache file /Users/noah/.cache/cloud-custodian.cache
+2020-11-25 17:39:22,989 - custodian.output - DEBUG - metric:PolicyException Count:1 policy:subscriptions restype:aws.sns-subscription
+2020-11-25 17:39:22,989 - custodian.output - DEBUG - metric:ApiCalls Count:2 policy:subscriptions restype:aws.sns-subscription
+2020-11-25 17:40:50,394 - custodian.policy - DEBUG - Running policy:Subscriptions resource:aws.sns-subscription region:us-east-1 c7n:0.9.8
+2020-11-25 17:40:50,396 - custodian.cache - DEBUG - Using cache file /Users/noah/.cache/cloud-custodian.cache
+2020-11-25 17:40:50,396 - custodian.resources.snssubscription - DEBUG - Using cached c7n.resources.sns.SNSSubscription: 51
+2020-11-25 17:40:50,397 - custodian.output - DEBUG - metric:PolicyException Count:1 policy:subscriptions restype:aws.sns-subscription
+2020-11-25 17:40:50,397 - custodian.output - DEBUG - metric:ApiCalls Count:0 policy:subscriptions restype:aws.sns-subscription
+2020-11-25 17:44:11,790 - custodian.policy - DEBUG - Running policy:Subscriptions resource:aws.sns-subscription region:us-east-1 c7n:0.9.8
+2020-11-25 17:44:11,792 - custodian.cache - DEBUG - Using cache file /Users/noah/.cache/cloud-custodian.cache
+2020-11-25 17:44:11,792 - custodian.resources.snssubscription - DEBUG - Using cached c7n.resources.sns.SNSSubscription: 51
+2020-11-25 17:44:11,794 - custodian.resources.snssubscription - DEBUG - Filtered from 51 to 1 snssubscription
+2020-11-25 17:44:11,794 - custodian.policy - INFO - policy:Subscriptions resource:aws.sns-subscription region:us-east-1 count:1 time:0.00
+2020-11-25 17:44:11,796 - custodian.output - DEBUG - metric:ResourceCount Count:1 policy:subscriptions restype:aws.sns-subscription scope:policy
+2020-11-25 17:44:11,796 - custodian.output - DEBUG - metric:ApiCalls Count:0 policy:subscriptions restype:aws.sns-subscription

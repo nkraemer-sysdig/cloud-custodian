@@ -1,0 +1,12 @@
+[
+  {
+    "SubscriptionArn": "arn:aws:sns:us-east-1:059797578166:CIS_AWS_Foundations_Benchmark_v1-3-0:2fe322de-010a-4dac-ba18-b9cc67d9d7c2",
+    "Owner": "059797578166",
+    "Protocol": "email",
+    "Endpoint": "noah.kraemer+cis_alerts@sysdig.com",
+    "TopicArn": "arn:aws:sns:us-east-1:059797578166:CIS_AWS_Foundations_Benchmark_v1-3-0",
+    "c7n:MatchedFilters": [
+      "TopicArn"
+    ]
+  }
+]

@@ -1,0 +1,379 @@
+2020-11-25 14:31:41,819 - custodian.policy - INFO - policy:LogGroup resource:aws.log-group region:us-east-1 count:0 time:2.43
+2020-11-25 14:32:52,573 - custodian.policy - INFO - policy:LogGroup resource:aws.log-group region:us-east-1 count:0 time:0.00
+2020-11-25 14:37:45,781 - custodian.policy - INFO - policy:LogGroup resource:aws.log-group region:us-east-1 count:0 time:0.00
+2020-11-25 14:39:08,138 - custodian.policy - INFO - policy:LogGroup resource:aws.log-group region:us-east-1 count:0 time:0.00
+2020-11-25 15:15:49,376 - custodian.policy - DEBUG - Running policy:LogGroup resource:aws.log-group region:us-east-1 c7n:0.9.8
+2020-11-25 15:15:49,377 - custodian.cache - DEBUG - Using cache file /Users/noah/.cache/cloud-custodian.cache
+2020-11-25 15:15:52,048 - custodian.resources.loggroup - DEBUG - Filtered from 262 to 0 loggroup
+2020-11-25 15:15:52,048 - custodian.policy - INFO - policy:LogGroup resource:aws.log-group region:us-east-1 count:0 time:2.67
+2020-11-25 15:15:52,049 - custodian.output - DEBUG - metric:ResourceCount Count:0 policy:loggroup restype:aws.log-group scope:policy
+2020-11-25 15:15:52,049 - custodian.output - DEBUG - metric:ApiCalls Count:6 policy:loggroup restype:aws.log-group
+2020-11-25 15:16:38,905 - custodian.policy - DEBUG - Running policy:LogGroup resource:aws.log-group region:us-east-1 c7n:0.9.8
+2020-11-25 15:16:38,905 - custodian.cache - DEBUG - Using cache file /Users/noah/.cache/cloud-custodian.cache
+2020-11-25 15:16:38,906 - custodian.resources.loggroup - DEBUG - Using cached c7n.resources.cw.LogGroup: 262
+2020-11-25 15:16:38,906 - custodian.resources.loggroup - DEBUG - Filtered from 262 to 0 loggroup
+2020-11-25 15:16:38,906 - custodian.policy - INFO - policy:LogGroup resource:aws.log-group region:us-east-1 count:0 time:0.00
+2020-11-25 15:16:38,907 - custodian.output - DEBUG - metric:ResourceCount Count:0 policy:loggroup restype:aws.log-group scope:policy
+2020-11-25 15:16:38,907 - custodian.output - DEBUG - metric:ApiCalls Count:0 policy:loggroup restype:aws.log-group
+2020-11-25 15:59:58,967 - custodian.policy - DEBUG - Running policy:LogGroup resource:aws.log-group region:us-east-1 c7n:0.9.8
+2020-11-25 15:59:58,974 - custodian.cache - DEBUG - Using cache file /Users/noah/.cache/cloud-custodian.cache
+2020-11-25 16:00:01,837 - custodian.resources.loggroup - DEBUG - Filtered from 262 to 0 loggroup
+2020-11-25 16:00:01,837 - custodian.policy - INFO - policy:LogGroup resource:aws.log-group region:us-east-1 count:0 time:2.87
+2020-11-25 16:00:01,838 - custodian.output - DEBUG - metric:ResourceCount Count:0 policy:loggroup restype:aws.log-group scope:policy
+2020-11-25 16:00:01,838 - custodian.output - DEBUG - metric:ApiCalls Count:6 policy:loggroup restype:aws.log-group
+2020-11-25 16:01:14,175 - custodian.policy - DEBUG - Running policy:LogGroup resource:aws.log-group region:us-east-1 c7n:0.9.8
+2020-11-25 16:01:14,175 - custodian.cache - DEBUG - Using cache file /Users/noah/.cache/cloud-custodian.cache
+2020-11-25 16:01:14,175 - custodian.resources.loggroup - DEBUG - Using cached c7n.resources.cw.LogGroup: 262
+2020-11-25 16:01:14,176 - custodian.resources.loggroup - DEBUG - Filtered from 262 to 0 loggroup
+2020-11-25 16:01:14,176 - custodian.policy - INFO - policy:LogGroup resource:aws.log-group region:us-east-1 count:0 time:0.00
+2020-11-25 16:01:14,177 - custodian.output - DEBUG - metric:ResourceCount Count:0 policy:loggroup restype:aws.log-group scope:policy
+2020-11-25 16:01:14,177 - custodian.output - DEBUG - metric:ApiCalls Count:0 policy:loggroup restype:aws.log-group
+2020-11-25 16:02:47,127 - custodian.policy - DEBUG - Running policy:LogGroup resource:aws.log-group region:us-east-1 c7n:0.9.8
+2020-11-25 16:02:47,128 - custodian.cache - DEBUG - Using cache file /Users/noah/.cache/cloud-custodian.cache
+2020-11-25 16:02:47,128 - custodian.resources.loggroup - DEBUG - Using cached c7n.resources.cw.LogGroup: 262
+2020-11-25 16:02:47,130 - custodian.resources.loggroup - DEBUG - Filtered from 262 to 0 loggroup
+2020-11-25 16:02:47,130 - custodian.policy - INFO - policy:LogGroup resource:aws.log-group region:us-east-1 count:0 time:0.00
+2020-11-25 16:02:47,131 - custodian.output - DEBUG - metric:ResourceCount Count:0 policy:loggroup restype:aws.log-group scope:policy
+2020-11-25 16:02:47,131 - custodian.output - DEBUG - metric:ApiCalls Count:0 policy:loggroup restype:aws.log-group
+2020-11-25 16:04:29,423 - custodian.policy - DEBUG - Running policy:LogGroup resource:aws.log-group region:us-east-1 c7n:0.9.8
+2020-11-25 16:04:29,423 - custodian.cache - DEBUG - Using cache file /Users/noah/.cache/cloud-custodian.cache
+2020-11-25 16:04:29,424 - custodian.resources.loggroup - DEBUG - Using cached c7n.resources.cw.LogGroup: 262
+2020-11-25 16:04:29,424 - custodian.resources.loggroup - DEBUG - Filtered from 262 to 0 loggroup
+2020-11-25 16:04:29,424 - custodian.policy - INFO - policy:LogGroup resource:aws.log-group region:us-east-1 count:0 time:0.00
+2020-11-25 16:04:29,426 - custodian.output - DEBUG - metric:ResourceCount Count:0 policy:loggroup restype:aws.log-group scope:policy
+2020-11-25 16:04:29,426 - custodian.output - DEBUG - metric:ApiCalls Count:0 policy:loggroup restype:aws.log-group
+2020-11-25 16:05:27,357 - custodian.policy - DEBUG - Running policy:LogGroup resource:aws.log-group region:us-east-1 c7n:0.9.8
+2020-11-25 16:05:27,357 - custodian.cache - DEBUG - Using cache file /Users/noah/.cache/cloud-custodian.cache
+2020-11-25 16:05:27,357 - custodian.resources.loggroup - DEBUG - Using cached c7n.resources.cw.LogGroup: 262
+2020-11-25 16:05:27,358 - custodian.resources.loggroup - DEBUG - Filtered from 262 to 0 loggroup
+2020-11-25 16:05:27,358 - custodian.policy - INFO - policy:LogGroup resource:aws.log-group region:us-east-1 count:0 time:0.00
+2020-11-25 16:05:27,359 - custodian.output - DEBUG - metric:ResourceCount Count:0 policy:loggroup restype:aws.log-group scope:policy
+2020-11-25 16:05:27,359 - custodian.output - DEBUG - metric:ApiCalls Count:0 policy:loggroup restype:aws.log-group
+2020-11-25 16:07:25,639 - custodian.policy - DEBUG - Running policy:LogGroup resource:aws.log-group region:us-east-1 c7n:0.9.8
+2020-11-25 16:07:25,639 - custodian.cache - DEBUG - Using cache file /Users/noah/.cache/cloud-custodian.cache
+2020-11-25 16:07:25,640 - custodian.resources.loggroup - DEBUG - Using cached c7n.resources.cw.LogGroup: 262
+2020-11-25 16:07:25,640 - custodian.resources.loggroup - DEBUG - Filtered from 262 to 1 loggroup
+2020-11-25 16:07:25,640 - custodian.policy - INFO - policy:LogGroup resource:aws.log-group region:us-east-1 count:1 time:0.00
+2020-11-25 16:07:25,641 - custodian.output - DEBUG - metric:ResourceCount Count:1 policy:loggroup restype:aws.log-group scope:policy
+2020-11-25 16:07:25,642 - custodian.output - DEBUG - metric:ApiCalls Count:0 policy:loggroup restype:aws.log-group
+2020-11-25 16:10:39,283 - custodian.policy - DEBUG - Running policy:LogGroup resource:aws.log-group region:us-east-1 c7n:0.9.8
+2020-11-25 16:10:39,284 - custodian.cache - DEBUG - Using cache file /Users/noah/.cache/cloud-custodian.cache
+2020-11-25 16:10:39,284 - custodian.resources.loggroup - DEBUG - Using cached c7n.resources.cw.LogGroup: 262
+2020-11-25 16:10:39,285 - custodian.resources.loggroup - DEBUG - Filtered from 262 to 2 loggroup
+2020-11-25 16:10:39,285 - custodian.policy - INFO - policy:LogGroup resource:aws.log-group region:us-east-1 count:2 time:0.00
+2020-11-25 16:10:39,286 - custodian.output - DEBUG - metric:ResourceCount Count:2 policy:loggroup restype:aws.log-group scope:policy
+2020-11-25 16:10:39,286 - custodian.output - DEBUG - metric:ApiCalls Count:0 policy:loggroup restype:aws.log-group
+2020-11-25 16:13:19,096 - custodian.policy - DEBUG - Running policy:LogGroup resource:aws.log-group region:us-east-1 c7n:0.9.8
+2020-11-25 16:13:19,097 - custodian.cache - DEBUG - Using cache file /Users/noah/.cache/cloud-custodian.cache
+2020-11-25 16:13:19,097 - custodian.resources.loggroup - DEBUG - Using cached c7n.resources.cw.LogGroup: 262
+2020-11-25 16:13:19,098 - custodian.resources.loggroup - DEBUG - Filtered from 262 to 2 loggroup
+2020-11-25 16:13:19,098 - custodian.policy - INFO - policy:LogGroup resource:aws.log-group region:us-east-1 count:2 time:0.00
+2020-11-25 16:13:19,099 - custodian.output - DEBUG - metric:ResourceCount Count:2 policy:loggroup restype:aws.log-group scope:policy
+2020-11-25 16:13:19,099 - custodian.output - DEBUG - metric:ApiCalls Count:0 policy:loggroup restype:aws.log-group
+2020-11-25 16:14:26,456 - custodian.policy - DEBUG - Running policy:LogGroup resource:aws.log-group region:us-east-1 c7n:0.9.8
+2020-11-25 16:14:26,457 - custodian.cache - DEBUG - Using cache file /Users/noah/.cache/cloud-custodian.cache
+2020-11-25 16:14:26,457 - custodian.resources.loggroup - DEBUG - Using cached c7n.resources.cw.LogGroup: 262
+2020-11-25 16:14:26,467 - custodian.resources.loggroup - DEBUG - Filtered from 262 to 2 loggroup
+2020-11-25 16:14:26,467 - custodian.policy - INFO - policy:LogGroup resource:aws.log-group region:us-east-1 count:2 time:0.01
+2020-11-25 16:14:26,469 - custodian.output - DEBUG - metric:ResourceCount Count:2 policy:loggroup restype:aws.log-group scope:policy
+2020-11-25 16:14:26,469 - custodian.output - DEBUG - metric:ApiCalls Count:0 policy:loggroup restype:aws.log-group
+2020-11-25 16:30:07,731 - custodian.policy - DEBUG - Running policy:LogGroup resource:aws.log-group region:us-east-1 c7n:0.9.8
+2020-11-25 16:30:07,733 - custodian.cache - DEBUG - Using cache file /Users/noah/.cache/cloud-custodian.cache
+2020-11-25 16:30:10,499 - custodian.resources.loggroup - DEBUG - Filtered from 262 to 2 loggroup
+2020-11-25 16:30:10,499 - custodian.policy - INFO - policy:LogGroup resource:aws.log-group region:us-east-1 count:2 time:2.77
+2020-11-25 16:30:10,501 - custodian.output - DEBUG - metric:ResourceCount Count:2 policy:loggroup restype:aws.log-group scope:policy
+2020-11-25 16:30:10,501 - custodian.output - DEBUG - metric:ApiCalls Count:6 policy:loggroup restype:aws.log-group
+2020-11-25 16:35:37,002 - custodian.policy - DEBUG - Running policy:LogGroup resource:aws.log-group region:us-east-1 c7n:0.9.8
+2020-11-25 16:35:37,004 - custodian.cache - DEBUG - Using cache file /Users/noah/.cache/cloud-custodian.cache
+2020-11-25 16:35:37,004 - custodian.resources.loggroup - DEBUG - Using cached c7n.resources.cw.LogGroup: 262
+2020-11-25 16:35:37,006 - custodian.output - DEBUG - metric:PolicyException Count:1 policy:loggroup restype:aws.log-group
+2020-11-25 16:35:37,006 - custodian.output - DEBUG - metric:ApiCalls Count:0 policy:loggroup restype:aws.log-group
+2020-11-25 16:36:24,952 - custodian.policy - DEBUG - Running policy:LogGroup resource:aws.log-group region:us-east-1 c7n:0.9.8
+2020-11-25 16:36:24,953 - custodian.cache - DEBUG - Using cache file /Users/noah/.cache/cloud-custodian.cache
+2020-11-25 16:36:24,953 - custodian.resources.loggroup - DEBUG - Using cached c7n.resources.cw.LogGroup: 262
+2020-11-25 16:36:25,793 - custodian.resources.loggroup - DEBUG - Filtered from 262 to 0 loggroup
+2020-11-25 16:36:25,793 - custodian.policy - INFO - policy:LogGroup resource:aws.log-group region:us-east-1 count:0 time:0.84
+2020-11-25 16:36:25,794 - custodian.output - DEBUG - metric:ResourceCount Count:0 policy:loggroup restype:aws.log-group scope:policy
+2020-11-25 16:36:25,794 - custodian.output - DEBUG - metric:ApiCalls Count:2 policy:loggroup restype:aws.log-group
+2020-11-25 16:36:35,516 - custodian.policy - DEBUG - Running policy:LogGroup resource:aws.log-group region:us-east-1 c7n:0.9.8
+2020-11-25 16:36:35,516 - custodian.cache - DEBUG - Using cache file /Users/noah/.cache/cloud-custodian.cache
+2020-11-25 16:36:35,517 - custodian.resources.loggroup - DEBUG - Using cached c7n.resources.cw.LogGroup: 262
+2020-11-25 16:36:35,517 - custodian.resources.loggroup - DEBUG - Filtered from 262 to 2 loggroup
+2020-11-25 16:36:35,517 - custodian.policy - INFO - policy:LogGroup resource:aws.log-group region:us-east-1 count:2 time:0.00
+2020-11-25 16:36:35,518 - custodian.output - DEBUG - metric:ResourceCount Count:2 policy:loggroup restype:aws.log-group scope:policy
+2020-11-25 16:36:35,519 - custodian.output - DEBUG - metric:ApiCalls Count:0 policy:loggroup restype:aws.log-group
+2020-11-25 16:37:13,057 - custodian.policy - DEBUG - Running policy:LogGroup resource:aws.log-group region:us-east-1 c7n:0.9.8
+2020-11-25 16:37:13,058 - custodian.cache - DEBUG - Using cache file /Users/noah/.cache/cloud-custodian.cache
+2020-11-25 16:37:13,058 - custodian.resources.loggroup - DEBUG - Using cached c7n.resources.cw.LogGroup: 262
+2020-11-25 16:37:13,950 - custodian.resources.loggroup - DEBUG - Filtered from 262 to 2 loggroup
+2020-11-25 16:37:13,950 - custodian.policy - INFO - policy:LogGroup resource:aws.log-group region:us-east-1 count:2 time:0.89
+2020-11-25 16:37:13,952 - custodian.output - DEBUG - metric:ResourceCount Count:2 policy:loggroup restype:aws.log-group scope:policy
+2020-11-25 16:37:13,952 - custodian.output - DEBUG - metric:ApiCalls Count:2 policy:loggroup restype:aws.log-group
+2020-11-25 16:39:50,521 - custodian.policy - DEBUG - Running policy:LogGroup resource:aws.log-group region:us-east-1 c7n:0.9.8
+2020-11-25 16:39:50,522 - custodian.cache - DEBUG - Using cache file /Users/noah/.cache/cloud-custodian.cache
+2020-11-25 16:39:50,522 - custodian.resources.loggroup - DEBUG - Using cached c7n.resources.cw.LogGroup: 262
+2020-11-25 16:39:51,333 - custodian.resources.loggroup - DEBUG - Filtered from 262 to 1 loggroup
+2020-11-25 16:39:51,333 - custodian.policy - INFO - policy:LogGroup resource:aws.log-group region:us-east-1 count:1 time:0.81
+2020-11-25 16:39:51,334 - custodian.output - DEBUG - metric:ResourceCount Count:1 policy:loggroup restype:aws.log-group scope:policy
+2020-11-25 16:39:51,334 - custodian.output - DEBUG - metric:ApiCalls Count:2 policy:loggroup restype:aws.log-group
+2020-11-25 16:50:18,314 - custodian.policy - DEBUG - Running policy:LogGroup resource:aws.log-group region:us-east-1 c7n:0.9.8
+2020-11-25 16:50:18,324 - custodian.cache - DEBUG - Using cache file /Users/noah/.cache/cloud-custodian.cache
+2020-11-25 16:50:22,501 - custodian.resources.loggroup - DEBUG - Filtered from 262 to 1 loggroup
+2020-11-25 16:50:22,501 - custodian.policy - INFO - policy:LogGroup resource:aws.log-group region:us-east-1 count:1 time:4.19
+2020-11-25 16:50:22,503 - custodian.output - DEBUG - metric:ResourceCount Count:1 policy:loggroup restype:aws.log-group scope:policy
+2020-11-25 16:50:22,503 - custodian.output - DEBUG - metric:ApiCalls Count:8 policy:loggroup restype:aws.log-group
+2020-11-25 16:56:32,831 - custodian.policy - DEBUG - Running policy:LogGroup resource:aws.log-group region:us-east-1 c7n:0.9.8
+2020-11-25 16:56:32,832 - custodian.cache - DEBUG - Using cache file /Users/noah/.cache/cloud-custodian.cache
+2020-11-25 16:56:32,832 - custodian.resources.loggroup - DEBUG - Using cached c7n.resources.cw.LogGroup: 262
+2020-11-25 16:56:33,258 - custodian.output - DEBUG - metric:PolicyException Count:1 policy:loggroup restype:aws.log-group
+2020-11-25 16:56:33,258 - custodian.output - DEBUG - metric:ApiCalls Count:1 policy:loggroup restype:aws.log-group
+2020-11-25 16:58:24,682 - custodian.policy - DEBUG - Running policy:LogGroup resource:aws.log-group region:us-east-1 c7n:0.9.8
+2020-11-25 16:58:24,683 - custodian.cache - DEBUG - Using cache file /Users/noah/.cache/cloud-custodian.cache
+2020-11-25 16:58:24,683 - custodian.resources.loggroup - DEBUG - Using cached c7n.resources.cw.LogGroup: 262
+2020-11-25 16:58:25,599 - custodian.output - DEBUG - metric:PolicyException Count:1 policy:loggroup restype:aws.log-group
+2020-11-25 16:58:25,599 - custodian.output - DEBUG - metric:ApiCalls Count:1 policy:loggroup restype:aws.log-group
+2020-11-25 17:01:52,013 - custodian.policy - DEBUG - Running policy:LogGroup resource:aws.log-group region:us-east-1 c7n:0.9.8
+2020-11-25 17:01:52,014 - custodian.cache - DEBUG - Using cache file /Users/noah/.cache/cloud-custodian.cache
+2020-11-25 17:01:52,015 - custodian.resources.loggroup - DEBUG - Using cached c7n.resources.cw.LogGroup: 262
+2020-11-25 17:01:52,432 - custodian.output - DEBUG - metric:PolicyException Count:1 policy:loggroup restype:aws.log-group
+2020-11-25 17:01:52,432 - custodian.output - DEBUG - metric:ApiCalls Count:1 policy:loggroup restype:aws.log-group
+2020-11-25 17:02:32,294 - custodian.policy - DEBUG - Running policy:LogGroup resource:aws.log-group region:us-east-1 c7n:0.9.8
+2020-11-25 17:02:32,294 - custodian.cache - DEBUG - Using cache file /Users/noah/.cache/cloud-custodian.cache
+2020-11-25 17:02:32,294 - custodian.resources.loggroup - DEBUG - Using cached c7n.resources.cw.LogGroup: 262
+2020-11-25 17:02:32,762 - custodian.output - DEBUG - metric:PolicyException Count:1 policy:loggroup restype:aws.log-group
+2020-11-25 17:02:32,762 - custodian.output - DEBUG - metric:ApiCalls Count:1 policy:loggroup restype:aws.log-group
+2020-11-25 17:03:33,253 - custodian.policy - DEBUG - Running policy:LogGroup resource:aws.log-group region:us-east-1 c7n:0.9.8
+2020-11-25 17:03:33,254 - custodian.cache - DEBUG - Using cache file /Users/noah/.cache/cloud-custodian.cache
+2020-11-25 17:03:33,254 - custodian.resources.loggroup - DEBUG - Using cached c7n.resources.cw.LogGroup: 262
+2020-11-25 17:03:33,680 - custodian.filters - DEBUG - Error checking log groups cross-account {'metricFilters': [{'filterName': 'Unauthorized API Calls', 'filterPattern': '{(($.errorCode="UnauthorizedOperation") || ($.errorCode="AccessDenied")) || (($.sourceIPAddress!="delivery.logs.amazonaws.com") || ($.eventName!="HeadBucket"))}', 'metricTransformations': [{'metricName': 'unauthorized_api_calls', 'metricNamespace': 'CIS_AWS_Foundations_Benchmark_v1.3.0', 'metricValue': '1', 'defaultValue': 0.0}], 'creationTime': 1600188890712, 'logGroupName': 'aws-cloudtrail-logs-059797578166-6a2f190e'}]}
+2020-11-25 17:03:33,681 - custodian.output - DEBUG - metric:PolicyException Count:1 policy:loggroup restype:aws.log-group
+2020-11-25 17:03:33,681 - custodian.output - DEBUG - metric:ApiCalls Count:1 policy:loggroup restype:aws.log-group
+2020-11-25 17:03:38,686 - custodian.policy - DEBUG - Running policy:LogGroup resource:aws.log-group region:us-east-1 c7n:0.9.8
+2020-11-25 17:03:38,686 - custodian.cache - DEBUG - Using cache file /Users/noah/.cache/cloud-custodian.cache
+2020-11-25 17:03:38,687 - custodian.resources.loggroup - DEBUG - Using cached c7n.resources.cw.LogGroup: 262
+2020-11-25 17:03:39,091 - custodian.filters - DEBUG - Error checking log groups cross-account {'metricFilters': [{'filterName': 'Unauthorized API Calls', 'filterPattern': '{(($.errorCode="UnauthorizedOperation") || ($.errorCode="AccessDenied")) || (($.sourceIPAddress!="delivery.logs.amazonaws.com") || ($.eventName!="HeadBucket"))}', 'metricTransformations': [{'metricName': 'unauthorized_api_calls', 'metricNamespace': 'CIS_AWS_Foundations_Benchmark_v1.3.0', 'metricValue': '1', 'defaultValue': 0.0}], 'creationTime': 1600188890712, 'logGroupName': 'aws-cloudtrail-logs-059797578166-6a2f190e'}]}
+2020-11-25 17:03:39,092 - custodian.output - DEBUG - metric:PolicyException Count:1 policy:loggroup restype:aws.log-group
+2020-11-25 17:03:39,092 - custodian.output - DEBUG - metric:ApiCalls Count:1 policy:loggroup restype:aws.log-group
+2020-11-25 17:04:32,143 - custodian.policy - DEBUG - Running policy:LogGroup resource:aws.log-group region:us-east-1 c7n:0.9.8
+2020-11-25 17:04:32,144 - custodian.cache - DEBUG - Using cache file /Users/noah/.cache/cloud-custodian.cache
+2020-11-25 17:04:32,144 - custodian.resources.loggroup - DEBUG - Using cached c7n.resources.cw.LogGroup: 262
+2020-11-25 17:04:32,560 - custodian.filters - DEBUG - Error checking log groups cross-account {'metricFilters': [{'filterName': 'Unauthorized API Calls', 'filterPattern': '{(($.errorCode="UnauthorizedOperation") || ($.errorCode="AccessDenied")) || (($.sourceIPAddress!="delivery.logs.amazonaws.com") || ($.eventName!="HeadBucket"))}', 'metricTransformations': [{'metricName': 'unauthorized_api_calls', 'metricNamespace': 'CIS_AWS_Foundations_Benchmark_v1.3.0', 'metricValue': '1', 'defaultValue': 0.0}], 'creationTime': 1600188890712, 'logGroupName': 'aws-cloudtrail-logs-059797578166-6a2f190e'}]}
+2020-11-25 17:04:32,943 - custodian.filters - DEBUG - Error checking log groups cross-account {'metricFilters': []}
+2020-11-25 17:04:32,945 - custodian.resources.loggroup - DEBUG - Filtered from 262 to 0 loggroup
+2020-11-25 17:04:32,945 - custodian.policy - INFO - policy:LogGroup resource:aws.log-group region:us-east-1 count:0 time:0.80
+2020-11-25 17:04:32,947 - custodian.output - DEBUG - metric:ResourceCount Count:0 policy:loggroup restype:aws.log-group scope:policy
+2020-11-25 17:04:32,947 - custodian.output - DEBUG - metric:ApiCalls Count:2 policy:loggroup restype:aws.log-group
+2020-11-25 17:04:57,503 - custodian.policy - DEBUG - Running policy:LogGroup resource:aws.log-group region:us-east-1 c7n:0.9.8
+2020-11-25 17:04:57,504 - custodian.cache - DEBUG - Using cache file /Users/noah/.cache/cloud-custodian.cache
+2020-11-25 17:04:57,504 - custodian.resources.loggroup - DEBUG - Using cached c7n.resources.cw.LogGroup: 262
+2020-11-25 17:04:58,908 - custodian.resources.loggroup - DEBUG - Filtered from 262 to 2 loggroup
+2020-11-25 17:04:58,908 - custodian.policy - INFO - policy:LogGroup resource:aws.log-group region:us-east-1 count:2 time:1.40
+2020-11-25 17:04:58,909 - custodian.output - DEBUG - metric:ResourceCount Count:2 policy:loggroup restype:aws.log-group scope:policy
+2020-11-25 17:04:58,909 - custodian.output - DEBUG - metric:ApiCalls Count:2 policy:loggroup restype:aws.log-group
+2020-11-25 17:06:11,308 - custodian.policy - DEBUG - Running policy:LogGroup resource:aws.log-group region:us-east-1 c7n:0.9.8
+2020-11-25 17:06:11,310 - custodian.cache - DEBUG - Using cache file /Users/noah/.cache/cloud-custodian.cache
+2020-11-25 17:06:14,626 - custodian.resources.loggroup - DEBUG - Filtered from 262 to 0 loggroup
+2020-11-25 17:06:14,626 - custodian.policy - INFO - policy:LogGroup resource:aws.log-group region:us-east-1 count:0 time:3.32
+2020-11-25 17:06:14,627 - custodian.output - DEBUG - metric:ResourceCount Count:0 policy:loggroup restype:aws.log-group scope:policy
+2020-11-25 17:06:14,627 - custodian.output - DEBUG - metric:ApiCalls Count:8 policy:loggroup restype:aws.log-group
+2020-11-25 17:06:37,779 - custodian.policy - DEBUG - Running policy:LogGroup resource:aws.log-group region:us-east-1 c7n:0.9.8
+2020-11-25 17:06:37,780 - custodian.cache - DEBUG - Using cache file /Users/noah/.cache/cloud-custodian.cache
+2020-11-25 17:06:37,781 - custodian.resources.loggroup - DEBUG - Using cached c7n.resources.cw.LogGroup: 262
+2020-11-25 17:06:38,582 - custodian.resources.loggroup - DEBUG - Filtered from 262 to 2 loggroup
+2020-11-25 17:06:38,583 - custodian.policy - INFO - policy:LogGroup resource:aws.log-group region:us-east-1 count:2 time:0.80
+2020-11-25 17:06:38,584 - custodian.output - DEBUG - metric:ResourceCount Count:2 policy:loggroup restype:aws.log-group scope:policy
+2020-11-25 17:06:38,584 - custodian.output - DEBUG - metric:ApiCalls Count:2 policy:loggroup restype:aws.log-group
+2020-11-25 17:07:09,860 - custodian.policy - DEBUG - Running policy:LogGroup resource:aws.log-group region:us-east-1 c7n:0.9.8
+2020-11-25 17:07:09,861 - custodian.cache - DEBUG - Using cache file /Users/noah/.cache/cloud-custodian.cache
+2020-11-25 17:07:09,861 - custodian.resources.loggroup - DEBUG - Using cached c7n.resources.cw.LogGroup: 262
+2020-11-25 17:07:10,754 - custodian.resources.loggroup - DEBUG - Filtered from 262 to 0 loggroup
+2020-11-25 17:07:10,754 - custodian.policy - INFO - policy:LogGroup resource:aws.log-group region:us-east-1 count:0 time:0.89
+2020-11-25 17:07:10,755 - custodian.output - DEBUG - metric:ResourceCount Count:0 policy:loggroup restype:aws.log-group scope:policy
+2020-11-25 17:07:10,756 - custodian.output - DEBUG - metric:ApiCalls Count:2 policy:loggroup restype:aws.log-group
+2020-11-25 17:07:31,966 - custodian.policy - DEBUG - Running policy:LogGroup resource:aws.log-group region:us-east-1 c7n:0.9.8
+2020-11-25 17:07:31,966 - custodian.cache - DEBUG - Using cache file /Users/noah/.cache/cloud-custodian.cache
+2020-11-25 17:07:31,967 - custodian.resources.loggroup - DEBUG - Using cached c7n.resources.cw.LogGroup: 262
+2020-11-25 17:07:32,973 - custodian.resources.loggroup - DEBUG - Filtered from 262 to 0 loggroup
+2020-11-25 17:07:32,973 - custodian.policy - INFO - policy:LogGroup resource:aws.log-group region:us-east-1 count:0 time:1.01
+2020-11-25 17:07:32,974 - custodian.output - DEBUG - metric:ResourceCount Count:0 policy:loggroup restype:aws.log-group scope:policy
+2020-11-25 17:07:32,974 - custodian.output - DEBUG - metric:ApiCalls Count:2 policy:loggroup restype:aws.log-group
+2020-11-25 17:07:55,740 - custodian.policy - DEBUG - Running policy:LogGroup resource:aws.log-group region:us-east-1 c7n:0.9.8
+2020-11-25 17:07:55,740 - custodian.cache - DEBUG - Using cache file /Users/noah/.cache/cloud-custodian.cache
+2020-11-25 17:07:55,740 - custodian.resources.loggroup - DEBUG - Using cached c7n.resources.cw.LogGroup: 262
+2020-11-25 17:07:56,567 - custodian.resources.loggroup - DEBUG - Filtered from 262 to 2 loggroup
+2020-11-25 17:07:56,567 - custodian.policy - INFO - policy:LogGroup resource:aws.log-group region:us-east-1 count:2 time:0.83
+2020-11-25 17:07:56,568 - custodian.output - DEBUG - metric:ResourceCount Count:2 policy:loggroup restype:aws.log-group scope:policy
+2020-11-25 17:07:56,568 - custodian.output - DEBUG - metric:ApiCalls Count:2 policy:loggroup restype:aws.log-group
+2020-11-25 17:09:15,948 - custodian.policy - DEBUG - Running policy:LogGroup resource:aws.log-group region:us-east-1 c7n:0.9.8
+2020-11-25 17:09:15,949 - custodian.cache - DEBUG - Using cache file /Users/noah/.cache/cloud-custodian.cache
+2020-11-25 17:09:15,949 - custodian.resources.loggroup - DEBUG - Using cached c7n.resources.cw.LogGroup: 262
+2020-11-25 17:09:16,807 - custodian.resources.loggroup - DEBUG - Filtered from 262 to 2 loggroup
+2020-11-25 17:09:16,808 - custodian.policy - INFO - policy:LogGroup resource:aws.log-group region:us-east-1 count:2 time:0.86
+2020-11-25 17:09:16,809 - custodian.output - DEBUG - metric:ResourceCount Count:2 policy:loggroup restype:aws.log-group scope:policy
+2020-11-25 17:09:16,809 - custodian.output - DEBUG - metric:ApiCalls Count:2 policy:loggroup restype:aws.log-group
+2020-11-25 17:09:56,657 - custodian.policy - DEBUG - Running policy:LogGroup resource:aws.log-group region:us-east-1 c7n:0.9.8
+2020-11-25 17:09:56,658 - custodian.cache - DEBUG - Using cache file /Users/noah/.cache/cloud-custodian.cache
+2020-11-25 17:09:56,658 - custodian.resources.loggroup - DEBUG - Using cached c7n.resources.cw.LogGroup: 262
+2020-11-25 17:09:57,626 - custodian.resources.loggroup - DEBUG - Filtered from 262 to 2 loggroup
+2020-11-25 17:09:57,627 - custodian.policy - INFO - policy:LogGroup resource:aws.log-group region:us-east-1 count:2 time:0.97
+2020-11-25 17:09:57,628 - custodian.output - DEBUG - metric:ResourceCount Count:2 policy:loggroup restype:aws.log-group scope:policy
+2020-11-25 17:09:57,628 - custodian.output - DEBUG - metric:ApiCalls Count:2 policy:loggroup restype:aws.log-group
+2020-11-25 17:10:17,696 - custodian.policy - DEBUG - Running policy:LogGroup resource:aws.log-group region:us-east-1 c7n:0.9.8
+2020-11-25 17:10:17,697 - custodian.cache - DEBUG - Using cache file /Users/noah/.cache/cloud-custodian.cache
+2020-11-25 17:10:17,697 - custodian.resources.loggroup - DEBUG - Using cached c7n.resources.cw.LogGroup: 262
+2020-11-25 17:10:18,509 - custodian.resources.loggroup - DEBUG - Filtered from 262 to 2 loggroup
+2020-11-25 17:10:18,510 - custodian.policy - INFO - policy:LogGroup resource:aws.log-group region:us-east-1 count:2 time:0.81
+2020-11-25 17:10:18,511 - custodian.output - DEBUG - metric:ResourceCount Count:2 policy:loggroup restype:aws.log-group scope:policy
+2020-11-25 17:10:18,511 - custodian.output - DEBUG - metric:ApiCalls Count:2 policy:loggroup restype:aws.log-group
+2020-11-25 17:10:29,834 - custodian.policy - DEBUG - Running policy:LogGroup resource:aws.log-group region:us-east-1 c7n:0.9.8
+2020-11-25 17:10:29,835 - custodian.cache - DEBUG - Using cache file /Users/noah/.cache/cloud-custodian.cache
+2020-11-25 17:10:29,835 - custodian.resources.loggroup - DEBUG - Using cached c7n.resources.cw.LogGroup: 262
+2020-11-25 17:10:30,634 - custodian.resources.loggroup - DEBUG - Filtered from 262 to 1 loggroup
+2020-11-25 17:10:30,634 - custodian.policy - INFO - policy:LogGroup resource:aws.log-group region:us-east-1 count:1 time:0.80
+2020-11-25 17:10:30,636 - custodian.output - DEBUG - metric:ResourceCount Count:1 policy:loggroup restype:aws.log-group scope:policy
+2020-11-25 17:10:30,636 - custodian.output - DEBUG - metric:ApiCalls Count:2 policy:loggroup restype:aws.log-group
+2020-11-25 17:18:18,157 - custodian.policy - DEBUG - Running policy:LogGroup resource:aws.log-group region:us-east-1 c7n:0.9.8
+2020-11-25 17:18:18,158 - custodian.cache - DEBUG - Using cache file /Users/noah/.cache/cloud-custodian.cache
+2020-11-25 17:18:18,158 - custodian.resources.loggroup - DEBUG - Using cached c7n.resources.cw.LogGroup: 262
+2020-11-25 17:18:19,843 - custodian.resources.loggroup - DEBUG - Filtered from 262 to 1 loggroup
+2020-11-25 17:18:19,843 - custodian.policy - INFO - policy:LogGroup resource:aws.log-group region:us-east-1 count:1 time:1.69
+2020-11-25 17:18:19,844 - custodian.output - DEBUG - metric:ResourceCount Count:1 policy:loggroup restype:aws.log-group scope:policy
+2020-11-25 17:18:19,845 - custodian.output - DEBUG - metric:ApiCalls Count:4 policy:loggroup restype:aws.log-group
+2020-11-25 17:20:06,414 - custodian.policy - DEBUG - Running policy:LogGroup resource:aws.log-group region:us-east-1 c7n:0.9.8
+2020-11-25 17:20:06,415 - custodian.cache - DEBUG - Using cache file /Users/noah/.cache/cloud-custodian.cache
+2020-11-25 17:20:06,415 - custodian.resources.loggroup - DEBUG - Using cached c7n.resources.cw.LogGroup: 262
+2020-11-25 17:20:08,110 - custodian.resources.loggroup - DEBUG - Filtered from 262 to 1 loggroup
+2020-11-25 17:20:08,110 - custodian.policy - INFO - policy:LogGroup resource:aws.log-group region:us-east-1 count:1 time:1.70
+2020-11-25 17:20:08,112 - custodian.output - DEBUG - metric:ResourceCount Count:1 policy:loggroup restype:aws.log-group scope:policy
+2020-11-25 17:20:08,112 - custodian.output - DEBUG - metric:ApiCalls Count:4 policy:loggroup restype:aws.log-group
+2020-11-25 17:20:30,187 - custodian.policy - DEBUG - Running policy:LogGroup resource:aws.log-group region:us-east-1 c7n:0.9.8
+2020-11-25 17:20:30,188 - custodian.cache - DEBUG - Using cache file /Users/noah/.cache/cloud-custodian.cache
+2020-11-25 17:20:30,188 - custodian.resources.loggroup - DEBUG - Using cached c7n.resources.cw.LogGroup: 262
+2020-11-25 17:20:33,343 - custodian.resources.loggroup - DEBUG - Filtered from 262 to 1 loggroup
+2020-11-25 17:20:33,343 - custodian.policy - INFO - policy:LogGroup resource:aws.log-group region:us-east-1 count:1 time:3.16
+2020-11-25 17:20:33,345 - custodian.output - DEBUG - metric:ResourceCount Count:1 policy:loggroup restype:aws.log-group scope:policy
+2020-11-25 17:20:33,345 - custodian.output - DEBUG - metric:ApiCalls Count:4 policy:loggroup restype:aws.log-group
+2020-11-25 17:21:38,680 - custodian.policy - DEBUG - Running policy:LogGroup resource:aws.log-group region:us-east-1 c7n:0.9.8
+2020-11-25 17:21:38,681 - custodian.cache - DEBUG - Using cache file /Users/noah/.cache/cloud-custodian.cache
+2020-11-25 17:21:38,681 - custodian.resources.loggroup - DEBUG - Using cached c7n.resources.cw.LogGroup: 262
+2020-11-25 17:21:40,624 - custodian.resources.loggroup - DEBUG - Filtered from 262 to 1 loggroup
+2020-11-25 17:21:40,624 - custodian.policy - INFO - policy:LogGroup resource:aws.log-group region:us-east-1 count:1 time:1.94
+2020-11-25 17:21:40,625 - custodian.output - DEBUG - metric:ResourceCount Count:1 policy:loggroup restype:aws.log-group scope:policy
+2020-11-25 17:21:40,625 - custodian.output - DEBUG - metric:ApiCalls Count:4 policy:loggroup restype:aws.log-group
+2020-11-25 17:22:31,487 - custodian.policy - DEBUG - Running policy:LogGroup resource:aws.log-group region:us-east-1 c7n:0.9.8
+2020-11-25 17:22:31,488 - custodian.cache - DEBUG - Using cache file /Users/noah/.cache/cloud-custodian.cache
+2020-11-25 17:22:31,488 - custodian.resources.loggroup - DEBUG - Using cached c7n.resources.cw.LogGroup: 262
+2020-11-25 17:22:33,187 - custodian.resources.loggroup - DEBUG - Filtered from 262 to 1 loggroup
+2020-11-25 17:22:33,188 - custodian.policy - INFO - policy:LogGroup resource:aws.log-group region:us-east-1 count:1 time:1.70
+2020-11-25 17:22:33,189 - custodian.output - DEBUG - metric:ResourceCount Count:1 policy:loggroup restype:aws.log-group scope:policy
+2020-11-25 17:22:33,189 - custodian.output - DEBUG - metric:ApiCalls Count:4 policy:loggroup restype:aws.log-group
+2020-11-25 17:24:06,252 - custodian.policy - DEBUG - Running policy:LogGroup resource:aws.log-group region:us-east-1 c7n:0.9.8
+2020-11-25 17:24:06,253 - custodian.cache - DEBUG - Using cache file /Users/noah/.cache/cloud-custodian.cache
+2020-11-25 17:24:06,253 - custodian.resources.loggroup - DEBUG - Using cached c7n.resources.cw.LogGroup: 262
+2020-11-25 17:24:07,893 - custodian.resources.loggroup - DEBUG - Filtered from 262 to 1 loggroup
+2020-11-25 17:24:07,893 - custodian.policy - INFO - policy:LogGroup resource:aws.log-group region:us-east-1 count:1 time:1.64
+2020-11-25 17:24:07,894 - custodian.output - DEBUG - metric:ResourceCount Count:1 policy:loggroup restype:aws.log-group scope:policy
+2020-11-25 17:24:07,894 - custodian.output - DEBUG - metric:ApiCalls Count:4 policy:loggroup restype:aws.log-group
+2020-11-25 17:25:26,087 - custodian.policy - DEBUG - Running policy:LogGroup resource:aws.log-group region:us-east-1 c7n:0.9.8
+2020-11-25 17:25:26,088 - custodian.cache - DEBUG - Using cache file /Users/noah/.cache/cloud-custodian.cache
+2020-11-25 17:25:26,088 - custodian.resources.loggroup - DEBUG - Using cached c7n.resources.cw.LogGroup: 262
+2020-11-25 17:25:27,909 - custodian.resources.loggroup - DEBUG - Filtered from 262 to 1 loggroup
+2020-11-25 17:25:27,909 - custodian.policy - INFO - policy:LogGroup resource:aws.log-group region:us-east-1 count:1 time:1.82
+2020-11-25 17:25:27,910 - custodian.output - DEBUG - metric:ResourceCount Count:1 policy:loggroup restype:aws.log-group scope:policy
+2020-11-25 17:25:27,910 - custodian.output - DEBUG - metric:ApiCalls Count:4 policy:loggroup restype:aws.log-group
+2020-11-25 17:25:48,088 - custodian.policy - DEBUG - Running policy:LogGroup resource:aws.log-group region:us-east-1 c7n:0.9.8
+2020-11-25 17:25:48,089 - custodian.cache - DEBUG - Using cache file /Users/noah/.cache/cloud-custodian.cache
+2020-11-25 17:25:48,089 - custodian.resources.loggroup - DEBUG - Using cached c7n.resources.cw.LogGroup: 262
+2020-11-25 17:25:49,750 - custodian.resources.loggroup - DEBUG - Filtered from 262 to 1 loggroup
+2020-11-25 17:25:49,750 - custodian.policy - INFO - policy:LogGroup resource:aws.log-group region:us-east-1 count:1 time:1.66
+2020-11-25 17:25:49,751 - custodian.output - DEBUG - metric:ResourceCount Count:1 policy:loggroup restype:aws.log-group scope:policy
+2020-11-25 17:25:49,751 - custodian.output - DEBUG - metric:ApiCalls Count:4 policy:loggroup restype:aws.log-group
+2020-11-25 17:26:16,261 - custodian.policy - DEBUG - Running policy:LogGroup resource:aws.log-group region:us-east-1 c7n:0.9.8
+2020-11-25 17:26:16,261 - custodian.cache - DEBUG - Using cache file /Users/noah/.cache/cloud-custodian.cache
+2020-11-25 17:26:16,261 - custodian.resources.loggroup - DEBUG - Using cached c7n.resources.cw.LogGroup: 262
+2020-11-25 17:26:17,921 - custodian.resources.loggroup - DEBUG - Filtered from 262 to 1 loggroup
+2020-11-25 17:26:17,922 - custodian.policy - INFO - policy:LogGroup resource:aws.log-group region:us-east-1 count:1 time:1.66
+2020-11-25 17:26:17,923 - custodian.output - DEBUG - metric:ResourceCount Count:1 policy:loggroup restype:aws.log-group scope:policy
+2020-11-25 17:26:17,923 - custodian.output - DEBUG - metric:ApiCalls Count:4 policy:loggroup restype:aws.log-group
+2020-11-25 17:27:54,779 - custodian.policy - DEBUG - Running policy:LogGroup resource:aws.log-group region:us-east-1 c7n:0.9.8
+2020-11-25 17:27:54,780 - custodian.cache - DEBUG - Using cache file /Users/noah/.cache/cloud-custodian.cache
+2020-11-25 17:27:54,780 - custodian.resources.loggroup - DEBUG - Using cached c7n.resources.cw.LogGroup: 262
+2020-11-25 17:27:56,379 - custodian.resources.loggroup - DEBUG - Filtered from 262 to 1 loggroup
+2020-11-25 17:27:56,380 - custodian.policy - INFO - policy:LogGroup resource:aws.log-group region:us-east-1 count:1 time:1.60
+2020-11-25 17:27:56,381 - custodian.output - DEBUG - metric:ResourceCount Count:1 policy:loggroup restype:aws.log-group scope:policy
+2020-11-25 17:27:56,381 - custodian.output - DEBUG - metric:ApiCalls Count:4 policy:loggroup restype:aws.log-group
+2020-11-25 17:28:20,859 - custodian.policy - DEBUG - Running policy:LogGroup resource:aws.log-group region:us-east-1 c7n:0.9.8
+2020-11-25 17:28:20,860 - custodian.cache - DEBUG - Using cache file /Users/noah/.cache/cloud-custodian.cache
+2020-11-25 17:28:20,860 - custodian.resources.loggroup - DEBUG - Using cached c7n.resources.cw.LogGroup: 262
+2020-11-25 17:28:22,538 - custodian.resources.loggroup - DEBUG - Filtered from 262 to 1 loggroup
+2020-11-25 17:28:22,538 - custodian.policy - INFO - policy:LogGroup resource:aws.log-group region:us-east-1 count:1 time:1.68
+2020-11-25 17:28:22,539 - custodian.output - DEBUG - metric:ResourceCount Count:1 policy:loggroup restype:aws.log-group scope:policy
+2020-11-25 17:28:22,539 - custodian.output - DEBUG - metric:ApiCalls Count:4 policy:loggroup restype:aws.log-group
+2020-11-25 17:29:04,300 - custodian.policy - DEBUG - Running policy:LogGroup resource:aws.log-group region:us-east-1 c7n:0.9.8
+2020-11-25 17:29:04,301 - custodian.cache - DEBUG - Using cache file /Users/noah/.cache/cloud-custodian.cache
+2020-11-25 17:29:04,301 - custodian.resources.loggroup - DEBUG - Using cached c7n.resources.cw.LogGroup: 262
+2020-11-25 17:29:05,957 - custodian.resources.loggroup - DEBUG - Filtered from 262 to 1 loggroup
+2020-11-25 17:29:05,957 - custodian.policy - INFO - policy:LogGroup resource:aws.log-group region:us-east-1 count:1 time:1.66
+2020-11-25 17:29:05,958 - custodian.output - DEBUG - metric:ResourceCount Count:1 policy:loggroup restype:aws.log-group scope:policy
+2020-11-25 17:29:05,959 - custodian.output - DEBUG - metric:ApiCalls Count:4 policy:loggroup restype:aws.log-group
+2020-11-25 17:31:03,417 - custodian.policy - DEBUG - Running policy:LogGroup resource:aws.log-group region:us-east-1 c7n:0.9.8
+2020-11-25 17:31:03,418 - custodian.cache - DEBUG - Using cache file /Users/noah/.cache/cloud-custodian.cache
+2020-11-25 17:31:03,418 - custodian.resources.loggroup - DEBUG - Using cached c7n.resources.cw.LogGroup: 262
+2020-11-25 17:31:05,153 - custodian.resources.loggroup - DEBUG - Filtered from 262 to 1 loggroup
+2020-11-25 17:31:05,153 - custodian.policy - INFO - policy:LogGroup resource:aws.log-group region:us-east-1 count:1 time:1.74
+2020-11-25 17:31:05,155 - custodian.output - DEBUG - metric:ResourceCount Count:1 policy:loggroup restype:aws.log-group scope:policy
+2020-11-25 17:31:05,155 - custodian.output - DEBUG - metric:ApiCalls Count:4 policy:loggroup restype:aws.log-group
+2020-11-25 17:31:16,782 - custodian.policy - DEBUG - Running policy:LogGroup resource:aws.log-group region:us-east-1 c7n:0.9.8
+2020-11-25 17:31:16,783 - custodian.cache - DEBUG - Using cache file /Users/noah/.cache/cloud-custodian.cache
+2020-11-25 17:31:16,783 - custodian.resources.loggroup - DEBUG - Using cached c7n.resources.cw.LogGroup: 262
+2020-11-25 17:31:18,406 - custodian.resources.loggroup - DEBUG - Filtered from 262 to 1 loggroup
+2020-11-25 17:31:18,407 - custodian.policy - INFO - policy:LogGroup resource:aws.log-group region:us-east-1 count:1 time:1.62
+2020-11-25 17:31:18,408 - custodian.output - DEBUG - metric:ResourceCount Count:1 policy:loggroup restype:aws.log-group scope:policy
+2020-11-25 17:31:18,408 - custodian.output - DEBUG - metric:ApiCalls Count:4 policy:loggroup restype:aws.log-group
+2020-11-25 17:35:59,756 - custodian.policy - DEBUG - Running policy:LogGroup resource:aws.log-group region:us-east-1 c7n:0.9.8
+2020-11-25 17:35:59,757 - custodian.cache - DEBUG - Using cache file /Users/noah/.cache/cloud-custodian.cache
+2020-11-25 17:35:59,757 - custodian.resources.loggroup - DEBUG - Using cached c7n.resources.cw.LogGroup: 262
+2020-11-25 17:36:00,581 - custodian.resources.loggroup - DEBUG - Filtered from 262 to 0 loggroup
+2020-11-25 17:36:00,581 - custodian.policy - INFO - policy:LogGroup resource:aws.log-group region:us-east-1 count:0 time:0.82
+2020-11-25 17:36:00,582 - custodian.output - DEBUG - metric:ResourceCount Count:0 policy:loggroup restype:aws.log-group scope:policy
+2020-11-25 17:36:00,582 - custodian.output - DEBUG - metric:ApiCalls Count:2 policy:loggroup restype:aws.log-group
+2020-11-25 17:36:42,131 - custodian.policy - DEBUG - Running policy:LogGroup resource:aws.log-group region:us-east-1 c7n:0.9.8
+2020-11-25 17:36:45,651 - custodian.resources.loggroup - DEBUG - Filtered from 262 to 0 loggroup
+2020-11-25 17:36:45,651 - custodian.policy - INFO - policy:LogGroup resource:aws.log-group region:us-east-1 count:0 time:3.52
+2020-11-25 17:36:45,653 - custodian.output - DEBUG - metric:ResourceCount Count:0 policy:loggroup restype:aws.log-group scope:policy
+2020-11-25 17:36:45,653 - custodian.output - DEBUG - metric:ApiCalls Count:8 policy:loggroup restype:aws.log-group
+2020-11-25 17:37:53,448 - custodian.policy - DEBUG - Running policy:LogGroup resource:aws.log-group region:us-east-1 c7n:0.9.8
+2020-11-25 17:37:53,451 - custodian.cache - DEBUG - Using cache file /Users/noah/.cache/cloud-custodian.cache
+2020-11-25 17:37:53,451 - custodian.resources.loggroup - DEBUG - Using cached c7n.resources.cw.LogGroup: 262
+2020-11-25 17:37:56,659 - custodian.resources.loggroup - DEBUG - Filtered from 262 to 1 loggroup
+2020-11-25 17:37:56,659 - custodian.policy - INFO - policy:LogGroup resource:aws.log-group region:us-east-1 count:1 time:3.21
+2020-11-25 17:37:56,661 - custodian.output - DEBUG - metric:ResourceCount Count:1 policy:loggroup restype:aws.log-group scope:policy
+2020-11-25 17:37:56,661 - custodian.output - DEBUG - metric:ApiCalls Count:4 policy:loggroup restype:aws.log-group
+2020-11-25 17:38:30,833 - custodian.policy - DEBUG - Running policy:LogGroup resource:aws.log-group region:us-east-1 c7n:0.9.8
+2020-11-25 17:38:30,834 - custodian.cache - DEBUG - Using cache file /Users/noah/.cache/cloud-custodian.cache
+2020-11-25 17:38:30,834 - custodian.resources.loggroup - DEBUG - Using cached c7n.resources.cw.LogGroup: 262
+2020-11-25 17:38:32,567 - custodian.resources.loggroup - DEBUG - Filtered from 262 to 1 loggroup
+2020-11-25 17:38:32,567 - custodian.policy - INFO - policy:LogGroup resource:aws.log-group region:us-east-1 count:1 time:1.73
+2020-11-25 17:38:32,569 - custodian.output - DEBUG - metric:ResourceCount Count:1 policy:loggroup restype:aws.log-group scope:policy
+2020-11-25 17:38:32,569 - custodian.output - DEBUG - metric:ApiCalls Count:4 policy:loggroup restype:aws.log-group
+2020-11-25 17:39:20,641 - custodian.policy - DEBUG - Running policy:LogGroup resource:aws.log-group region:us-east-1 c7n:0.9.8
+2020-11-25 17:39:20,642 - custodian.cache - DEBUG - Using cache file /Users/noah/.cache/cloud-custodian.cache
+2020-11-25 17:39:20,643 - custodian.resources.loggroup - DEBUG - Using cached c7n.resources.cw.LogGroup: 262
+2020-11-25 17:39:22,316 - custodian.resources.loggroup - DEBUG - Filtered from 262 to 1 loggroup
+2020-11-25 17:39:22,316 - custodian.policy - INFO - policy:LogGroup resource:aws.log-group region:us-east-1 count:1 time:1.67
+2020-11-25 17:39:22,318 - custodian.output - DEBUG - metric:ResourceCount Count:1 policy:loggroup restype:aws.log-group scope:policy
+2020-11-25 17:39:22,318 - custodian.output - DEBUG - metric:ApiCalls Count:4 policy:loggroup restype:aws.log-group
+2020-11-25 17:40:48,686 - custodian.policy - DEBUG - Running policy:LogGroup resource:aws.log-group region:us-east-1 c7n:0.9.8
+2020-11-25 17:40:48,688 - custodian.cache - DEBUG - Using cache file /Users/noah/.cache/cloud-custodian.cache
+2020-11-25 17:40:48,688 - custodian.resources.loggroup - DEBUG - Using cached c7n.resources.cw.LogGroup: 262
+2020-11-25 17:40:50,387 - custodian.resources.loggroup - DEBUG - Filtered from 262 to 1 loggroup
+2020-11-25 17:40:50,388 - custodian.policy - INFO - policy:LogGroup resource:aws.log-group region:us-east-1 count:1 time:1.70
+2020-11-25 17:40:50,389 - custodian.output - DEBUG - metric:ResourceCount Count:1 policy:loggroup restype:aws.log-group scope:policy
+2020-11-25 17:40:50,389 - custodian.output - DEBUG - metric:ApiCalls Count:4 policy:loggroup restype:aws.log-group
+2020-11-25 17:44:10,096 - custodian.policy - DEBUG - Running policy:LogGroup resource:aws.log-group region:us-east-1 c7n:0.9.8
+2020-11-25 17:44:10,097 - custodian.cache - DEBUG - Using cache file /Users/noah/.cache/cloud-custodian.cache
+2020-11-25 17:44:10,097 - custodian.resources.loggroup - DEBUG - Using cached c7n.resources.cw.LogGroup: 262
+2020-11-25 17:44:11,783 - custodian.resources.loggroup - DEBUG - Filtered from 262 to 1 loggroup
+2020-11-25 17:44:11,783 - custodian.policy - INFO - policy:LogGroup resource:aws.log-group region:us-east-1 count:1 time:1.69
+2020-11-25 17:44:11,784 - custodian.output - DEBUG - metric:ResourceCount Count:1 policy:loggroup restype:aws.log-group scope:policy
+2020-11-25 17:44:11,785 - custodian.output - DEBUG - metric:ApiCalls Count:4 policy:loggroup restype:aws.log-group

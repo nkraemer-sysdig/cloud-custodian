@@ -1,0 +1,66 @@
+policies:
+  - name: "CloudTrail"
+    resource: aws.cloudtrail
+    filters:
+      - type: value
+        key: "IsMultiRegionTrail"
+        value: true
+      - type: status
+        key: "IsLogging"
+        value: true
+      - type: event-selectors
+        key: "EventSelectors[].IncludeManagementEvents"
+        op: contains
+        value: true
+      - type: event-selectors
+        key: "EventSelectors[].ReadWriteType"
+        op: contains
+        value: "All"
+
+  - name: "LogGroup"
+    resource: aws.log-group
+    filters:
+      - type: value
+        key: "logGroupName"
+        op: in
+        value_from:
+          url: file:///Users/noah/Projects/cloud-custodian/out/CloudTrail/resources.json
+          format: json
+          expr: "[].CloudWatchLogsLogGroupName"
+      - type: metric-filters
+        key: "metricFilters"
+        value_type: size
+        op: eq
+        value: 1
+      - type: metric-filters
+        key: "metricFilters[0].filterPattern"
+        op: regex
+        value: "^.*AccessDenied.*$"
+      - type: metric-filters
+        key: "metricFilters[0].metricTransformations"
+        value_type: size
+        op: eq
+        value: 1
+
+  - name: Alarms
+    resource: aws.alarm
+    filters:
+      - type: value
+        key: "MetricName"
+        op: in
+        value_from:
+          url: file:///Users/noah/Projects/cloud-custodian/out/LogGroup/resources.json
+          format: json
+          expr: "[].MetricFilters.metricFilters[0].metricTransformations[0].metricName"
+
+  - name: Subscriptions
+    resource: aws.sns-subscription
+    filters:
+      - type: value
+        key: "TopicArn"
+        op: in
+        value_from:
+          url: file:///Users/noah/Projects/cloud-custodian/out/Alarms/resources.json
+          format: json
+          expr: "[].AlarmActions[]"
+  # must have at least one
