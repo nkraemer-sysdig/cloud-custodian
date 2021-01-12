@@ -124,6 +124,50 @@ class Status(ValueFilter):
         return self.match(r['c7n:TrailStatus'])
 
 
+@CloudTrail.filter_registry.register('event-selectors')
+class EventSelectors(ValueFilter):
+    """Filter a cloudtrail by its related Event Selectors.
+    :Example:
+    .. code-block:: yaml
+        policies:
+          - name: cloudtrail-event-selectors
+            resource: aws.cloudtrail
+            filters:
+            - type: event-selectors
+              key: EventSelectors[].IncludeManagementEvents
+              op: contains
+              value: True
+    """
+
+    schema = type_schema('event-selectors', rinherit=ValueFilter.schema)
+    schema_alias = False
+    permissions = ('cloudtrail:GetEventSelectors',)
+    annotation_key = 'c7n:TrailEventSelectors'
+
+    def process(self, resources, event=None):
+        for r in resources:
+            region = self.manager.config.region
+            trail_arn = Arn.parse(r['TrailARN'])
+
+            if r.get('HomeRegion') and r['HomeRegion'] != region:
+                region = trail_arn.region
+            if self.annotation_key in r:
+                continue
+            client = local_session(self.manager.session_factory).client(
+                'cloudtrail', region_name=region)
+            selectors = client.get_event_selectors(TrailName=r['TrailARN'])
+            selectors.pop('ResponseMetadata')
+            r[self.annotation_key] = selectors
+            cloudwatch_arn = Arn.parse(r['CloudWatchLogsLogGroupArn'])
+            r["CloudWatchLogsLogGroupName"] = cloudwatch_arn.resource.split(
+                cloudwatch_arn.separator)[0]
+
+        return super(EventSelectors, self).process(resources)
+
+    def __call__(self, r):
+        return self.match(r['c7n:TrailEventSelectors'])
+
+
 @CloudTrail.action_registry.register('update-trail')
 class UpdateTrail(Action):
     """Update trail attributes.

@@ -44,6 +44,27 @@ class CloudTrail(BaseTest):
             output.getvalue())
         self.assertEqual(len(resources), 0)
 
+    def test_event_selectors(self):
+        factory = self.replay_flight_data('test_cloudtrail_event_selectors')
+        p = self.load_policy({
+            'name': 'resource',
+            'resource': 'cloudtrail',
+            'filters': [{
+                'type': 'event-selectors',
+                'key': 'EventSelectors[].IncludeManagementEvents',
+                'op': 'contains',
+                'value': True
+            }]},
+            session_factory=factory)
+        resources = p.run()
+        self.assertEqual(len(resources), 1)
+        self.assertTrue('c7n:TrailEventSelectors' in resources[0])
+
+        selectors = resources[0]['c7n:TrailEventSelectors']['EventSelectors']
+        self.assertEqual(len(selectors), 1)
+        self.assertTrue('IncludeManagementEvents' in selectors[0])
+        self.assertTrue(selectors[0]['IncludeManagementEvents'])
+
     def test_trail_update(self):
         factory = self.replay_flight_data('test_cloudtrail_update')
         p = self.load_policy({
