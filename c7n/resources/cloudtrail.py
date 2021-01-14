@@ -158,9 +158,6 @@ class EventSelectors(ValueFilter):
             selectors = client.get_event_selectors(TrailName=r['TrailARN'])
             selectors.pop('ResponseMetadata')
             r[self.annotation_key] = selectors
-            cloudwatch_arn = Arn.parse(r['CloudWatchLogsLogGroupArn'])
-            r["CloudWatchLogsLogGroupName"] = cloudwatch_arn.resource.split(
-                cloudwatch_arn.separator)[0]
 
         return super(EventSelectors, self).process(resources)
 
