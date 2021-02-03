@@ -21,6 +21,23 @@ class DescribeTrail(DescribeSource):
         return universal_augment(self.manager, resources)
 
 
+class RegionClientMixin:
+    def __init__(self):
+        pass
+
+    def get_client_and_trails_for_region(self, region, trails):
+        client = local_session(self.manager.session_factory).client(
+            'cloudtrail', region_name=region)
+
+        trails_in_region = set()
+        for t in trails:
+            parsed_arn = Arn.parse(t['TrailARN'])
+            if parsed_arn.region == region:
+                trails_in_region.add(t['TrailARN'])
+
+        return client, trails_in_region
+
+
 @resources.register('cloudtrail')
 class CloudTrail(QueryResourceManager):
 
@@ -70,7 +87,7 @@ class IsShadow(Filter):
 
 
 @CloudTrail.filter_registry.register('status')
-class Status(ValueFilter):
+class Status(ValueFilter, RegionClientMixin):
     """Filter a cloudtrail by its status.
 
     :Example:
@@ -92,26 +109,21 @@ class Status(ValueFilter):
     annotation_key = 'c7n:TrailStatus'
 
     def process(self, resources, event=None):
-
         non_account_trails = set()
+        client, trails = self.get_client_and_trails_for_region(self.manager.config.region, resources)
 
         for r in resources:
-            region = self.manager.config.region
             trail_arn = Arn.parse(r['TrailARN'])
-
             if (r.get('IsOrganizationTrail') and
                     self.manager.config.account_id != trail_arn.account_id):
                 non_account_trails.add(r['TrailARN'])
                 continue
-            if r.get('HomeRegion') and r['HomeRegion'] != region:
-                region = trail_arn.region
             if self.annotation_key in r:
                 continue
-            client = local_session(self.manager.session_factory).client(
-                'cloudtrail', region_name=region)
-            status = client.get_trail_status(Name=r['Name'])
-            status.pop('ResponseMetadata')
-            r[self.annotation_key] = status
+            if r['TrailARN'] in trails:
+                status = client.get_trail_status(Name=r['Name'])
+                status.pop('ResponseMetadata')
+                r[self.annotation_key] = status
 
         if non_account_trails:
             self.log.warning(
@@ -125,7 +137,7 @@ class Status(ValueFilter):
 
 
 @CloudTrail.filter_registry.register('event-selectors')
-class EventSelectors(ValueFilter):
+class EventSelectors(ValueFilter, RegionClientMixin):
     """Filter a cloudtrail by its related Event Selectors.
     :Example:
     .. code-block:: yaml
@@ -145,19 +157,13 @@ class EventSelectors(ValueFilter):
     annotation_key = 'c7n:TrailEventSelectors'
 
     def process(self, resources, event=None):
-        for r in resources:
-            region = self.manager.config.region
-            trail_arn = Arn.parse(r['TrailARN'])
+        client, trails = self.get_client_and_trails_for_region(self.manager.config.region, resources)
 
-            if r.get('HomeRegion') and r['HomeRegion'] != region:
-                region = trail_arn.region
-            if self.annotation_key in r:
-                continue
-            client = local_session(self.manager.session_factory).client(
-                'cloudtrail', region_name=region)
-            selectors = client.get_event_selectors(TrailName=r['TrailARN'])
-            selectors.pop('ResponseMetadata')
-            r[self.annotation_key] = selectors
+        for r in resources:
+            if r['TrailARN'] in trails:
+                selectors = client.get_event_selectors(TrailName=r['TrailARN'])
+                selectors.pop('ResponseMetadata')
+                r[self.annotation_key] = selectors
 
         return super(EventSelectors, self).process(resources)
 
