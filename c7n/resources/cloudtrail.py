@@ -109,8 +109,9 @@ class Status(ValueFilter, RegionClientMixin):
     annotation_key = 'c7n:TrailStatus'
 
     def process(self, resources, event=None):
+        region = self.manager.config.region
         non_account_trails = set()
-        client, trails = self.get_client_and_trails_for_region(self.manager.config.region, resources)
+        client, trails = self.get_client_and_trails_for_region(region, resources)
 
         for r in resources:
             trail_arn = Arn.parse(r['TrailARN'])
@@ -157,7 +158,8 @@ class EventSelectors(ValueFilter, RegionClientMixin):
     annotation_key = 'c7n:TrailEventSelectors'
 
     def process(self, resources, event=None):
-        client, trails = self.get_client_and_trails_for_region(self.manager.config.region, resources)
+        region = self.manager.config.region
+        client, trails = self.get_client_and_trails_for_region(region, resources)
 
         for r in resources:
             if r['TrailARN'] in trails:
