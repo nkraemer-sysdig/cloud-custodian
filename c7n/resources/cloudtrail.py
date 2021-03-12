@@ -140,16 +140,19 @@ class Status(ValueFilter, RegionClientMixin):
 @CloudTrail.filter_registry.register('event-selectors')
 class EventSelectors(ValueFilter, RegionClientMixin):
     """Filter a cloudtrail by its related Event Selectors.
-    :Example:
+
+    :example:
+
     .. code-block:: yaml
-        policies:
-          - name: cloudtrail-event-selectors
-            resource: aws.cloudtrail
-            filters:
-            - type: event-selectors
-              key: EventSelectors[].IncludeManagementEvents
-              op: contains
-              value: True
+
+      policies:
+        - name: cloudtrail-event-selectors
+          resource: aws.cloudtrail
+          filters:
+          - type: event-selectors
+            key: EventSelectors[].IncludeManagementEvents
+            op: contains
+            value: True
     """
 
     schema = type_schema('event-selectors', rinherit=ValueFilter.schema)
