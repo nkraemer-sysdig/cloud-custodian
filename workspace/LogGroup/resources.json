@@ -1,0 +1,30 @@
+[
+  {
+    "logGroupName": "aws-cloudtrail-logs-059797578166-6a2f190e",
+    "creationTime": 1600187330105,
+    "metricFilterCount": 1,
+    "arn": "arn:aws:logs:us-east-1:059797578166:log-group:aws-cloudtrail-logs-059797578166-6a2f190e:*",
+    "storedBytes": 37100294987,
+    "c7n:MatchedFilters": [
+      "logGroupName"
+    ],
+    "MetricFilters": {
+      "metricFilters": [
+        {
+          "filterName": "Unauthorized API Calls",
+          "filterPattern": "{(($.errorCode=\"UnauthorizedOperation\") || ($.errorCode=\"AccessDenied\")) || (($.sourceIPAddress!=\"delivery.logs.amazonaws.com\") || ($.eventName!=\"HeadBucket\"))}",
+          "metricTransformations": [
+            {
+              "metricName": "unauthorized_api_calls",
+              "metricNamespace": "CIS_AWS_Foundations_Benchmark_v1.3.0",
+              "metricValue": "1",
+              "defaultValue": 0.0
+            }
+          ],
+          "creationTime": 1600188890712,
+          "logGroupName": "aws-cloudtrail-logs-059797578166-6a2f190e"
+        }
+      ]
+    }
+  }
+]

@@ -1,0 +1,555 @@
+2020-11-25 14:31:39,384 - custodian.policy - INFO - policy:CloudTrail resource:aws.cloudtrail region:us-east-1 count:2 time:2.29
+2020-11-25 14:48:11,306 - custodian.policy - DEBUG - Running policy:CloudTrail resource:aws.cloudtrail region:us-east-1 c7n:0.9.8
+2020-11-25 14:48:11,317 - custodian.cache - DEBUG - Using cache file /Users/noah/.cache/cloud-custodian.cache
+2020-11-25 14:48:11,317 - custodian.resources.cloudtrail - DEBUG - Using cached c7n.resources.cloudtrail.CloudTrail: 2
+2020-11-25 14:48:13,603 - custodian.output - DEBUG - metric:PolicyException Count:1 policy:cloudtrail restype:aws.cloudtrail
+2020-11-25 14:48:13,603 - custodian.output - DEBUG - metric:ApiCalls Count:4 policy:cloudtrail restype:aws.cloudtrail
+2020-11-25 14:51:51,896 - custodian.policy - DEBUG - Running policy:CloudTrail resource:aws.cloudtrail region:us-east-1 c7n:0.9.8
+2020-11-25 14:51:51,899 - custodian.cache - DEBUG - Using cache file /Users/noah/.cache/cloud-custodian.cache
+2020-11-25 14:51:51,899 - custodian.resources.cloudtrail - DEBUG - Using cached c7n.resources.cloudtrail.CloudTrail: 2
+2020-11-25 14:51:53,631 - custodian.filters - DEBUG - Selectors {'TrailARN': 'arn:aws:cloudtrail:us-east-1:059797578166:trail/default-cloudtrail-059797578166', 'EventSelectors': [{'ReadWriteType': 'All', 'IncludeManagementEvents': True, 'DataResources': [], 'ExcludeManagementEventSources': []}]}
+2020-11-25 14:51:54,108 - custodian.filters - DEBUG - Selectors {'TrailARN': 'arn:aws:cloudtrail:us-east-1:059797578166:trail/sysdigcloud-devAccount-trail', 'EventSelectors': [{'ReadWriteType': 'All', 'IncludeManagementEvents': True, 'DataResources': [], 'ExcludeManagementEventSources': []}]}
+2020-11-25 14:51:54,111 - custodian.output - DEBUG - metric:PolicyException Count:1 policy:cloudtrail restype:aws.cloudtrail
+2020-11-25 14:51:54,111 - custodian.output - DEBUG - metric:ApiCalls Count:4 policy:cloudtrail restype:aws.cloudtrail
+2020-11-25 14:54:22,734 - custodian.policy - DEBUG - Running policy:CloudTrail resource:aws.cloudtrail region:us-east-1 c7n:0.9.8
+2020-11-25 14:54:22,736 - custodian.cache - DEBUG - Using cache file /Users/noah/.cache/cloud-custodian.cache
+2020-11-25 14:54:22,736 - custodian.resources.cloudtrail - DEBUG - Using cached c7n.resources.cloudtrail.CloudTrail: 2
+2020-11-25 14:54:22,736 - custodian.resources.cloudtrail - DEBUG - Filtering resources: [{'Name': 'default-cloudtrail-059797578166', 'S3BucketName': 'cloudtrail-logging-059797578166', 'S3KeyPrefix': 'cloudtrail', 'IncludeGlobalServiceEvents': True, 'IsMultiRegionTrail': True, 'HomeRegion': 'us-east-1', 'TrailARN': 'arn:aws:cloudtrail:us-east-1:059797578166:trail/default-cloudtrail-059797578166', 'LogFileValidationEnabled': True, 'CloudWatchLogsLogGroupArn': 'arn:aws:logs:us-east-1:059797578166:log-group:cloudtrail-logging:*', 'CloudWatchLogsRoleArn': 'arn:aws:iam::059797578166:role/CloudTrail-CloudWatch-Delivery-Role', 'KmsKeyId': 'arn:aws:kms:us-east-1:059797578166:key/2c056f7b-13c5-4e6b-aa5c-7d349a680cd9', 'HasCustomEventSelectors': False, 'HasInsightSelectors': False, 'IsOrganizationTrail': False, 'Tags': []}, {'Name': 'sysdigcloud-devAccount-trail', 'S3BucketName': 'draios-infrastructures', 'S3KeyPrefix': 'cloudtrail', 'SnsTopicName': 'arn:aws:sns:us-east-1:273107874544:cloudtrail-logs', 'SnsTopicARN': 'arn:aws:sns:us-east-1:273107874544:cloudtrail-logs', 'IncludeGlobalServiceEvents': True, 'IsMultiRegionTrail': True, 'HomeRegion': 'us-east-1', 'TrailARN': 'arn:aws:cloudtrail:us-east-1:059797578166:trail/sysdigcloud-devAccount-trail', 'LogFileValidationEnabled': False, 'CloudWatchLogsLogGroupArn': 'arn:aws:logs:us-east-1:059797578166:log-group:aws-cloudtrail-logs-059797578166-6a2f190e:*', 'CloudWatchLogsRoleArn': 'arn:aws:iam::059797578166:role/service-role/CloudTrailRoleForCloudWatchLogs_sysdig-cloudtrail-test', 'HasCustomEventSelectors': False, 'HasInsightSelectors': False, 'IsOrganizationTrail': False, 'Tags': []}]
+2020-11-25 14:54:24,456 - custodian.filters - DEBUG - Selectors {'TrailARN': 'arn:aws:cloudtrail:us-east-1:059797578166:trail/default-cloudtrail-059797578166', 'EventSelectors': [{'ReadWriteType': 'All', 'IncludeManagementEvents': True, 'DataResources': [], 'ExcludeManagementEventSources': []}], 'ResponseMetadata': {'RequestId': '2c759429-0191-454e-95ac-ec6bf8d70afb', 'HTTPStatusCode': 200, 'HTTPHeaders': {'x-amzn-requestid': '2c759429-0191-454e-95ac-ec6bf8d70afb', 'content-type': 'application/x-amz-json-1.1', 'content-length': '222', 'date': 'Wed, 25 Nov 2020 22:54:24 GMT'}, 'RetryAttempts': 0}}
+2020-11-25 14:54:25,015 - custodian.filters - DEBUG - Selectors {'TrailARN': 'arn:aws:cloudtrail:us-east-1:059797578166:trail/sysdigcloud-devAccount-trail', 'EventSelectors': [{'ReadWriteType': 'All', 'IncludeManagementEvents': True, 'DataResources': [], 'ExcludeManagementEventSources': []}], 'ResponseMetadata': {'RequestId': '682726b0-ce7d-4d96-a8e1-f86c2148a558', 'HTTPStatusCode': 200, 'HTTPHeaders': {'x-amzn-requestid': '682726b0-ce7d-4d96-a8e1-f86c2148a558', 'content-type': 'application/x-amz-json-1.1', 'content-length': '219', 'date': 'Wed, 25 Nov 2020 22:54:24 GMT'}, 'RetryAttempts': 0}}
+2020-11-25 14:54:25,019 - custodian.output - DEBUG - metric:PolicyException Count:1 policy:cloudtrail restype:aws.cloudtrail
+2020-11-25 14:54:25,019 - custodian.output - DEBUG - metric:ApiCalls Count:4 policy:cloudtrail restype:aws.cloudtrail
+2020-11-25 14:56:14,154 - custodian.policy - DEBUG - Running policy:CloudTrail resource:aws.cloudtrail region:us-east-1 c7n:0.9.8
+2020-11-25 14:56:14,191 - custodian.cache - DEBUG - Using cache file /Users/noah/.cache/cloud-custodian.cache
+2020-11-25 14:56:14,191 - custodian.resources.cloudtrail - DEBUG - Using cached c7n.resources.cloudtrail.CloudTrail: 2
+2020-11-25 14:56:15,908 - custodian.filters - DEBUG - Selectors {'TrailARN': 'arn:aws:cloudtrail:us-east-1:059797578166:trail/default-cloudtrail-059797578166', 'EventSelectors': [{'ReadWriteType': 'All', 'IncludeManagementEvents': True, 'DataResources': [], 'ExcludeManagementEventSources': []}]}
+2020-11-25 14:56:16,439 - custodian.filters - DEBUG - Selectors {'TrailARN': 'arn:aws:cloudtrail:us-east-1:059797578166:trail/sysdigcloud-devAccount-trail', 'EventSelectors': [{'ReadWriteType': 'All', 'IncludeManagementEvents': True, 'DataResources': [], 'ExcludeManagementEventSources': []}]}
+2020-11-25 14:56:16,442 - custodian.resources.cloudtrail - DEBUG - Filtering resources: None
+2020-11-25 14:56:16,443 - custodian.output - DEBUG - metric:PolicyException Count:1 policy:cloudtrail restype:aws.cloudtrail
+2020-11-25 14:56:16,443 - custodian.output - DEBUG - metric:ApiCalls Count:4 policy:cloudtrail restype:aws.cloudtrail
+2020-11-25 14:57:01,148 - custodian.policy - DEBUG - Running policy:CloudTrail resource:aws.cloudtrail region:us-east-1 c7n:0.9.8
+2020-11-25 14:57:01,177 - custodian.cache - DEBUG - Using cache file /Users/noah/.cache/cloud-custodian.cache
+2020-11-25 14:57:01,177 - custodian.resources.cloudtrail - DEBUG - Using cached c7n.resources.cloudtrail.CloudTrail: 2
+2020-11-25 14:57:01,177 - custodian.resources.cloudtrail - DEBUG - Filtering resources: [{'Name': 'default-cloudtrail-059797578166', 'S3BucketName': 'cloudtrail-logging-059797578166', 'S3KeyPrefix': 'cloudtrail', 'IncludeGlobalServiceEvents': True, 'IsMultiRegionTrail': True, 'HomeRegion': 'us-east-1', 'TrailARN': 'arn:aws:cloudtrail:us-east-1:059797578166:trail/default-cloudtrail-059797578166', 'LogFileValidationEnabled': True, 'CloudWatchLogsLogGroupArn': 'arn:aws:logs:us-east-1:059797578166:log-group:cloudtrail-logging:*', 'CloudWatchLogsRoleArn': 'arn:aws:iam::059797578166:role/CloudTrail-CloudWatch-Delivery-Role', 'KmsKeyId': 'arn:aws:kms:us-east-1:059797578166:key/2c056f7b-13c5-4e6b-aa5c-7d349a680cd9', 'HasCustomEventSelectors': False, 'HasInsightSelectors': False, 'IsOrganizationTrail': False, 'Tags': []}, {'Name': 'sysdigcloud-devAccount-trail', 'S3BucketName': 'draios-infrastructures', 'S3KeyPrefix': 'cloudtrail', 'SnsTopicName': 'arn:aws:sns:us-east-1:273107874544:cloudtrail-logs', 'SnsTopicARN': 'arn:aws:sns:us-east-1:273107874544:cloudtrail-logs', 'IncludeGlobalServiceEvents': True, 'IsMultiRegionTrail': True, 'HomeRegion': 'us-east-1', 'TrailARN': 'arn:aws:cloudtrail:us-east-1:059797578166:trail/sysdigcloud-devAccount-trail', 'LogFileValidationEnabled': False, 'CloudWatchLogsLogGroupArn': 'arn:aws:logs:us-east-1:059797578166:log-group:aws-cloudtrail-logs-059797578166-6a2f190e:*', 'CloudWatchLogsRoleArn': 'arn:aws:iam::059797578166:role/service-role/CloudTrailRoleForCloudWatchLogs_sysdig-cloudtrail-test', 'HasCustomEventSelectors': False, 'HasInsightSelectors': False, 'IsOrganizationTrail': False, 'Tags': []}]
+2020-11-25 14:57:02,846 - custodian.filters - DEBUG - Selectors {'TrailARN': 'arn:aws:cloudtrail:us-east-1:059797578166:trail/default-cloudtrail-059797578166', 'EventSelectors': [{'ReadWriteType': 'All', 'IncludeManagementEvents': True, 'DataResources': [], 'ExcludeManagementEventSources': []}]}
+2020-11-25 14:57:03,415 - custodian.filters - DEBUG - Selectors {'TrailARN': 'arn:aws:cloudtrail:us-east-1:059797578166:trail/sysdigcloud-devAccount-trail', 'EventSelectors': [{'ReadWriteType': 'All', 'IncludeManagementEvents': True, 'DataResources': [], 'ExcludeManagementEventSources': []}]}
+2020-11-25 14:57:03,418 - custodian.output - DEBUG - metric:PolicyException Count:1 policy:cloudtrail restype:aws.cloudtrail
+2020-11-25 14:57:03,419 - custodian.output - DEBUG - metric:ApiCalls Count:4 policy:cloudtrail restype:aws.cloudtrail
+2020-11-25 14:58:23,206 - custodian.policy - DEBUG - Running policy:CloudTrail resource:aws.cloudtrail region:us-east-1 c7n:0.9.8
+2020-11-25 14:58:23,233 - custodian.cache - DEBUG - Using cache file /Users/noah/.cache/cloud-custodian.cache
+2020-11-25 14:58:23,233 - custodian.resources.cloudtrail - DEBUG - Using cached c7n.resources.cloudtrail.CloudTrail: 2
+2020-11-25 14:58:23,233 - custodian.resources.cloudtrail - DEBUG - Filtering resources IN: [{'Name': 'default-cloudtrail-059797578166', 'S3BucketName': 'cloudtrail-logging-059797578166', 'S3KeyPrefix': 'cloudtrail', 'IncludeGlobalServiceEvents': True, 'IsMultiRegionTrail': True, 'HomeRegion': 'us-east-1', 'TrailARN': 'arn:aws:cloudtrail:us-east-1:059797578166:trail/default-cloudtrail-059797578166', 'LogFileValidationEnabled': True, 'CloudWatchLogsLogGroupArn': 'arn:aws:logs:us-east-1:059797578166:log-group:cloudtrail-logging:*', 'CloudWatchLogsRoleArn': 'arn:aws:iam::059797578166:role/CloudTrail-CloudWatch-Delivery-Role', 'KmsKeyId': 'arn:aws:kms:us-east-1:059797578166:key/2c056f7b-13c5-4e6b-aa5c-7d349a680cd9', 'HasCustomEventSelectors': False, 'HasInsightSelectors': False, 'IsOrganizationTrail': False, 'Tags': []}, {'Name': 'sysdigcloud-devAccount-trail', 'S3BucketName': 'draios-infrastructures', 'S3KeyPrefix': 'cloudtrail', 'SnsTopicName': 'arn:aws:sns:us-east-1:273107874544:cloudtrail-logs', 'SnsTopicARN': 'arn:aws:sns:us-east-1:273107874544:cloudtrail-logs', 'IncludeGlobalServiceEvents': True, 'IsMultiRegionTrail': True, 'HomeRegion': 'us-east-1', 'TrailARN': 'arn:aws:cloudtrail:us-east-1:059797578166:trail/sysdigcloud-devAccount-trail', 'LogFileValidationEnabled': False, 'CloudWatchLogsLogGroupArn': 'arn:aws:logs:us-east-1:059797578166:log-group:aws-cloudtrail-logs-059797578166-6a2f190e:*', 'CloudWatchLogsRoleArn': 'arn:aws:iam::059797578166:role/service-role/CloudTrailRoleForCloudWatchLogs_sysdig-cloudtrail-test', 'HasCustomEventSelectors': False, 'HasInsightSelectors': False, 'IsOrganizationTrail': False, 'Tags': []}]
+2020-11-25 14:58:23,233 - custodian.resources.cloudtrail - DEBUG - Filtering resources BEFORE: [{'Name': 'default-cloudtrail-059797578166', 'S3BucketName': 'cloudtrail-logging-059797578166', 'S3KeyPrefix': 'cloudtrail', 'IncludeGlobalServiceEvents': True, 'IsMultiRegionTrail': True, 'HomeRegion': 'us-east-1', 'TrailARN': 'arn:aws:cloudtrail:us-east-1:059797578166:trail/default-cloudtrail-059797578166', 'LogFileValidationEnabled': True, 'CloudWatchLogsLogGroupArn': 'arn:aws:logs:us-east-1:059797578166:log-group:cloudtrail-logging:*', 'CloudWatchLogsRoleArn': 'arn:aws:iam::059797578166:role/CloudTrail-CloudWatch-Delivery-Role', 'KmsKeyId': 'arn:aws:kms:us-east-1:059797578166:key/2c056f7b-13c5-4e6b-aa5c-7d349a680cd9', 'HasCustomEventSelectors': False, 'HasInsightSelectors': False, 'IsOrganizationTrail': False, 'Tags': []}, {'Name': 'sysdigcloud-devAccount-trail', 'S3BucketName': 'draios-infrastructures', 'S3KeyPrefix': 'cloudtrail', 'SnsTopicName': 'arn:aws:sns:us-east-1:273107874544:cloudtrail-logs', 'SnsTopicARN': 'arn:aws:sns:us-east-1:273107874544:cloudtrail-logs', 'IncludeGlobalServiceEvents': True, 'IsMultiRegionTrail': True, 'HomeRegion': 'us-east-1', 'TrailARN': 'arn:aws:cloudtrail:us-east-1:059797578166:trail/sysdigcloud-devAccount-trail', 'LogFileValidationEnabled': False, 'CloudWatchLogsLogGroupArn': 'arn:aws:logs:us-east-1:059797578166:log-group:aws-cloudtrail-logs-059797578166-6a2f190e:*', 'CloudWatchLogsRoleArn': 'arn:aws:iam::059797578166:role/service-role/CloudTrailRoleForCloudWatchLogs_sysdig-cloudtrail-test', 'HasCustomEventSelectors': False, 'HasInsightSelectors': False, 'IsOrganizationTrail': False, 'Tags': []}]
+2020-11-25 14:58:23,233 - custodian.resources.cloudtrail - DEBUG - Filtering resources AFTER: [{'Name': 'default-cloudtrail-059797578166', 'S3BucketName': 'cloudtrail-logging-059797578166', 'S3KeyPrefix': 'cloudtrail', 'IncludeGlobalServiceEvents': True, 'IsMultiRegionTrail': True, 'HomeRegion': 'us-east-1', 'TrailARN': 'arn:aws:cloudtrail:us-east-1:059797578166:trail/default-cloudtrail-059797578166', 'LogFileValidationEnabled': True, 'CloudWatchLogsLogGroupArn': 'arn:aws:logs:us-east-1:059797578166:log-group:cloudtrail-logging:*', 'CloudWatchLogsRoleArn': 'arn:aws:iam::059797578166:role/CloudTrail-CloudWatch-Delivery-Role', 'KmsKeyId': 'arn:aws:kms:us-east-1:059797578166:key/2c056f7b-13c5-4e6b-aa5c-7d349a680cd9', 'HasCustomEventSelectors': False, 'HasInsightSelectors': False, 'IsOrganizationTrail': False, 'Tags': [], 'c7n:MatchedFilters': ['IsMultiRegionTrail']}, {'Name': 'sysdigcloud-devAccount-trail', 'S3BucketName': 'draios-infrastructures', 'S3KeyPrefix': 'cloudtrail', 'SnsTopicName': 'arn:aws:sns:us-east-1:273107874544:cloudtrail-logs', 'SnsTopicARN': 'arn:aws:sns:us-east-1:273107874544:cloudtrail-logs', 'IncludeGlobalServiceEvents': True, 'IsMultiRegionTrail': True, 'HomeRegion': 'us-east-1', 'TrailARN': 'arn:aws:cloudtrail:us-east-1:059797578166:trail/sysdigcloud-devAccount-trail', 'LogFileValidationEnabled': False, 'CloudWatchLogsLogGroupArn': 'arn:aws:logs:us-east-1:059797578166:log-group:aws-cloudtrail-logs-059797578166-6a2f190e:*', 'CloudWatchLogsRoleArn': 'arn:aws:iam::059797578166:role/service-role/CloudTrailRoleForCloudWatchLogs_sysdig-cloudtrail-test', 'HasCustomEventSelectors': False, 'HasInsightSelectors': False, 'IsOrganizationTrail': False, 'Tags': [], 'c7n:MatchedFilters': ['IsMultiRegionTrail']}]
+2020-11-25 14:58:23,234 - custodian.resources.cloudtrail - DEBUG - Filtering resources BEFORE: [{'Name': 'default-cloudtrail-059797578166', 'S3BucketName': 'cloudtrail-logging-059797578166', 'S3KeyPrefix': 'cloudtrail', 'IncludeGlobalServiceEvents': True, 'IsMultiRegionTrail': True, 'HomeRegion': 'us-east-1', 'TrailARN': 'arn:aws:cloudtrail:us-east-1:059797578166:trail/default-cloudtrail-059797578166', 'LogFileValidationEnabled': True, 'CloudWatchLogsLogGroupArn': 'arn:aws:logs:us-east-1:059797578166:log-group:cloudtrail-logging:*', 'CloudWatchLogsRoleArn': 'arn:aws:iam::059797578166:role/CloudTrail-CloudWatch-Delivery-Role', 'KmsKeyId': 'arn:aws:kms:us-east-1:059797578166:key/2c056f7b-13c5-4e6b-aa5c-7d349a680cd9', 'HasCustomEventSelectors': False, 'HasInsightSelectors': False, 'IsOrganizationTrail': False, 'Tags': [], 'c7n:MatchedFilters': ['IsMultiRegionTrail']}, {'Name': 'sysdigcloud-devAccount-trail', 'S3BucketName': 'draios-infrastructures', 'S3KeyPrefix': 'cloudtrail', 'SnsTopicName': 'arn:aws:sns:us-east-1:273107874544:cloudtrail-logs', 'SnsTopicARN': 'arn:aws:sns:us-east-1:273107874544:cloudtrail-logs', 'IncludeGlobalServiceEvents': True, 'IsMultiRegionTrail': True, 'HomeRegion': 'us-east-1', 'TrailARN': 'arn:aws:cloudtrail:us-east-1:059797578166:trail/sysdigcloud-devAccount-trail', 'LogFileValidationEnabled': False, 'CloudWatchLogsLogGroupArn': 'arn:aws:logs:us-east-1:059797578166:log-group:aws-cloudtrail-logs-059797578166-6a2f190e:*', 'CloudWatchLogsRoleArn': 'arn:aws:iam::059797578166:role/service-role/CloudTrailRoleForCloudWatchLogs_sysdig-cloudtrail-test', 'HasCustomEventSelectors': False, 'HasInsightSelectors': False, 'IsOrganizationTrail': False, 'Tags': [], 'c7n:MatchedFilters': ['IsMultiRegionTrail']}]
+2020-11-25 14:58:24,718 - custodian.resources.cloudtrail - DEBUG - Filtering resources AFTER: [{'Name': 'default-cloudtrail-059797578166', 'S3BucketName': 'cloudtrail-logging-059797578166', 'S3KeyPrefix': 'cloudtrail', 'IncludeGlobalServiceEvents': True, 'IsMultiRegionTrail': True, 'HomeRegion': 'us-east-1', 'TrailARN': 'arn:aws:cloudtrail:us-east-1:059797578166:trail/default-cloudtrail-059797578166', 'LogFileValidationEnabled': True, 'CloudWatchLogsLogGroupArn': 'arn:aws:logs:us-east-1:059797578166:log-group:cloudtrail-logging:*', 'CloudWatchLogsRoleArn': 'arn:aws:iam::059797578166:role/CloudTrail-CloudWatch-Delivery-Role', 'KmsKeyId': 'arn:aws:kms:us-east-1:059797578166:key/2c056f7b-13c5-4e6b-aa5c-7d349a680cd9', 'HasCustomEventSelectors': False, 'HasInsightSelectors': False, 'IsOrganizationTrail': False, 'Tags': [], 'c7n:MatchedFilters': ['IsMultiRegionTrail'], 'c7n:TrailStatus': {'IsLogging': True, 'LatestDeliveryTime': datetime.datetime(2020, 11, 25, 14, 58, 10, 151000, tzinfo=tzlocal()), 'StartLoggingTime': datetime.datetime(2020, 10, 19, 12, 10, 2, 957000, tzinfo=tzlocal()), 'LatestCloudWatchLogsDeliveryTime': datetime.datetime(2020, 11, 25, 14, 58, 19, 772000, tzinfo=tzlocal()), 'LatestDigestDeliveryTime': datetime.datetime(2020, 11, 25, 14, 30, 21, 728000, tzinfo=tzlocal()), 'LatestDeliveryAttemptTime': '2020-11-25T22:58:10Z', 'LatestNotificationAttemptTime': '', 'LatestNotificationAttemptSucceeded': '', 'LatestDeliveryAttemptSucceeded': '2020-11-25T22:58:10Z', 'TimeLoggingStarted': '2020-10-19T19:10:02Z', 'TimeLoggingStopped': ''}}, {'Name': 'sysdigcloud-devAccount-trail', 'S3BucketName': 'draios-infrastructures', 'S3KeyPrefix': 'cloudtrail', 'SnsTopicName': 'arn:aws:sns:us-east-1:273107874544:cloudtrail-logs', 'SnsTopicARN': 'arn:aws:sns:us-east-1:273107874544:cloudtrail-logs', 'IncludeGlobalServiceEvents': True, 'IsMultiRegionTrail': True, 'HomeRegion': 'us-east-1', 'TrailARN': 'arn:aws:cloudtrail:us-east-1:059797578166:trail/sysdigcloud-devAccount-trail', 'LogFileValidationEnabled': False, 'CloudWatchLogsLogGroupArn': 'arn:aws:logs:us-east-1:059797578166:log-group:aws-cloudtrail-logs-059797578166-6a2f190e:*', 'CloudWatchLogsRoleArn': 'arn:aws:iam::059797578166:role/service-role/CloudTrailRoleForCloudWatchLogs_sysdig-cloudtrail-test', 'HasCustomEventSelectors': False, 'HasInsightSelectors': False, 'IsOrganizationTrail': False, 'Tags': [], 'c7n:MatchedFilters': ['IsMultiRegionTrail'], 'c7n:TrailStatus': {'IsLogging': True, 'LatestDeliveryTime': datetime.datetime(2020, 11, 25, 14, 58, 9, 940000, tzinfo=tzlocal()), 'LatestNotificationTime': datetime.datetime(2020, 11, 25, 14, 58, 9, 940000, tzinfo=tzlocal()), 'StartLoggingTime': datetime.datetime(2016, 8, 17, 13, 49, 36, 71000, tzinfo=tzlocal()), 'LatestCloudWatchLogsDeliveryTime': datetime.datetime(2020, 11, 25, 14, 58, 19, 778000, tzinfo=tzlocal()), 'LatestDeliveryAttemptTime': '2020-11-25T22:58:09Z', 'LatestNotificationAttemptTime': '2020-11-25T22:58:09Z', 'LatestNotificationAttemptSucceeded': '2020-11-25T22:58:09Z', 'LatestDeliveryAttemptSucceeded': '2020-11-25T22:58:09Z', 'TimeLoggingStarted': '2016-08-17T20:49:36Z', 'TimeLoggingStopped': ''}}]
+2020-11-25 14:58:24,718 - custodian.resources.cloudtrail - DEBUG - Filtering resources BEFORE: [{'Name': 'default-cloudtrail-059797578166', 'S3BucketName': 'cloudtrail-logging-059797578166', 'S3KeyPrefix': 'cloudtrail', 'IncludeGlobalServiceEvents': True, 'IsMultiRegionTrail': True, 'HomeRegion': 'us-east-1', 'TrailARN': 'arn:aws:cloudtrail:us-east-1:059797578166:trail/default-cloudtrail-059797578166', 'LogFileValidationEnabled': True, 'CloudWatchLogsLogGroupArn': 'arn:aws:logs:us-east-1:059797578166:log-group:cloudtrail-logging:*', 'CloudWatchLogsRoleArn': 'arn:aws:iam::059797578166:role/CloudTrail-CloudWatch-Delivery-Role', 'KmsKeyId': 'arn:aws:kms:us-east-1:059797578166:key/2c056f7b-13c5-4e6b-aa5c-7d349a680cd9', 'HasCustomEventSelectors': False, 'HasInsightSelectors': False, 'IsOrganizationTrail': False, 'Tags': [], 'c7n:MatchedFilters': ['IsMultiRegionTrail'], 'c7n:TrailStatus': {'IsLogging': True, 'LatestDeliveryTime': datetime.datetime(2020, 11, 25, 14, 58, 10, 151000, tzinfo=tzlocal()), 'StartLoggingTime': datetime.datetime(2020, 10, 19, 12, 10, 2, 957000, tzinfo=tzlocal()), 'LatestCloudWatchLogsDeliveryTime': datetime.datetime(2020, 11, 25, 14, 58, 19, 772000, tzinfo=tzlocal()), 'LatestDigestDeliveryTime': datetime.datetime(2020, 11, 25, 14, 30, 21, 728000, tzinfo=tzlocal()), 'LatestDeliveryAttemptTime': '2020-11-25T22:58:10Z', 'LatestNotificationAttemptTime': '', 'LatestNotificationAttemptSucceeded': '', 'LatestDeliveryAttemptSucceeded': '2020-11-25T22:58:10Z', 'TimeLoggingStarted': '2020-10-19T19:10:02Z', 'TimeLoggingStopped': ''}}, {'Name': 'sysdigcloud-devAccount-trail', 'S3BucketName': 'draios-infrastructures', 'S3KeyPrefix': 'cloudtrail', 'SnsTopicName': 'arn:aws:sns:us-east-1:273107874544:cloudtrail-logs', 'SnsTopicARN': 'arn:aws:sns:us-east-1:273107874544:cloudtrail-logs', 'IncludeGlobalServiceEvents': True, 'IsMultiRegionTrail': True, 'HomeRegion': 'us-east-1', 'TrailARN': 'arn:aws:cloudtrail:us-east-1:059797578166:trail/sysdigcloud-devAccount-trail', 'LogFileValidationEnabled': False, 'CloudWatchLogsLogGroupArn': 'arn:aws:logs:us-east-1:059797578166:log-group:aws-cloudtrail-logs-059797578166-6a2f190e:*', 'CloudWatchLogsRoleArn': 'arn:aws:iam::059797578166:role/service-role/CloudTrailRoleForCloudWatchLogs_sysdig-cloudtrail-test', 'HasCustomEventSelectors': False, 'HasInsightSelectors': False, 'IsOrganizationTrail': False, 'Tags': [], 'c7n:MatchedFilters': ['IsMultiRegionTrail'], 'c7n:TrailStatus': {'IsLogging': True, 'LatestDeliveryTime': datetime.datetime(2020, 11, 25, 14, 58, 9, 940000, tzinfo=tzlocal()), 'LatestNotificationTime': datetime.datetime(2020, 11, 25, 14, 58, 9, 940000, tzinfo=tzlocal()), 'StartLoggingTime': datetime.datetime(2016, 8, 17, 13, 49, 36, 71000, tzinfo=tzlocal()), 'LatestCloudWatchLogsDeliveryTime': datetime.datetime(2020, 11, 25, 14, 58, 19, 778000, tzinfo=tzlocal()), 'LatestDeliveryAttemptTime': '2020-11-25T22:58:09Z', 'LatestNotificationAttemptTime': '2020-11-25T22:58:09Z', 'LatestNotificationAttemptSucceeded': '2020-11-25T22:58:09Z', 'LatestDeliveryAttemptSucceeded': '2020-11-25T22:58:09Z', 'TimeLoggingStarted': '2016-08-17T20:49:36Z', 'TimeLoggingStopped': ''}}]
+2020-11-25 14:58:25,277 - custodian.filters - DEBUG - Selectors {'TrailARN': 'arn:aws:cloudtrail:us-east-1:059797578166:trail/default-cloudtrail-059797578166', 'EventSelectors': [{'ReadWriteType': 'All', 'IncludeManagementEvents': True, 'DataResources': [], 'ExcludeManagementEventSources': []}]}
+2020-11-25 14:58:25,748 - custodian.filters - DEBUG - Selectors {'TrailARN': 'arn:aws:cloudtrail:us-east-1:059797578166:trail/sysdigcloud-devAccount-trail', 'EventSelectors': [{'ReadWriteType': 'All', 'IncludeManagementEvents': True, 'DataResources': [], 'ExcludeManagementEventSources': []}]}
+2020-11-25 14:58:25,751 - custodian.resources.cloudtrail - DEBUG - Filtering resources AFTER: None
+2020-11-25 14:58:25,751 - custodian.resources.cloudtrail - DEBUG - Filtering resources OUT: None
+2020-11-25 14:58:25,752 - custodian.output - DEBUG - metric:PolicyException Count:1 policy:cloudtrail restype:aws.cloudtrail
+2020-11-25 14:58:25,752 - custodian.output - DEBUG - metric:ApiCalls Count:4 policy:cloudtrail restype:aws.cloudtrail
+2020-11-25 15:01:33,479 - custodian.policy - DEBUG - Running policy:CloudTrail resource:aws.cloudtrail region:us-east-1 c7n:0.9.8
+2020-11-25 15:01:35,835 - custodian.filters - DEBUG - Filtering resources IN: [{'Name': 'default-cloudtrail-059797578166', 'S3BucketName': 'cloudtrail-logging-059797578166', 'S3KeyPrefix': 'cloudtrail', 'IncludeGlobalServiceEvents': True, 'IsMultiRegionTrail': True, 'HomeRegion': 'us-east-1', 'TrailARN': 'arn:aws:cloudtrail:us-east-1:059797578166:trail/default-cloudtrail-059797578166', 'LogFileValidationEnabled': True, 'CloudWatchLogsLogGroupArn': 'arn:aws:logs:us-east-1:059797578166:log-group:cloudtrail-logging:*', 'CloudWatchLogsRoleArn': 'arn:aws:iam::059797578166:role/CloudTrail-CloudWatch-Delivery-Role', 'KmsKeyId': 'arn:aws:kms:us-east-1:059797578166:key/2c056f7b-13c5-4e6b-aa5c-7d349a680cd9', 'HasCustomEventSelectors': False, 'HasInsightSelectors': False, 'IsOrganizationTrail': False, 'Tags': [], 'c7n:MatchedFilters': ['IsMultiRegionTrail'], 'c7n:TrailStatus': {'IsLogging': True, 'LatestDeliveryTime': datetime.datetime(2020, 11, 25, 15, 1, 19, 864000, tzinfo=tzlocal()), 'StartLoggingTime': datetime.datetime(2020, 10, 19, 12, 10, 2, 957000, tzinfo=tzlocal()), 'LatestCloudWatchLogsDeliveryTime': datetime.datetime(2020, 11, 25, 15, 1, 17, 723000, tzinfo=tzlocal()), 'LatestDigestDeliveryTime': datetime.datetime(2020, 11, 25, 14, 30, 21, 728000, tzinfo=tzlocal()), 'LatestDeliveryAttemptTime': '2020-11-25T23:01:19Z', 'LatestNotificationAttemptTime': '', 'LatestNotificationAttemptSucceeded': '', 'LatestDeliveryAttemptSucceeded': '2020-11-25T23:01:19Z', 'TimeLoggingStarted': '2020-10-19T19:10:02Z', 'TimeLoggingStopped': ''}}, {'Name': 'sysdigcloud-devAccount-trail', 'S3BucketName': 'draios-infrastructures', 'S3KeyPrefix': 'cloudtrail', 'SnsTopicName': 'arn:aws:sns:us-east-1:273107874544:cloudtrail-logs', 'SnsTopicARN': 'arn:aws:sns:us-east-1:273107874544:cloudtrail-logs', 'IncludeGlobalServiceEvents': True, 'IsMultiRegionTrail': True, 'HomeRegion': 'us-east-1', 'TrailARN': 'arn:aws:cloudtrail:us-east-1:059797578166:trail/sysdigcloud-devAccount-trail', 'LogFileValidationEnabled': False, 'CloudWatchLogsLogGroupArn': 'arn:aws:logs:us-east-1:059797578166:log-group:aws-cloudtrail-logs-059797578166-6a2f190e:*', 'CloudWatchLogsRoleArn': 'arn:aws:iam::059797578166:role/service-role/CloudTrailRoleForCloudWatchLogs_sysdig-cloudtrail-test', 'HasCustomEventSelectors': False, 'HasInsightSelectors': False, 'IsOrganizationTrail': False, 'Tags': [], 'c7n:MatchedFilters': ['IsMultiRegionTrail'], 'c7n:TrailStatus': {'IsLogging': True, 'LatestDeliveryTime': datetime.datetime(2020, 11, 25, 15, 1, 19, 649000, tzinfo=tzlocal()), 'LatestNotificationTime': datetime.datetime(2020, 11, 25, 15, 1, 19, 648000, tzinfo=tzlocal()), 'StartLoggingTime': datetime.datetime(2016, 8, 17, 13, 49, 36, 71000, tzinfo=tzlocal()), 'LatestCloudWatchLogsDeliveryTime': datetime.datetime(2020, 11, 25, 15, 1, 17, 718000, tzinfo=tzlocal()), 'LatestDeliveryAttemptTime': '2020-11-25T23:01:19Z', 'LatestNotificationAttemptTime': '2020-11-25T23:01:19Z', 'LatestNotificationAttemptSucceeded': '2020-11-25T23:01:19Z', 'LatestDeliveryAttemptSucceeded': '2020-11-25T23:01:19Z', 'TimeLoggingStarted': '2016-08-17T20:49:36Z', 'TimeLoggingStopped': ''}}]
+2020-11-25 15:01:36,383 - custodian.filters - DEBUG - Selectors {'TrailARN': 'arn:aws:cloudtrail:us-east-1:059797578166:trail/default-cloudtrail-059797578166', 'EventSelectors': [{'ReadWriteType': 'All', 'IncludeManagementEvents': True, 'DataResources': [], 'ExcludeManagementEventSources': []}]}
+2020-11-25 15:01:36,762 - custodian.filters - DEBUG - Selectors {'TrailARN': 'arn:aws:cloudtrail:us-east-1:059797578166:trail/sysdigcloud-devAccount-trail', 'EventSelectors': [{'ReadWriteType': 'All', 'IncludeManagementEvents': True, 'DataResources': [], 'ExcludeManagementEventSources': []}]}
+2020-11-25 15:01:36,765 - custodian.resources.cloudtrail - DEBUG - Filtered from 2 to 2 cloudtrail
+2020-11-25 15:01:36,765 - custodian.policy - INFO - policy:CloudTrail resource:aws.cloudtrail region:us-east-1 count:2 time:3.29
+2020-11-25 15:01:36,768 - custodian.output - DEBUG - metric:ResourceCount Count:2 policy:cloudtrail restype:aws.cloudtrail scope:policy
+2020-11-25 15:01:36,768 - custodian.output - DEBUG - metric:ApiCalls Count:6 policy:cloudtrail restype:aws.cloudtrail
+2020-11-25 15:02:13,763 - custodian.policy - DEBUG - Running policy:CloudTrail resource:aws.cloudtrail region:us-east-1 c7n:0.9.8
+2020-11-25 15:02:13,772 - custodian.cache - DEBUG - Using cache file /Users/noah/.cache/cloud-custodian.cache
+2020-11-25 15:02:13,773 - custodian.resources.cloudtrail - DEBUG - Using cached c7n.resources.cloudtrail.CloudTrail: 2
+2020-11-25 15:02:15,455 - custodian.filters - DEBUG - Selectors {'TrailARN': 'arn:aws:cloudtrail:us-east-1:059797578166:trail/default-cloudtrail-059797578166', 'EventSelectors': [{'ReadWriteType': 'All', 'IncludeManagementEvents': True, 'DataResources': [], 'ExcludeManagementEventSources': []}]}
+2020-11-25 15:02:16,058 - custodian.filters - DEBUG - Selectors {'TrailARN': 'arn:aws:cloudtrail:us-east-1:059797578166:trail/sysdigcloud-devAccount-trail', 'EventSelectors': [{'ReadWriteType': 'All', 'IncludeManagementEvents': True, 'DataResources': [], 'ExcludeManagementEventSources': []}]}
+2020-11-25 15:02:16,061 - custodian.resources.cloudtrail - DEBUG - Filtered from 2 to 2 cloudtrail
+2020-11-25 15:02:16,061 - custodian.policy - INFO - policy:CloudTrail resource:aws.cloudtrail region:us-east-1 count:2 time:2.30
+2020-11-25 15:02:16,063 - custodian.output - DEBUG - metric:ResourceCount Count:2 policy:cloudtrail restype:aws.cloudtrail scope:policy
+2020-11-25 15:02:16,063 - custodian.output - DEBUG - metric:ApiCalls Count:4 policy:cloudtrail restype:aws.cloudtrail
+2020-11-25 15:02:25,752 - custodian.policy - DEBUG - Running policy:CloudTrail resource:aws.cloudtrail region:us-east-1 c7n:0.9.8
+2020-11-25 15:02:25,752 - custodian.cache - DEBUG - Using cache file /Users/noah/.cache/cloud-custodian.cache
+2020-11-25 15:02:25,752 - custodian.resources.cloudtrail - DEBUG - Using cached c7n.resources.cloudtrail.CloudTrail: 2
+2020-11-25 15:02:27,335 - custodian.filters - DEBUG - Selectors {'TrailARN': 'arn:aws:cloudtrail:us-east-1:059797578166:trail/default-cloudtrail-059797578166', 'EventSelectors': [{'ReadWriteType': 'All', 'IncludeManagementEvents': True, 'DataResources': [], 'ExcludeManagementEventSources': []}]}
+2020-11-25 15:02:27,904 - custodian.filters - DEBUG - Selectors {'TrailARN': 'arn:aws:cloudtrail:us-east-1:059797578166:trail/sysdigcloud-devAccount-trail', 'EventSelectors': [{'ReadWriteType': 'All', 'IncludeManagementEvents': True, 'DataResources': [], 'ExcludeManagementEventSources': []}]}
+2020-11-25 15:02:27,907 - custodian.resources.cloudtrail - DEBUG - Filtered from 2 to 2 cloudtrail
+2020-11-25 15:02:27,907 - custodian.policy - INFO - policy:CloudTrail resource:aws.cloudtrail region:us-east-1 count:2 time:2.16
+2020-11-25 15:02:27,909 - custodian.output - DEBUG - metric:ResourceCount Count:2 policy:cloudtrail restype:aws.cloudtrail scope:policy
+2020-11-25 15:02:27,909 - custodian.output - DEBUG - metric:ApiCalls Count:4 policy:cloudtrail restype:aws.cloudtrail
+2020-11-25 15:05:52,134 - custodian.policy - DEBUG - Running policy:CloudTrail resource:aws.cloudtrail region:us-east-1 c7n:0.9.8
+2020-11-25 15:05:52,135 - custodian.cache - DEBUG - Using cache file /Users/noah/.cache/cloud-custodian.cache
+2020-11-25 15:05:52,135 - custodian.resources.cloudtrail - DEBUG - Using cached c7n.resources.cloudtrail.CloudTrail: 2
+2020-11-25 15:05:53,747 - custodian.filters - DEBUG - Selectors {'TrailARN': 'arn:aws:cloudtrail:us-east-1:059797578166:trail/default-cloudtrail-059797578166', 'EventSelectors': [{'ReadWriteType': 'All', 'IncludeManagementEvents': True, 'DataResources': [], 'ExcludeManagementEventSources': []}]}
+2020-11-25 15:05:54,564 - custodian.filters - DEBUG - Selectors {'TrailARN': 'arn:aws:cloudtrail:us-east-1:059797578166:trail/sysdigcloud-devAccount-trail', 'EventSelectors': [{'ReadWriteType': 'All', 'IncludeManagementEvents': True, 'DataResources': [], 'ExcludeManagementEventSources': []}]}
+2020-11-25 15:05:54,567 - custodian.resources.cloudtrail - DEBUG - Filtered from 2 to 2 cloudtrail
+2020-11-25 15:05:54,567 - custodian.policy - INFO - policy:CloudTrail resource:aws.cloudtrail region:us-east-1 count:2 time:2.43
+2020-11-25 15:05:54,569 - custodian.output - DEBUG - metric:ResourceCount Count:2 policy:cloudtrail restype:aws.cloudtrail scope:policy
+2020-11-25 15:05:54,569 - custodian.output - DEBUG - metric:ApiCalls Count:4 policy:cloudtrail restype:aws.cloudtrail
+2020-11-25 15:10:17,817 - custodian.policy - DEBUG - Running policy:CloudTrail resource:aws.cloudtrail region:us-east-1 c7n:0.9.8
+2020-11-25 15:10:17,817 - custodian.cache - DEBUG - Using cache file /Users/noah/.cache/cloud-custodian.cache
+2020-11-25 15:10:17,818 - custodian.resources.cloudtrail - DEBUG - Using cached c7n.resources.cloudtrail.CloudTrail: 2
+2020-11-25 15:10:19,897 - custodian.filters - DEBUG - Selectors {'TrailARN': 'arn:aws:cloudtrail:us-east-1:059797578166:trail/default-cloudtrail-059797578166', 'EventSelectors': [{'ReadWriteType': 'All', 'IncludeManagementEvents': True, 'DataResources': [], 'ExcludeManagementEventSources': []}]}
+2020-11-25 15:10:20,449 - custodian.filters - DEBUG - Selectors {'TrailARN': 'arn:aws:cloudtrail:us-east-1:059797578166:trail/sysdigcloud-devAccount-trail', 'EventSelectors': [{'ReadWriteType': 'All', 'IncludeManagementEvents': True, 'DataResources': [], 'ExcludeManagementEventSources': []}]}
+2020-11-25 15:10:20,452 - custodian.resources.cloudtrail - DEBUG - Filtered from 2 to 0 cloudtrail
+2020-11-25 15:10:20,452 - custodian.policy - INFO - policy:CloudTrail resource:aws.cloudtrail region:us-east-1 count:0 time:2.63
+2020-11-25 15:10:20,453 - custodian.output - DEBUG - metric:ResourceCount Count:0 policy:cloudtrail restype:aws.cloudtrail scope:policy
+2020-11-25 15:10:20,453 - custodian.output - DEBUG - metric:ApiCalls Count:4 policy:cloudtrail restype:aws.cloudtrail
+2020-11-25 15:10:29,239 - custodian.policy - DEBUG - Running policy:CloudTrail resource:aws.cloudtrail region:us-east-1 c7n:0.9.8
+2020-11-25 15:10:29,240 - custodian.cache - DEBUG - Using cache file /Users/noah/.cache/cloud-custodian.cache
+2020-11-25 15:10:29,240 - custodian.resources.cloudtrail - DEBUG - Using cached c7n.resources.cloudtrail.CloudTrail: 2
+2020-11-25 15:10:30,671 - custodian.filters - DEBUG - Selectors {'TrailARN': 'arn:aws:cloudtrail:us-east-1:059797578166:trail/default-cloudtrail-059797578166', 'EventSelectors': [{'ReadWriteType': 'All', 'IncludeManagementEvents': True, 'DataResources': [], 'ExcludeManagementEventSources': []}]}
+2020-11-25 15:10:31,230 - custodian.filters - DEBUG - Selectors {'TrailARN': 'arn:aws:cloudtrail:us-east-1:059797578166:trail/sysdigcloud-devAccount-trail', 'EventSelectors': [{'ReadWriteType': 'All', 'IncludeManagementEvents': True, 'DataResources': [], 'ExcludeManagementEventSources': []}]}
+2020-11-25 15:10:31,233 - custodian.resources.cloudtrail - DEBUG - Filtered from 2 to 2 cloudtrail
+2020-11-25 15:10:31,233 - custodian.policy - INFO - policy:CloudTrail resource:aws.cloudtrail region:us-east-1 count:2 time:1.99
+2020-11-25 15:10:31,235 - custodian.output - DEBUG - metric:ResourceCount Count:2 policy:cloudtrail restype:aws.cloudtrail scope:policy
+2020-11-25 15:10:31,235 - custodian.output - DEBUG - metric:ApiCalls Count:4 policy:cloudtrail restype:aws.cloudtrail
+2020-11-25 15:10:39,747 - custodian.policy - DEBUG - Running policy:CloudTrail resource:aws.cloudtrail region:us-east-1 c7n:0.9.8
+2020-11-25 15:10:39,748 - custodian.cache - DEBUG - Using cache file /Users/noah/.cache/cloud-custodian.cache
+2020-11-25 15:10:39,748 - custodian.resources.cloudtrail - DEBUG - Using cached c7n.resources.cloudtrail.CloudTrail: 2
+2020-11-25 15:10:42,469 - custodian.filters - DEBUG - Selectors {'TrailARN': 'arn:aws:cloudtrail:us-east-1:059797578166:trail/default-cloudtrail-059797578166', 'EventSelectors': [{'ReadWriteType': 'All', 'IncludeManagementEvents': True, 'DataResources': [], 'ExcludeManagementEventSources': []}]}
+2020-11-25 15:10:42,926 - custodian.filters - DEBUG - Selectors {'TrailARN': 'arn:aws:cloudtrail:us-east-1:059797578166:trail/sysdigcloud-devAccount-trail', 'EventSelectors': [{'ReadWriteType': 'All', 'IncludeManagementEvents': True, 'DataResources': [], 'ExcludeManagementEventSources': []}]}
+2020-11-25 15:10:42,928 - custodian.resources.cloudtrail - DEBUG - Filtered from 2 to 0 cloudtrail
+2020-11-25 15:10:42,928 - custodian.policy - INFO - policy:CloudTrail resource:aws.cloudtrail region:us-east-1 count:0 time:3.18
+2020-11-25 15:10:42,930 - custodian.output - DEBUG - metric:ResourceCount Count:0 policy:cloudtrail restype:aws.cloudtrail scope:policy
+2020-11-25 15:10:42,930 - custodian.output - DEBUG - metric:ApiCalls Count:4 policy:cloudtrail restype:aws.cloudtrail
+2020-11-25 15:10:54,508 - custodian.policy - DEBUG - Running policy:CloudTrail resource:aws.cloudtrail region:us-east-1 c7n:0.9.8
+2020-11-25 15:10:54,508 - custodian.cache - DEBUG - Using cache file /Users/noah/.cache/cloud-custodian.cache
+2020-11-25 15:10:54,508 - custodian.resources.cloudtrail - DEBUG - Using cached c7n.resources.cloudtrail.CloudTrail: 2
+2020-11-25 15:10:56,183 - custodian.filters - DEBUG - Selectors {'TrailARN': 'arn:aws:cloudtrail:us-east-1:059797578166:trail/default-cloudtrail-059797578166', 'EventSelectors': [{'ReadWriteType': 'All', 'IncludeManagementEvents': True, 'DataResources': [], 'ExcludeManagementEventSources': []}]}
+2020-11-25 15:10:56,738 - custodian.filters - DEBUG - Selectors {'TrailARN': 'arn:aws:cloudtrail:us-east-1:059797578166:trail/sysdigcloud-devAccount-trail', 'EventSelectors': [{'ReadWriteType': 'All', 'IncludeManagementEvents': True, 'DataResources': [], 'ExcludeManagementEventSources': []}]}
+2020-11-25 15:10:56,741 - custodian.resources.cloudtrail - DEBUG - Filtered from 2 to 0 cloudtrail
+2020-11-25 15:10:56,741 - custodian.policy - INFO - policy:CloudTrail resource:aws.cloudtrail region:us-east-1 count:0 time:2.23
+2020-11-25 15:10:56,742 - custodian.output - DEBUG - metric:ResourceCount Count:0 policy:cloudtrail restype:aws.cloudtrail scope:policy
+2020-11-25 15:10:56,742 - custodian.output - DEBUG - metric:ApiCalls Count:4 policy:cloudtrail restype:aws.cloudtrail
+2020-11-25 15:11:53,994 - custodian.policy - DEBUG - Running policy:CloudTrail resource:aws.cloudtrail region:us-east-1 c7n:0.9.8
+2020-11-25 15:11:53,995 - custodian.cache - DEBUG - Using cache file /Users/noah/.cache/cloud-custodian.cache
+2020-11-25 15:11:53,995 - custodian.resources.cloudtrail - DEBUG - Using cached c7n.resources.cloudtrail.CloudTrail: 2
+2020-11-25 15:11:55,781 - custodian.filters - DEBUG - Selectors {'TrailARN': 'arn:aws:cloudtrail:us-east-1:059797578166:trail/default-cloudtrail-059797578166', 'EventSelectors': [{'ReadWriteType': 'All', 'IncludeManagementEvents': True, 'DataResources': [], 'ExcludeManagementEventSources': []}]}
+2020-11-25 15:11:56,291 - custodian.output - DEBUG - metric:PolicyException Count:1 policy:cloudtrail restype:aws.cloudtrail
+2020-11-25 15:11:56,291 - custodian.output - DEBUG - metric:ApiCalls Count:3 policy:cloudtrail restype:aws.cloudtrail
+2020-11-25 15:12:00,899 - custodian.policy - DEBUG - Running policy:CloudTrail resource:aws.cloudtrail region:us-east-1 c7n:0.9.8
+2020-11-25 15:12:00,900 - custodian.cache - DEBUG - Using cache file /Users/noah/.cache/cloud-custodian.cache
+2020-11-25 15:12:00,900 - custodian.resources.cloudtrail - DEBUG - Using cached c7n.resources.cloudtrail.CloudTrail: 2
+2020-11-25 15:12:02,538 - custodian.filters - DEBUG - Selectors {'TrailARN': 'arn:aws:cloudtrail:us-east-1:059797578166:trail/default-cloudtrail-059797578166', 'EventSelectors': [{'ReadWriteType': 'All', 'IncludeManagementEvents': True, 'DataResources': [], 'ExcludeManagementEventSources': []}]}
+2020-11-25 15:12:03,026 - custodian.filters - DEBUG - Selectors {'TrailARN': 'arn:aws:cloudtrail:us-east-1:059797578166:trail/sysdigcloud-devAccount-trail', 'EventSelectors': [{'ReadWriteType': 'All', 'IncludeManagementEvents': True, 'DataResources': [], 'ExcludeManagementEventSources': []}]}
+2020-11-25 15:12:03,029 - custodian.resources.cloudtrail - DEBUG - Filtered from 2 to 0 cloudtrail
+2020-11-25 15:12:03,029 - custodian.policy - INFO - policy:CloudTrail resource:aws.cloudtrail region:us-east-1 count:0 time:2.13
+2020-11-25 15:12:03,030 - custodian.output - DEBUG - metric:ResourceCount Count:0 policy:cloudtrail restype:aws.cloudtrail scope:policy
+2020-11-25 15:12:03,030 - custodian.output - DEBUG - metric:ApiCalls Count:4 policy:cloudtrail restype:aws.cloudtrail
+2020-11-25 15:12:46,513 - custodian.policy - DEBUG - Running policy:CloudTrail resource:aws.cloudtrail region:us-east-1 c7n:0.9.8
+2020-11-25 15:12:46,513 - custodian.cache - DEBUG - Using cache file /Users/noah/.cache/cloud-custodian.cache
+2020-11-25 15:12:46,514 - custodian.resources.cloudtrail - DEBUG - Using cached c7n.resources.cloudtrail.CloudTrail: 2
+2020-11-25 15:12:48,163 - custodian.filters - DEBUG - Selectors {'TrailARN': 'arn:aws:cloudtrail:us-east-1:059797578166:trail/default-cloudtrail-059797578166', 'EventSelectors': [{'ReadWriteType': 'All', 'IncludeManagementEvents': True, 'DataResources': [], 'ExcludeManagementEventSources': []}]}
+2020-11-25 15:12:48,729 - custodian.filters - DEBUG - Selectors {'TrailARN': 'arn:aws:cloudtrail:us-east-1:059797578166:trail/sysdigcloud-devAccount-trail', 'EventSelectors': [{'ReadWriteType': 'All', 'IncludeManagementEvents': True, 'DataResources': [], 'ExcludeManagementEventSources': []}]}
+2020-11-25 15:12:48,732 - custodian.resources.cloudtrail - DEBUG - Filtered from 2 to 2 cloudtrail
+2020-11-25 15:12:48,732 - custodian.policy - INFO - policy:CloudTrail resource:aws.cloudtrail region:us-east-1 count:2 time:2.22
+2020-11-25 15:12:48,734 - custodian.output - DEBUG - metric:ResourceCount Count:2 policy:cloudtrail restype:aws.cloudtrail scope:policy
+2020-11-25 15:12:48,734 - custodian.output - DEBUG - metric:ApiCalls Count:4 policy:cloudtrail restype:aws.cloudtrail
+2020-11-25 15:13:20,233 - custodian.policy - DEBUG - Running policy:CloudTrail resource:aws.cloudtrail region:us-east-1 c7n:0.9.8
+2020-11-25 15:13:20,233 - custodian.cache - DEBUG - Using cache file /Users/noah/.cache/cloud-custodian.cache
+2020-11-25 15:13:20,233 - custodian.resources.cloudtrail - DEBUG - Using cached c7n.resources.cloudtrail.CloudTrail: 2
+2020-11-25 15:13:21,874 - custodian.filters - DEBUG - Selectors {'TrailARN': 'arn:aws:cloudtrail:us-east-1:059797578166:trail/default-cloudtrail-059797578166', 'EventSelectors': [{'ReadWriteType': 'All', 'IncludeManagementEvents': True, 'DataResources': [], 'ExcludeManagementEventSources': []}]}
+2020-11-25 15:13:22,429 - custodian.filters - DEBUG - Selectors {'TrailARN': 'arn:aws:cloudtrail:us-east-1:059797578166:trail/sysdigcloud-devAccount-trail', 'EventSelectors': [{'ReadWriteType': 'All', 'IncludeManagementEvents': True, 'DataResources': [], 'ExcludeManagementEventSources': []}]}
+2020-11-25 15:13:22,430 - custodian.resources.cloudtrail - DEBUG - Filtered from 2 to 0 cloudtrail
+2020-11-25 15:13:22,430 - custodian.policy - INFO - policy:CloudTrail resource:aws.cloudtrail region:us-east-1 count:0 time:2.20
+2020-11-25 15:13:22,431 - custodian.output - DEBUG - metric:ResourceCount Count:0 policy:cloudtrail restype:aws.cloudtrail scope:policy
+2020-11-25 15:13:22,431 - custodian.output - DEBUG - metric:ApiCalls Count:4 policy:cloudtrail restype:aws.cloudtrail
+2020-11-25 15:13:33,390 - custodian.policy - DEBUG - Running policy:CloudTrail resource:aws.cloudtrail region:us-east-1 c7n:0.9.8
+2020-11-25 15:13:33,394 - custodian.cache - DEBUG - Using cache file /Users/noah/.cache/cloud-custodian.cache
+2020-11-25 15:13:33,394 - custodian.resources.cloudtrail - DEBUG - Using cached c7n.resources.cloudtrail.CloudTrail: 2
+2020-11-25 15:13:35,139 - custodian.filters - DEBUG - Selectors {'TrailARN': 'arn:aws:cloudtrail:us-east-1:059797578166:trail/default-cloudtrail-059797578166', 'EventSelectors': [{'ReadWriteType': 'All', 'IncludeManagementEvents': True, 'DataResources': [], 'ExcludeManagementEventSources': []}]}
+2020-11-25 15:13:35,538 - custodian.filters - DEBUG - Selectors {'TrailARN': 'arn:aws:cloudtrail:us-east-1:059797578166:trail/sysdigcloud-devAccount-trail', 'EventSelectors': [{'ReadWriteType': 'All', 'IncludeManagementEvents': True, 'DataResources': [], 'ExcludeManagementEventSources': []}]}
+2020-11-25 15:13:35,541 - custodian.resources.cloudtrail - DEBUG - Filtered from 2 to 2 cloudtrail
+2020-11-25 15:13:35,541 - custodian.policy - INFO - policy:CloudTrail resource:aws.cloudtrail region:us-east-1 count:2 time:2.15
+2020-11-25 15:13:35,543 - custodian.output - DEBUG - metric:ResourceCount Count:2 policy:cloudtrail restype:aws.cloudtrail scope:policy
+2020-11-25 15:13:35,543 - custodian.output - DEBUG - metric:ApiCalls Count:4 policy:cloudtrail restype:aws.cloudtrail
+2020-11-25 15:15:47,086 - custodian.policy - DEBUG - Running policy:CloudTrail resource:aws.cloudtrail region:us-east-1 c7n:0.9.8
+2020-11-25 15:15:47,088 - custodian.cache - DEBUG - Using cache file /Users/noah/.cache/cloud-custodian.cache
+2020-11-25 15:15:47,088 - custodian.resources.cloudtrail - DEBUG - Using cached c7n.resources.cloudtrail.CloudTrail: 2
+2020-11-25 15:15:48,813 - custodian.filters - DEBUG - Selectors {'TrailARN': 'arn:aws:cloudtrail:us-east-1:059797578166:trail/default-cloudtrail-059797578166', 'EventSelectors': [{'ReadWriteType': 'All', 'IncludeManagementEvents': True, 'DataResources': [], 'ExcludeManagementEventSources': []}]}
+2020-11-25 15:15:49,370 - custodian.filters - DEBUG - Selectors {'TrailARN': 'arn:aws:cloudtrail:us-east-1:059797578166:trail/sysdigcloud-devAccount-trail', 'EventSelectors': [{'ReadWriteType': 'All', 'IncludeManagementEvents': True, 'DataResources': [], 'ExcludeManagementEventSources': []}]}
+2020-11-25 15:15:49,373 - custodian.resources.cloudtrail - DEBUG - Filtered from 2 to 2 cloudtrail
+2020-11-25 15:15:49,373 - custodian.policy - INFO - policy:CloudTrail resource:aws.cloudtrail region:us-east-1 count:2 time:2.29
+2020-11-25 15:15:49,374 - custodian.output - DEBUG - metric:ResourceCount Count:2 policy:cloudtrail restype:aws.cloudtrail scope:policy
+2020-11-25 15:15:49,375 - custodian.output - DEBUG - metric:ApiCalls Count:4 policy:cloudtrail restype:aws.cloudtrail
+2020-11-25 15:16:37,239 - custodian.policy - DEBUG - Running policy:CloudTrail resource:aws.cloudtrail region:us-east-1 c7n:0.9.8
+2020-11-25 15:16:37,247 - custodian.cache - DEBUG - Using cache file /Users/noah/.cache/cloud-custodian.cache
+2020-11-25 15:16:37,247 - custodian.resources.cloudtrail - DEBUG - Using cached c7n.resources.cloudtrail.CloudTrail: 2
+2020-11-25 15:16:38,902 - custodian.resources.cloudtrail - DEBUG - Filtered from 2 to 2 cloudtrail
+2020-11-25 15:16:38,902 - custodian.policy - INFO - policy:CloudTrail resource:aws.cloudtrail region:us-east-1 count:2 time:1.66
+2020-11-25 15:16:38,904 - custodian.output - DEBUG - metric:ResourceCount Count:2 policy:cloudtrail restype:aws.cloudtrail scope:policy
+2020-11-25 15:16:38,904 - custodian.output - DEBUG - metric:ApiCalls Count:4 policy:cloudtrail restype:aws.cloudtrail
+2020-11-25 15:59:56,052 - custodian.policy - DEBUG - Running policy:CloudTrail resource:aws.cloudtrail region:us-east-1 c7n:0.9.8
+2020-11-25 15:59:58,963 - custodian.resources.cloudtrail - DEBUG - Filtered from 2 to 2 cloudtrail
+2020-11-25 15:59:58,963 - custodian.policy - INFO - policy:CloudTrail resource:aws.cloudtrail region:us-east-1 count:2 time:2.91
+2020-11-25 15:59:58,966 - custodian.output - DEBUG - metric:ResourceCount Count:2 policy:cloudtrail restype:aws.cloudtrail scope:policy
+2020-11-25 15:59:58,966 - custodian.output - DEBUG - metric:ApiCalls Count:6 policy:cloudtrail restype:aws.cloudtrail
+2020-11-25 16:01:12,505 - custodian.policy - DEBUG - Running policy:CloudTrail resource:aws.cloudtrail region:us-east-1 c7n:0.9.8
+2020-11-25 16:01:12,509 - custodian.cache - DEBUG - Using cache file /Users/noah/.cache/cloud-custodian.cache
+2020-11-25 16:01:12,509 - custodian.resources.cloudtrail - DEBUG - Using cached c7n.resources.cloudtrail.CloudTrail: 2
+2020-11-25 16:01:14,172 - custodian.resources.cloudtrail - DEBUG - Filtered from 2 to 2 cloudtrail
+2020-11-25 16:01:14,172 - custodian.policy - INFO - policy:CloudTrail resource:aws.cloudtrail region:us-east-1 count:2 time:1.67
+2020-11-25 16:01:14,174 - custodian.output - DEBUG - metric:ResourceCount Count:2 policy:cloudtrail restype:aws.cloudtrail scope:policy
+2020-11-25 16:01:14,174 - custodian.output - DEBUG - metric:ApiCalls Count:4 policy:cloudtrail restype:aws.cloudtrail
+2020-11-25 16:02:45,463 - custodian.policy - DEBUG - Running policy:CloudTrail resource:aws.cloudtrail region:us-east-1 c7n:0.9.8
+2020-11-25 16:02:45,465 - custodian.cache - DEBUG - Using cache file /Users/noah/.cache/cloud-custodian.cache
+2020-11-25 16:02:45,465 - custodian.resources.cloudtrail - DEBUG - Using cached c7n.resources.cloudtrail.CloudTrail: 2
+2020-11-25 16:02:47,124 - custodian.resources.cloudtrail - DEBUG - Filtered from 2 to 2 cloudtrail
+2020-11-25 16:02:47,124 - custodian.policy - INFO - policy:CloudTrail resource:aws.cloudtrail region:us-east-1 count:2 time:1.66
+2020-11-25 16:02:47,126 - custodian.output - DEBUG - metric:ResourceCount Count:2 policy:cloudtrail restype:aws.cloudtrail scope:policy
+2020-11-25 16:02:47,126 - custodian.output - DEBUG - metric:ApiCalls Count:4 policy:cloudtrail restype:aws.cloudtrail
+2020-11-25 16:04:27,788 - custodian.policy - DEBUG - Running policy:CloudTrail resource:aws.cloudtrail region:us-east-1 c7n:0.9.8
+2020-11-25 16:04:27,788 - custodian.cache - DEBUG - Using cache file /Users/noah/.cache/cloud-custodian.cache
+2020-11-25 16:04:27,788 - custodian.resources.cloudtrail - DEBUG - Using cached c7n.resources.cloudtrail.CloudTrail: 2
+2020-11-25 16:04:29,420 - custodian.resources.cloudtrail - DEBUG - Filtered from 2 to 2 cloudtrail
+2020-11-25 16:04:29,420 - custodian.policy - INFO - policy:CloudTrail resource:aws.cloudtrail region:us-east-1 count:2 time:1.63
+2020-11-25 16:04:29,422 - custodian.output - DEBUG - metric:ResourceCount Count:2 policy:cloudtrail restype:aws.cloudtrail scope:policy
+2020-11-25 16:04:29,422 - custodian.output - DEBUG - metric:ApiCalls Count:4 policy:cloudtrail restype:aws.cloudtrail
+2020-11-25 16:05:25,743 - custodian.policy - DEBUG - Running policy:CloudTrail resource:aws.cloudtrail region:us-east-1 c7n:0.9.8
+2020-11-25 16:05:25,745 - custodian.cache - DEBUG - Using cache file /Users/noah/.cache/cloud-custodian.cache
+2020-11-25 16:05:25,745 - custodian.resources.cloudtrail - DEBUG - Using cached c7n.resources.cloudtrail.CloudTrail: 2
+2020-11-25 16:05:27,354 - custodian.resources.cloudtrail - DEBUG - Filtered from 2 to 2 cloudtrail
+2020-11-25 16:05:27,354 - custodian.policy - INFO - policy:CloudTrail resource:aws.cloudtrail region:us-east-1 count:2 time:1.61
+2020-11-25 16:05:27,356 - custodian.output - DEBUG - metric:ResourceCount Count:2 policy:cloudtrail restype:aws.cloudtrail scope:policy
+2020-11-25 16:05:27,356 - custodian.output - DEBUG - metric:ApiCalls Count:4 policy:cloudtrail restype:aws.cloudtrail
+2020-11-25 16:07:23,886 - custodian.policy - DEBUG - Running policy:CloudTrail resource:aws.cloudtrail region:us-east-1 c7n:0.9.8
+2020-11-25 16:07:23,887 - custodian.cache - DEBUG - Using cache file /Users/noah/.cache/cloud-custodian.cache
+2020-11-25 16:07:23,887 - custodian.resources.cloudtrail - DEBUG - Using cached c7n.resources.cloudtrail.CloudTrail: 2
+2020-11-25 16:07:25,636 - custodian.resources.cloudtrail - DEBUG - Filtered from 2 to 2 cloudtrail
+2020-11-25 16:07:25,636 - custodian.policy - INFO - policy:CloudTrail resource:aws.cloudtrail region:us-east-1 count:2 time:1.75
+2020-11-25 16:07:25,637 - custodian.output - DEBUG - metric:ResourceCount Count:2 policy:cloudtrail restype:aws.cloudtrail scope:policy
+2020-11-25 16:07:25,638 - custodian.output - DEBUG - metric:ApiCalls Count:4 policy:cloudtrail restype:aws.cloudtrail
+2020-11-25 16:10:37,583 - custodian.policy - DEBUG - Running policy:CloudTrail resource:aws.cloudtrail region:us-east-1 c7n:0.9.8
+2020-11-25 16:10:37,584 - custodian.cache - DEBUG - Using cache file /Users/noah/.cache/cloud-custodian.cache
+2020-11-25 16:10:37,584 - custodian.resources.cloudtrail - DEBUG - Using cached c7n.resources.cloudtrail.CloudTrail: 2
+2020-11-25 16:10:39,281 - custodian.resources.cloudtrail - DEBUG - Filtered from 2 to 2 cloudtrail
+2020-11-25 16:10:39,281 - custodian.policy - INFO - policy:CloudTrail resource:aws.cloudtrail region:us-east-1 count:2 time:1.70
+2020-11-25 16:10:39,282 - custodian.output - DEBUG - metric:ResourceCount Count:2 policy:cloudtrail restype:aws.cloudtrail scope:policy
+2020-11-25 16:10:39,282 - custodian.output - DEBUG - metric:ApiCalls Count:4 policy:cloudtrail restype:aws.cloudtrail
+2020-11-25 16:13:17,389 - custodian.policy - DEBUG - Running policy:CloudTrail resource:aws.cloudtrail region:us-east-1 c7n:0.9.8
+2020-11-25 16:13:17,392 - custodian.cache - DEBUG - Using cache file /Users/noah/.cache/cloud-custodian.cache
+2020-11-25 16:13:17,392 - custodian.resources.cloudtrail - DEBUG - Using cached c7n.resources.cloudtrail.CloudTrail: 2
+2020-11-25 16:13:19,094 - custodian.resources.cloudtrail - DEBUG - Filtered from 2 to 2 cloudtrail
+2020-11-25 16:13:19,094 - custodian.policy - INFO - policy:CloudTrail resource:aws.cloudtrail region:us-east-1 count:2 time:1.70
+2020-11-25 16:13:19,095 - custodian.output - DEBUG - metric:ResourceCount Count:2 policy:cloudtrail restype:aws.cloudtrail scope:policy
+2020-11-25 16:13:19,095 - custodian.output - DEBUG - metric:ApiCalls Count:4 policy:cloudtrail restype:aws.cloudtrail
+2020-11-25 16:14:24,717 - custodian.policy - DEBUG - Running policy:CloudTrail resource:aws.cloudtrail region:us-east-1 c7n:0.9.8
+2020-11-25 16:14:24,718 - custodian.cache - DEBUG - Using cache file /Users/noah/.cache/cloud-custodian.cache
+2020-11-25 16:14:24,718 - custodian.resources.cloudtrail - DEBUG - Using cached c7n.resources.cloudtrail.CloudTrail: 2
+2020-11-25 16:14:26,453 - custodian.resources.cloudtrail - DEBUG - Filtered from 2 to 2 cloudtrail
+2020-11-25 16:14:26,453 - custodian.policy - INFO - policy:CloudTrail resource:aws.cloudtrail region:us-east-1 count:2 time:1.74
+2020-11-25 16:14:26,455 - custodian.output - DEBUG - metric:ResourceCount Count:2 policy:cloudtrail restype:aws.cloudtrail scope:policy
+2020-11-25 16:14:26,455 - custodian.output - DEBUG - metric:ApiCalls Count:4 policy:cloudtrail restype:aws.cloudtrail
+2020-11-25 16:30:05,005 - custodian.policy - DEBUG - Running policy:CloudTrail resource:aws.cloudtrail region:us-east-1 c7n:0.9.8
+2020-11-25 16:30:07,726 - custodian.resources.cloudtrail - DEBUG - Filtered from 2 to 2 cloudtrail
+2020-11-25 16:30:07,727 - custodian.policy - INFO - policy:CloudTrail resource:aws.cloudtrail region:us-east-1 count:2 time:2.72
+2020-11-25 16:30:07,729 - custodian.output - DEBUG - metric:ResourceCount Count:2 policy:cloudtrail restype:aws.cloudtrail scope:policy
+2020-11-25 16:30:07,730 - custodian.output - DEBUG - metric:ApiCalls Count:6 policy:cloudtrail restype:aws.cloudtrail
+2020-11-25 16:35:35,154 - custodian.policy - DEBUG - Running policy:CloudTrail resource:aws.cloudtrail region:us-east-1 c7n:0.9.8
+2020-11-25 16:35:35,164 - custodian.cache - DEBUG - Using cache file /Users/noah/.cache/cloud-custodian.cache
+2020-11-25 16:35:35,164 - custodian.resources.cloudtrail - DEBUG - Using cached c7n.resources.cloudtrail.CloudTrail: 2
+2020-11-25 16:35:36,999 - custodian.resources.cloudtrail - DEBUG - Filtered from 2 to 2 cloudtrail
+2020-11-25 16:35:36,999 - custodian.policy - INFO - policy:CloudTrail resource:aws.cloudtrail region:us-east-1 count:2 time:1.84
+2020-11-25 16:35:37,001 - custodian.output - DEBUG - metric:ResourceCount Count:2 policy:cloudtrail restype:aws.cloudtrail scope:policy
+2020-11-25 16:35:37,001 - custodian.output - DEBUG - metric:ApiCalls Count:4 policy:cloudtrail restype:aws.cloudtrail
+2020-11-25 16:36:23,306 - custodian.policy - DEBUG - Running policy:CloudTrail resource:aws.cloudtrail region:us-east-1 c7n:0.9.8
+2020-11-25 16:36:23,309 - custodian.cache - DEBUG - Using cache file /Users/noah/.cache/cloud-custodian.cache
+2020-11-25 16:36:23,309 - custodian.resources.cloudtrail - DEBUG - Using cached c7n.resources.cloudtrail.CloudTrail: 2
+2020-11-25 16:36:24,949 - custodian.resources.cloudtrail - DEBUG - Filtered from 2 to 2 cloudtrail
+2020-11-25 16:36:24,949 - custodian.policy - INFO - policy:CloudTrail resource:aws.cloudtrail region:us-east-1 count:2 time:1.64
+2020-11-25 16:36:24,951 - custodian.output - DEBUG - metric:ResourceCount Count:2 policy:cloudtrail restype:aws.cloudtrail scope:policy
+2020-11-25 16:36:24,951 - custodian.output - DEBUG - metric:ApiCalls Count:4 policy:cloudtrail restype:aws.cloudtrail
+2020-11-25 16:36:33,855 - custodian.policy - DEBUG - Running policy:CloudTrail resource:aws.cloudtrail region:us-east-1 c7n:0.9.8
+2020-11-25 16:36:33,856 - custodian.cache - DEBUG - Using cache file /Users/noah/.cache/cloud-custodian.cache
+2020-11-25 16:36:33,856 - custodian.resources.cloudtrail - DEBUG - Using cached c7n.resources.cloudtrail.CloudTrail: 2
+2020-11-25 16:36:35,513 - custodian.resources.cloudtrail - DEBUG - Filtered from 2 to 2 cloudtrail
+2020-11-25 16:36:35,513 - custodian.policy - INFO - policy:CloudTrail resource:aws.cloudtrail region:us-east-1 count:2 time:1.66
+2020-11-25 16:36:35,515 - custodian.output - DEBUG - metric:ResourceCount Count:2 policy:cloudtrail restype:aws.cloudtrail scope:policy
+2020-11-25 16:36:35,515 - custodian.output - DEBUG - metric:ApiCalls Count:4 policy:cloudtrail restype:aws.cloudtrail
+2020-11-25 16:37:11,396 - custodian.policy - DEBUG - Running policy:CloudTrail resource:aws.cloudtrail region:us-east-1 c7n:0.9.8
+2020-11-25 16:37:11,397 - custodian.cache - DEBUG - Using cache file /Users/noah/.cache/cloud-custodian.cache
+2020-11-25 16:37:11,397 - custodian.resources.cloudtrail - DEBUG - Using cached c7n.resources.cloudtrail.CloudTrail: 2
+2020-11-25 16:37:13,054 - custodian.resources.cloudtrail - DEBUG - Filtered from 2 to 2 cloudtrail
+2020-11-25 16:37:13,055 - custodian.policy - INFO - policy:CloudTrail resource:aws.cloudtrail region:us-east-1 count:2 time:1.66
+2020-11-25 16:37:13,056 - custodian.output - DEBUG - metric:ResourceCount Count:2 policy:cloudtrail restype:aws.cloudtrail scope:policy
+2020-11-25 16:37:13,056 - custodian.output - DEBUG - metric:ApiCalls Count:4 policy:cloudtrail restype:aws.cloudtrail
+2020-11-25 16:39:48,817 - custodian.policy - DEBUG - Running policy:CloudTrail resource:aws.cloudtrail region:us-east-1 c7n:0.9.8
+2020-11-25 16:39:48,818 - custodian.cache - DEBUG - Using cache file /Users/noah/.cache/cloud-custodian.cache
+2020-11-25 16:39:48,818 - custodian.resources.cloudtrail - DEBUG - Using cached c7n.resources.cloudtrail.CloudTrail: 2
+2020-11-25 16:39:50,518 - custodian.resources.cloudtrail - DEBUG - Filtered from 2 to 2 cloudtrail
+2020-11-25 16:39:50,518 - custodian.policy - INFO - policy:CloudTrail resource:aws.cloudtrail region:us-east-1 count:2 time:1.70
+2020-11-25 16:39:50,520 - custodian.output - DEBUG - metric:ResourceCount Count:2 policy:cloudtrail restype:aws.cloudtrail scope:policy
+2020-11-25 16:39:50,520 - custodian.output - DEBUG - metric:ApiCalls Count:4 policy:cloudtrail restype:aws.cloudtrail
+2020-11-25 16:50:15,380 - custodian.policy - DEBUG - Running policy:CloudTrail resource:aws.cloudtrail region:us-east-1 c7n:0.9.8
+2020-11-25 16:50:18,311 - custodian.resources.cloudtrail - DEBUG - Filtered from 2 to 2 cloudtrail
+2020-11-25 16:50:18,311 - custodian.policy - INFO - policy:CloudTrail resource:aws.cloudtrail region:us-east-1 count:2 time:2.93
+2020-11-25 16:50:18,313 - custodian.output - DEBUG - metric:ResourceCount Count:2 policy:cloudtrail restype:aws.cloudtrail scope:policy
+2020-11-25 16:50:18,313 - custodian.output - DEBUG - metric:ApiCalls Count:6 policy:cloudtrail restype:aws.cloudtrail
+2020-11-25 16:56:31,140 - custodian.policy - DEBUG - Running policy:CloudTrail resource:aws.cloudtrail region:us-east-1 c7n:0.9.8
+2020-11-25 16:56:31,154 - custodian.cache - DEBUG - Using cache file /Users/noah/.cache/cloud-custodian.cache
+2020-11-25 16:56:31,154 - custodian.resources.cloudtrail - DEBUG - Using cached c7n.resources.cloudtrail.CloudTrail: 2
+2020-11-25 16:56:32,828 - custodian.resources.cloudtrail - DEBUG - Filtered from 2 to 2 cloudtrail
+2020-11-25 16:56:32,828 - custodian.policy - INFO - policy:CloudTrail resource:aws.cloudtrail region:us-east-1 count:2 time:1.69
+2020-11-25 16:56:32,829 - custodian.output - DEBUG - metric:ResourceCount Count:2 policy:cloudtrail restype:aws.cloudtrail scope:policy
+2020-11-25 16:56:32,830 - custodian.output - DEBUG - metric:ApiCalls Count:4 policy:cloudtrail restype:aws.cloudtrail
+2020-11-25 16:58:22,966 - custodian.policy - DEBUG - Running policy:CloudTrail resource:aws.cloudtrail region:us-east-1 c7n:0.9.8
+2020-11-25 16:58:22,968 - custodian.cache - DEBUG - Using cache file /Users/noah/.cache/cloud-custodian.cache
+2020-11-25 16:58:22,968 - custodian.resources.cloudtrail - DEBUG - Using cached c7n.resources.cloudtrail.CloudTrail: 2
+2020-11-25 16:58:24,679 - custodian.resources.cloudtrail - DEBUG - Filtered from 2 to 2 cloudtrail
+2020-11-25 16:58:24,680 - custodian.policy - INFO - policy:CloudTrail resource:aws.cloudtrail region:us-east-1 count:2 time:1.71
+2020-11-25 16:58:24,681 - custodian.output - DEBUG - metric:ResourceCount Count:2 policy:cloudtrail restype:aws.cloudtrail scope:policy
+2020-11-25 16:58:24,681 - custodian.output - DEBUG - metric:ApiCalls Count:4 policy:cloudtrail restype:aws.cloudtrail
+2020-11-25 17:01:35,781 - custodian.policy - DEBUG - Running policy:CloudTrail resource:aws.cloudtrail region:us-east-1 c7n:0.9.8
+2020-11-25 17:01:35,784 - custodian.cache - DEBUG - Using cache file /Users/noah/.cache/cloud-custodian.cache
+2020-11-25 17:01:35,784 - custodian.resources.cloudtrail - DEBUG - Using cached c7n.resources.cloudtrail.CloudTrail: 2
+2020-11-25 17:01:36,230 - custodian.output - DEBUG - metric:PolicyException Count:1 policy:cloudtrail restype:aws.cloudtrail
+2020-11-25 17:01:36,230 - custodian.output - DEBUG - metric:ApiCalls Count:0 policy:cloudtrail restype:aws.cloudtrail
+2020-11-25 17:01:50,325 - custodian.policy - DEBUG - Running policy:CloudTrail resource:aws.cloudtrail region:us-east-1 c7n:0.9.8
+2020-11-25 17:01:50,325 - custodian.cache - DEBUG - Using cache file /Users/noah/.cache/cloud-custodian.cache
+2020-11-25 17:01:50,325 - custodian.resources.cloudtrail - DEBUG - Using cached c7n.resources.cloudtrail.CloudTrail: 2
+2020-11-25 17:01:52,010 - custodian.resources.cloudtrail - DEBUG - Filtered from 2 to 2 cloudtrail
+2020-11-25 17:01:52,010 - custodian.policy - INFO - policy:CloudTrail resource:aws.cloudtrail region:us-east-1 count:2 time:1.69
+2020-11-25 17:01:52,012 - custodian.output - DEBUG - metric:ResourceCount Count:2 policy:cloudtrail restype:aws.cloudtrail scope:policy
+2020-11-25 17:01:52,012 - custodian.output - DEBUG - metric:ApiCalls Count:4 policy:cloudtrail restype:aws.cloudtrail
+2020-11-25 17:02:30,659 - custodian.policy - DEBUG - Running policy:CloudTrail resource:aws.cloudtrail region:us-east-1 c7n:0.9.8
+2020-11-25 17:02:30,659 - custodian.cache - DEBUG - Using cache file /Users/noah/.cache/cloud-custodian.cache
+2020-11-25 17:02:30,659 - custodian.resources.cloudtrail - DEBUG - Using cached c7n.resources.cloudtrail.CloudTrail: 2
+2020-11-25 17:02:32,290 - custodian.resources.cloudtrail - DEBUG - Filtered from 2 to 2 cloudtrail
+2020-11-25 17:02:32,291 - custodian.policy - INFO - policy:CloudTrail resource:aws.cloudtrail region:us-east-1 count:2 time:1.63
+2020-11-25 17:02:32,292 - custodian.output - DEBUG - metric:ResourceCount Count:2 policy:cloudtrail restype:aws.cloudtrail scope:policy
+2020-11-25 17:02:32,293 - custodian.output - DEBUG - metric:ApiCalls Count:4 policy:cloudtrail restype:aws.cloudtrail
+2020-11-25 17:03:31,100 - custodian.policy - DEBUG - Running policy:CloudTrail resource:aws.cloudtrail region:us-east-1 c7n:0.9.8
+2020-11-25 17:03:31,102 - custodian.cache - DEBUG - Using cache file /Users/noah/.cache/cloud-custodian.cache
+2020-11-25 17:03:31,102 - custodian.resources.cloudtrail - DEBUG - Using cached c7n.resources.cloudtrail.CloudTrail: 2
+2020-11-25 17:03:33,250 - custodian.resources.cloudtrail - DEBUG - Filtered from 2 to 2 cloudtrail
+2020-11-25 17:03:33,250 - custodian.policy - INFO - policy:CloudTrail resource:aws.cloudtrail region:us-east-1 count:2 time:2.15
+2020-11-25 17:03:33,252 - custodian.output - DEBUG - metric:ResourceCount Count:2 policy:cloudtrail restype:aws.cloudtrail scope:policy
+2020-11-25 17:03:33,252 - custodian.output - DEBUG - metric:ApiCalls Count:4 policy:cloudtrail restype:aws.cloudtrail
+2020-11-25 17:03:37,009 - custodian.policy - DEBUG - Running policy:CloudTrail resource:aws.cloudtrail region:us-east-1 c7n:0.9.8
+2020-11-25 17:03:37,011 - custodian.cache - DEBUG - Using cache file /Users/noah/.cache/cloud-custodian.cache
+2020-11-25 17:03:37,011 - custodian.resources.cloudtrail - DEBUG - Using cached c7n.resources.cloudtrail.CloudTrail: 2
+2020-11-25 17:03:38,683 - custodian.resources.cloudtrail - DEBUG - Filtered from 2 to 2 cloudtrail
+2020-11-25 17:03:38,683 - custodian.policy - INFO - policy:CloudTrail resource:aws.cloudtrail region:us-east-1 count:2 time:1.67
+2020-11-25 17:03:38,685 - custodian.output - DEBUG - metric:ResourceCount Count:2 policy:cloudtrail restype:aws.cloudtrail scope:policy
+2020-11-25 17:03:38,685 - custodian.output - DEBUG - metric:ApiCalls Count:4 policy:cloudtrail restype:aws.cloudtrail
+2020-11-25 17:04:30,522 - custodian.policy - DEBUG - Running policy:CloudTrail resource:aws.cloudtrail region:us-east-1 c7n:0.9.8
+2020-11-25 17:04:30,523 - custodian.cache - DEBUG - Using cache file /Users/noah/.cache/cloud-custodian.cache
+2020-11-25 17:04:30,523 - custodian.resources.cloudtrail - DEBUG - Using cached c7n.resources.cloudtrail.CloudTrail: 2
+2020-11-25 17:04:32,141 - custodian.resources.cloudtrail - DEBUG - Filtered from 2 to 2 cloudtrail
+2020-11-25 17:04:32,141 - custodian.policy - INFO - policy:CloudTrail resource:aws.cloudtrail region:us-east-1 count:2 time:1.62
+2020-11-25 17:04:32,142 - custodian.output - DEBUG - metric:ResourceCount Count:2 policy:cloudtrail restype:aws.cloudtrail scope:policy
+2020-11-25 17:04:32,142 - custodian.output - DEBUG - metric:ApiCalls Count:4 policy:cloudtrail restype:aws.cloudtrail
+2020-11-25 17:04:55,583 - custodian.policy - DEBUG - Running policy:CloudTrail resource:aws.cloudtrail region:us-east-1 c7n:0.9.8
+2020-11-25 17:04:55,584 - custodian.cache - DEBUG - Using cache file /Users/noah/.cache/cloud-custodian.cache
+2020-11-25 17:04:55,584 - custodian.resources.cloudtrail - DEBUG - Using cached c7n.resources.cloudtrail.CloudTrail: 2
+2020-11-25 17:04:57,500 - custodian.resources.cloudtrail - DEBUG - Filtered from 2 to 2 cloudtrail
+2020-11-25 17:04:57,500 - custodian.policy - INFO - policy:CloudTrail resource:aws.cloudtrail region:us-east-1 count:2 time:1.92
+2020-11-25 17:04:57,502 - custodian.output - DEBUG - metric:ResourceCount Count:2 policy:cloudtrail restype:aws.cloudtrail scope:policy
+2020-11-25 17:04:57,502 - custodian.output - DEBUG - metric:ApiCalls Count:4 policy:cloudtrail restype:aws.cloudtrail
+2020-11-25 17:06:08,584 - custodian.policy - DEBUG - Running policy:CloudTrail resource:aws.cloudtrail region:us-east-1 c7n:0.9.8
+2020-11-25 17:06:11,305 - custodian.resources.cloudtrail - DEBUG - Filtered from 2 to 2 cloudtrail
+2020-11-25 17:06:11,306 - custodian.policy - INFO - policy:CloudTrail resource:aws.cloudtrail region:us-east-1 count:2 time:2.72
+2020-11-25 17:06:11,307 - custodian.output - DEBUG - metric:ResourceCount Count:2 policy:cloudtrail restype:aws.cloudtrail scope:policy
+2020-11-25 17:06:11,307 - custodian.output - DEBUG - metric:ApiCalls Count:6 policy:cloudtrail restype:aws.cloudtrail
+2020-11-25 17:06:35,968 - custodian.policy - DEBUG - Running policy:CloudTrail resource:aws.cloudtrail region:us-east-1 c7n:0.9.8
+2020-11-25 17:06:35,970 - custodian.cache - DEBUG - Using cache file /Users/noah/.cache/cloud-custodian.cache
+2020-11-25 17:06:35,970 - custodian.resources.cloudtrail - DEBUG - Using cached c7n.resources.cloudtrail.CloudTrail: 2
+2020-11-25 17:06:37,777 - custodian.resources.cloudtrail - DEBUG - Filtered from 2 to 2 cloudtrail
+2020-11-25 17:06:37,777 - custodian.policy - INFO - policy:CloudTrail resource:aws.cloudtrail region:us-east-1 count:2 time:1.81
+2020-11-25 17:06:37,778 - custodian.output - DEBUG - metric:ResourceCount Count:2 policy:cloudtrail restype:aws.cloudtrail scope:policy
+2020-11-25 17:06:37,778 - custodian.output - DEBUG - metric:ApiCalls Count:4 policy:cloudtrail restype:aws.cloudtrail
+2020-11-25 17:07:07,198 - custodian.policy - DEBUG - Running policy:CloudTrail resource:aws.cloudtrail region:us-east-1 c7n:0.9.8
+2020-11-25 17:07:07,199 - custodian.cache - DEBUG - Using cache file /Users/noah/.cache/cloud-custodian.cache
+2020-11-25 17:07:07,199 - custodian.resources.cloudtrail - DEBUG - Using cached c7n.resources.cloudtrail.CloudTrail: 2
+2020-11-25 17:07:09,857 - custodian.resources.cloudtrail - DEBUG - Filtered from 2 to 2 cloudtrail
+2020-11-25 17:07:09,858 - custodian.policy - INFO - policy:CloudTrail resource:aws.cloudtrail region:us-east-1 count:2 time:2.66
+2020-11-25 17:07:09,859 - custodian.output - DEBUG - metric:ResourceCount Count:2 policy:cloudtrail restype:aws.cloudtrail scope:policy
+2020-11-25 17:07:09,859 - custodian.output - DEBUG - metric:ApiCalls Count:4 policy:cloudtrail restype:aws.cloudtrail
+2020-11-25 17:07:30,348 - custodian.policy - DEBUG - Running policy:CloudTrail resource:aws.cloudtrail region:us-east-1 c7n:0.9.8
+2020-11-25 17:07:30,348 - custodian.cache - DEBUG - Using cache file /Users/noah/.cache/cloud-custodian.cache
+2020-11-25 17:07:30,348 - custodian.resources.cloudtrail - DEBUG - Using cached c7n.resources.cloudtrail.CloudTrail: 2
+2020-11-25 17:07:31,963 - custodian.resources.cloudtrail - DEBUG - Filtered from 2 to 2 cloudtrail
+2020-11-25 17:07:31,963 - custodian.policy - INFO - policy:CloudTrail resource:aws.cloudtrail region:us-east-1 count:2 time:1.61
+2020-11-25 17:07:31,964 - custodian.output - DEBUG - metric:ResourceCount Count:2 policy:cloudtrail restype:aws.cloudtrail scope:policy
+2020-11-25 17:07:31,964 - custodian.output - DEBUG - metric:ApiCalls Count:4 policy:cloudtrail restype:aws.cloudtrail
+2020-11-25 17:07:54,042 - custodian.policy - DEBUG - Running policy:CloudTrail resource:aws.cloudtrail region:us-east-1 c7n:0.9.8
+2020-11-25 17:07:54,042 - custodian.cache - DEBUG - Using cache file /Users/noah/.cache/cloud-custodian.cache
+2020-11-25 17:07:54,042 - custodian.resources.cloudtrail - DEBUG - Using cached c7n.resources.cloudtrail.CloudTrail: 2
+2020-11-25 17:07:55,736 - custodian.resources.cloudtrail - DEBUG - Filtered from 2 to 2 cloudtrail
+2020-11-25 17:07:55,736 - custodian.policy - INFO - policy:CloudTrail resource:aws.cloudtrail region:us-east-1 count:2 time:1.69
+2020-11-25 17:07:55,738 - custodian.output - DEBUG - metric:ResourceCount Count:2 policy:cloudtrail restype:aws.cloudtrail scope:policy
+2020-11-25 17:07:55,739 - custodian.output - DEBUG - metric:ApiCalls Count:4 policy:cloudtrail restype:aws.cloudtrail
+2020-11-25 17:09:14,245 - custodian.policy - DEBUG - Running policy:CloudTrail resource:aws.cloudtrail region:us-east-1 c7n:0.9.8
+2020-11-25 17:09:14,246 - custodian.cache - DEBUG - Using cache file /Users/noah/.cache/cloud-custodian.cache
+2020-11-25 17:09:14,246 - custodian.resources.cloudtrail - DEBUG - Using cached c7n.resources.cloudtrail.CloudTrail: 2
+2020-11-25 17:09:15,945 - custodian.resources.cloudtrail - DEBUG - Filtered from 2 to 2 cloudtrail
+2020-11-25 17:09:15,945 - custodian.policy - INFO - policy:CloudTrail resource:aws.cloudtrail region:us-east-1 count:2 time:1.70
+2020-11-25 17:09:15,947 - custodian.output - DEBUG - metric:ResourceCount Count:2 policy:cloudtrail restype:aws.cloudtrail scope:policy
+2020-11-25 17:09:15,947 - custodian.output - DEBUG - metric:ApiCalls Count:4 policy:cloudtrail restype:aws.cloudtrail
+2020-11-25 17:09:54,997 - custodian.policy - DEBUG - Running policy:CloudTrail resource:aws.cloudtrail region:us-east-1 c7n:0.9.8
+2020-11-25 17:09:54,998 - custodian.cache - DEBUG - Using cache file /Users/noah/.cache/cloud-custodian.cache
+2020-11-25 17:09:54,998 - custodian.resources.cloudtrail - DEBUG - Using cached c7n.resources.cloudtrail.CloudTrail: 2
+2020-11-25 17:09:56,654 - custodian.resources.cloudtrail - DEBUG - Filtered from 2 to 2 cloudtrail
+2020-11-25 17:09:56,654 - custodian.policy - INFO - policy:CloudTrail resource:aws.cloudtrail region:us-east-1 count:2 time:1.66
+2020-11-25 17:09:56,656 - custodian.output - DEBUG - metric:ResourceCount Count:2 policy:cloudtrail restype:aws.cloudtrail scope:policy
+2020-11-25 17:09:56,656 - custodian.output - DEBUG - metric:ApiCalls Count:4 policy:cloudtrail restype:aws.cloudtrail
+2020-11-25 17:10:15,302 - custodian.policy - DEBUG - Running policy:CloudTrail resource:aws.cloudtrail region:us-east-1 c7n:0.9.8
+2020-11-25 17:10:15,302 - custodian.cache - DEBUG - Using cache file /Users/noah/.cache/cloud-custodian.cache
+2020-11-25 17:10:15,302 - custodian.resources.cloudtrail - DEBUG - Using cached c7n.resources.cloudtrail.CloudTrail: 2
+2020-11-25 17:10:17,693 - custodian.resources.cloudtrail - DEBUG - Filtered from 2 to 2 cloudtrail
+2020-11-25 17:10:17,693 - custodian.policy - INFO - policy:CloudTrail resource:aws.cloudtrail region:us-east-1 count:2 time:2.39
+2020-11-25 17:10:17,695 - custodian.output - DEBUG - metric:ResourceCount Count:2 policy:cloudtrail restype:aws.cloudtrail scope:policy
+2020-11-25 17:10:17,695 - custodian.output - DEBUG - metric:ApiCalls Count:4 policy:cloudtrail restype:aws.cloudtrail
+2020-11-25 17:10:28,247 - custodian.policy - DEBUG - Running policy:CloudTrail resource:aws.cloudtrail region:us-east-1 c7n:0.9.8
+2020-11-25 17:10:28,248 - custodian.cache - DEBUG - Using cache file /Users/noah/.cache/cloud-custodian.cache
+2020-11-25 17:10:28,248 - custodian.resources.cloudtrail - DEBUG - Using cached c7n.resources.cloudtrail.CloudTrail: 2
+2020-11-25 17:10:29,831 - custodian.resources.cloudtrail - DEBUG - Filtered from 2 to 2 cloudtrail
+2020-11-25 17:10:29,831 - custodian.policy - INFO - policy:CloudTrail resource:aws.cloudtrail region:us-east-1 count:2 time:1.58
+2020-11-25 17:10:29,833 - custodian.output - DEBUG - metric:ResourceCount Count:2 policy:cloudtrail restype:aws.cloudtrail scope:policy
+2020-11-25 17:10:29,833 - custodian.output - DEBUG - metric:ApiCalls Count:4 policy:cloudtrail restype:aws.cloudtrail
+2020-11-25 17:18:16,478 - custodian.policy - DEBUG - Running policy:CloudTrail resource:aws.cloudtrail region:us-east-1 c7n:0.9.8
+2020-11-25 17:18:16,480 - custodian.cache - DEBUG - Using cache file /Users/noah/.cache/cloud-custodian.cache
+2020-11-25 17:18:16,481 - custodian.resources.cloudtrail - DEBUG - Using cached c7n.resources.cloudtrail.CloudTrail: 2
+2020-11-25 17:18:18,154 - custodian.resources.cloudtrail - DEBUG - Filtered from 2 to 2 cloudtrail
+2020-11-25 17:18:18,154 - custodian.policy - INFO - policy:CloudTrail resource:aws.cloudtrail region:us-east-1 count:2 time:1.68
+2020-11-25 17:18:18,156 - custodian.output - DEBUG - metric:ResourceCount Count:2 policy:cloudtrail restype:aws.cloudtrail scope:policy
+2020-11-25 17:18:18,156 - custodian.output - DEBUG - metric:ApiCalls Count:4 policy:cloudtrail restype:aws.cloudtrail
+2020-11-25 17:20:04,594 - custodian.policy - DEBUG - Running policy:CloudTrail resource:aws.cloudtrail region:us-east-1 c7n:0.9.8
+2020-11-25 17:20:04,602 - custodian.cache - DEBUG - Using cache file /Users/noah/.cache/cloud-custodian.cache
+2020-11-25 17:20:04,602 - custodian.resources.cloudtrail - DEBUG - Using cached c7n.resources.cloudtrail.CloudTrail: 2
+2020-11-25 17:20:06,409 - custodian.resources.cloudtrail - DEBUG - Filtered from 2 to 2 cloudtrail
+2020-11-25 17:20:06,410 - custodian.policy - INFO - policy:CloudTrail resource:aws.cloudtrail region:us-east-1 count:2 time:1.82
+2020-11-25 17:20:06,412 - custodian.output - DEBUG - metric:ResourceCount Count:2 policy:cloudtrail restype:aws.cloudtrail scope:policy
+2020-11-25 17:20:06,412 - custodian.output - DEBUG - metric:ApiCalls Count:4 policy:cloudtrail restype:aws.cloudtrail
+2020-11-25 17:20:28,524 - custodian.policy - DEBUG - Running policy:CloudTrail resource:aws.cloudtrail region:us-east-1 c7n:0.9.8
+2020-11-25 17:20:28,525 - custodian.cache - DEBUG - Using cache file /Users/noah/.cache/cloud-custodian.cache
+2020-11-25 17:20:28,526 - custodian.resources.cloudtrail - DEBUG - Using cached c7n.resources.cloudtrail.CloudTrail: 2
+2020-11-25 17:20:30,184 - custodian.resources.cloudtrail - DEBUG - Filtered from 2 to 2 cloudtrail
+2020-11-25 17:20:30,184 - custodian.policy - INFO - policy:CloudTrail resource:aws.cloudtrail region:us-east-1 count:2 time:1.66
+2020-11-25 17:20:30,186 - custodian.output - DEBUG - metric:ResourceCount Count:2 policy:cloudtrail restype:aws.cloudtrail scope:policy
+2020-11-25 17:20:30,186 - custodian.output - DEBUG - metric:ApiCalls Count:4 policy:cloudtrail restype:aws.cloudtrail
+2020-11-25 17:21:36,758 - custodian.policy - DEBUG - Running policy:CloudTrail resource:aws.cloudtrail region:us-east-1 c7n:0.9.8
+2020-11-25 17:21:36,760 - custodian.cache - DEBUG - Using cache file /Users/noah/.cache/cloud-custodian.cache
+2020-11-25 17:21:36,760 - custodian.resources.cloudtrail - DEBUG - Using cached c7n.resources.cloudtrail.CloudTrail: 2
+2020-11-25 17:21:38,677 - custodian.resources.cloudtrail - DEBUG - Filtered from 2 to 2 cloudtrail
+2020-11-25 17:21:38,677 - custodian.policy - INFO - policy:CloudTrail resource:aws.cloudtrail region:us-east-1 count:2 time:1.92
+2020-11-25 17:21:38,679 - custodian.output - DEBUG - metric:ResourceCount Count:2 policy:cloudtrail restype:aws.cloudtrail scope:policy
+2020-11-25 17:21:38,679 - custodian.output - DEBUG - metric:ApiCalls Count:4 policy:cloudtrail restype:aws.cloudtrail
+2020-11-25 17:22:29,825 - custodian.policy - DEBUG - Running policy:CloudTrail resource:aws.cloudtrail region:us-east-1 c7n:0.9.8
+2020-11-25 17:22:29,827 - custodian.cache - DEBUG - Using cache file /Users/noah/.cache/cloud-custodian.cache
+2020-11-25 17:22:29,827 - custodian.resources.cloudtrail - DEBUG - Using cached c7n.resources.cloudtrail.CloudTrail: 2
+2020-11-25 17:22:31,484 - custodian.resources.cloudtrail - DEBUG - Filtered from 2 to 2 cloudtrail
+2020-11-25 17:22:31,484 - custodian.policy - INFO - policy:CloudTrail resource:aws.cloudtrail region:us-east-1 count:2 time:1.66
+2020-11-25 17:22:31,486 - custodian.output - DEBUG - metric:ResourceCount Count:2 policy:cloudtrail restype:aws.cloudtrail scope:policy
+2020-11-25 17:22:31,486 - custodian.output - DEBUG - metric:ApiCalls Count:4 policy:cloudtrail restype:aws.cloudtrail
+2020-11-25 17:24:04,598 - custodian.policy - DEBUG - Running policy:CloudTrail resource:aws.cloudtrail region:us-east-1 c7n:0.9.8
+2020-11-25 17:24:04,601 - custodian.cache - DEBUG - Using cache file /Users/noah/.cache/cloud-custodian.cache
+2020-11-25 17:24:04,601 - custodian.resources.cloudtrail - DEBUG - Using cached c7n.resources.cloudtrail.CloudTrail: 2
+2020-11-25 17:24:06,249 - custodian.resources.cloudtrail - DEBUG - Filtered from 2 to 2 cloudtrail
+2020-11-25 17:24:06,249 - custodian.policy - INFO - policy:CloudTrail resource:aws.cloudtrail region:us-east-1 count:2 time:1.65
+2020-11-25 17:24:06,251 - custodian.output - DEBUG - metric:ResourceCount Count:2 policy:cloudtrail restype:aws.cloudtrail scope:policy
+2020-11-25 17:24:06,251 - custodian.output - DEBUG - metric:ApiCalls Count:4 policy:cloudtrail restype:aws.cloudtrail
+2020-11-25 17:25:24,401 - custodian.policy - DEBUG - Running policy:CloudTrail resource:aws.cloudtrail region:us-east-1 c7n:0.9.8
+2020-11-25 17:25:24,402 - custodian.cache - DEBUG - Using cache file /Users/noah/.cache/cloud-custodian.cache
+2020-11-25 17:25:24,402 - custodian.resources.cloudtrail - DEBUG - Using cached c7n.resources.cloudtrail.CloudTrail: 2
+2020-11-25 17:25:26,084 - custodian.resources.cloudtrail - DEBUG - Filtered from 2 to 2 cloudtrail
+2020-11-25 17:25:26,085 - custodian.policy - INFO - policy:CloudTrail resource:aws.cloudtrail region:us-east-1 count:2 time:1.68
+2020-11-25 17:25:26,086 - custodian.output - DEBUG - metric:ResourceCount Count:2 policy:cloudtrail restype:aws.cloudtrail scope:policy
+2020-11-25 17:25:26,086 - custodian.output - DEBUG - metric:ApiCalls Count:4 policy:cloudtrail restype:aws.cloudtrail
+2020-11-25 17:25:46,108 - custodian.policy - DEBUG - Running policy:CloudTrail resource:aws.cloudtrail region:us-east-1 c7n:0.9.8
+2020-11-25 17:25:46,109 - custodian.cache - DEBUG - Using cache file /Users/noah/.cache/cloud-custodian.cache
+2020-11-25 17:25:46,109 - custodian.resources.cloudtrail - DEBUG - Using cached c7n.resources.cloudtrail.CloudTrail: 2
+2020-11-25 17:25:48,085 - custodian.resources.cloudtrail - DEBUG - Filtered from 2 to 2 cloudtrail
+2020-11-25 17:25:48,086 - custodian.policy - INFO - policy:CloudTrail resource:aws.cloudtrail region:us-east-1 count:2 time:1.98
+2020-11-25 17:25:48,087 - custodian.output - DEBUG - metric:ResourceCount Count:2 policy:cloudtrail restype:aws.cloudtrail scope:policy
+2020-11-25 17:25:48,087 - custodian.output - DEBUG - metric:ApiCalls Count:4 policy:cloudtrail restype:aws.cloudtrail
+2020-11-25 17:26:14,612 - custodian.policy - DEBUG - Running policy:CloudTrail resource:aws.cloudtrail region:us-east-1 c7n:0.9.8
+2020-11-25 17:26:14,613 - custodian.cache - DEBUG - Using cache file /Users/noah/.cache/cloud-custodian.cache
+2020-11-25 17:26:14,614 - custodian.resources.cloudtrail - DEBUG - Using cached c7n.resources.cloudtrail.CloudTrail: 2
+2020-11-25 17:26:16,258 - custodian.resources.cloudtrail - DEBUG - Filtered from 2 to 2 cloudtrail
+2020-11-25 17:26:16,258 - custodian.policy - INFO - policy:CloudTrail resource:aws.cloudtrail region:us-east-1 count:2 time:1.65
+2020-11-25 17:26:16,259 - custodian.output - DEBUG - metric:ResourceCount Count:2 policy:cloudtrail restype:aws.cloudtrail scope:policy
+2020-11-25 17:26:16,260 - custodian.output - DEBUG - metric:ApiCalls Count:4 policy:cloudtrail restype:aws.cloudtrail
+2020-11-25 17:27:53,086 - custodian.policy - DEBUG - Running policy:CloudTrail resource:aws.cloudtrail region:us-east-1 c7n:0.9.8
+2020-11-25 17:27:53,089 - custodian.cache - DEBUG - Using cache file /Users/noah/.cache/cloud-custodian.cache
+2020-11-25 17:27:53,089 - custodian.resources.cloudtrail - DEBUG - Using cached c7n.resources.cloudtrail.CloudTrail: 2
+2020-11-25 17:27:54,776 - custodian.resources.cloudtrail - DEBUG - Filtered from 2 to 2 cloudtrail
+2020-11-25 17:27:54,777 - custodian.policy - INFO - policy:CloudTrail resource:aws.cloudtrail region:us-east-1 count:2 time:1.69
+2020-11-25 17:27:54,778 - custodian.output - DEBUG - metric:ResourceCount Count:2 policy:cloudtrail restype:aws.cloudtrail scope:policy
+2020-11-25 17:27:54,778 - custodian.output - DEBUG - metric:ApiCalls Count:4 policy:cloudtrail restype:aws.cloudtrail
+2020-11-25 17:28:19,175 - custodian.policy - DEBUG - Running policy:CloudTrail resource:aws.cloudtrail region:us-east-1 c7n:0.9.8
+2020-11-25 17:28:19,176 - custodian.cache - DEBUG - Using cache file /Users/noah/.cache/cloud-custodian.cache
+2020-11-25 17:28:19,176 - custodian.resources.cloudtrail - DEBUG - Using cached c7n.resources.cloudtrail.CloudTrail: 2
+2020-11-25 17:28:20,856 - custodian.resources.cloudtrail - DEBUG - Filtered from 2 to 2 cloudtrail
+2020-11-25 17:28:20,856 - custodian.policy - INFO - policy:CloudTrail resource:aws.cloudtrail region:us-east-1 count:2 time:1.68
+2020-11-25 17:28:20,858 - custodian.output - DEBUG - metric:ResourceCount Count:2 policy:cloudtrail restype:aws.cloudtrail scope:policy
+2020-11-25 17:28:20,858 - custodian.output - DEBUG - metric:ApiCalls Count:4 policy:cloudtrail restype:aws.cloudtrail
+2020-11-25 17:29:02,521 - custodian.policy - DEBUG - Running policy:CloudTrail resource:aws.cloudtrail region:us-east-1 c7n:0.9.8
+2020-11-25 17:29:02,524 - custodian.cache - DEBUG - Using cache file /Users/noah/.cache/cloud-custodian.cache
+2020-11-25 17:29:02,524 - custodian.resources.cloudtrail - DEBUG - Using cached c7n.resources.cloudtrail.CloudTrail: 2
+2020-11-25 17:29:04,297 - custodian.resources.cloudtrail - DEBUG - Filtered from 2 to 2 cloudtrail
+2020-11-25 17:29:04,297 - custodian.policy - INFO - policy:CloudTrail resource:aws.cloudtrail region:us-east-1 count:2 time:1.78
+2020-11-25 17:29:04,299 - custodian.output - DEBUG - metric:ResourceCount Count:2 policy:cloudtrail restype:aws.cloudtrail scope:policy
+2020-11-25 17:29:04,299 - custodian.output - DEBUG - metric:ApiCalls Count:4 policy:cloudtrail restype:aws.cloudtrail
+2020-11-25 17:31:01,278 - custodian.policy - DEBUG - Running policy:CloudTrail resource:aws.cloudtrail region:us-east-1 c7n:0.9.8
+2020-11-25 17:31:01,279 - custodian.cache - DEBUG - Using cache file /Users/noah/.cache/cloud-custodian.cache
+2020-11-25 17:31:01,279 - custodian.resources.cloudtrail - DEBUG - Using cached c7n.resources.cloudtrail.CloudTrail: 2
+2020-11-25 17:31:03,414 - custodian.resources.cloudtrail - DEBUG - Filtered from 2 to 2 cloudtrail
+2020-11-25 17:31:03,414 - custodian.policy - INFO - policy:CloudTrail resource:aws.cloudtrail region:us-east-1 count:2 time:2.14
+2020-11-25 17:31:03,416 - custodian.output - DEBUG - metric:ResourceCount Count:2 policy:cloudtrail restype:aws.cloudtrail scope:policy
+2020-11-25 17:31:03,416 - custodian.output - DEBUG - metric:ApiCalls Count:4 policy:cloudtrail restype:aws.cloudtrail
+2020-11-25 17:31:15,034 - custodian.policy - DEBUG - Running policy:CloudTrail resource:aws.cloudtrail region:us-east-1 c7n:0.9.8
+2020-11-25 17:31:15,035 - custodian.cache - DEBUG - Using cache file /Users/noah/.cache/cloud-custodian.cache
+2020-11-25 17:31:15,035 - custodian.resources.cloudtrail - DEBUG - Using cached c7n.resources.cloudtrail.CloudTrail: 2
+2020-11-25 17:31:16,779 - custodian.resources.cloudtrail - DEBUG - Filtered from 2 to 2 cloudtrail
+2020-11-25 17:31:16,779 - custodian.policy - INFO - policy:CloudTrail resource:aws.cloudtrail region:us-east-1 count:2 time:1.74
+2020-11-25 17:31:16,781 - custodian.output - DEBUG - metric:ResourceCount Count:2 policy:cloudtrail restype:aws.cloudtrail scope:policy
+2020-11-25 17:31:16,781 - custodian.output - DEBUG - metric:ApiCalls Count:4 policy:cloudtrail restype:aws.cloudtrail
+2020-11-25 17:35:58,082 - custodian.policy - DEBUG - Running policy:CloudTrail resource:aws.cloudtrail region:us-east-1 c7n:0.9.8
+2020-11-25 17:35:58,086 - custodian.cache - DEBUG - Using cache file /Users/noah/.cache/cloud-custodian.cache
+2020-11-25 17:35:58,087 - custodian.resources.cloudtrail - DEBUG - Using cached c7n.resources.cloudtrail.CloudTrail: 2
+2020-11-25 17:35:59,753 - custodian.resources.cloudtrail - DEBUG - Filtered from 2 to 2 cloudtrail
+2020-11-25 17:35:59,753 - custodian.policy - INFO - policy:CloudTrail resource:aws.cloudtrail region:us-east-1 count:2 time:1.67
+2020-11-25 17:35:59,755 - custodian.output - DEBUG - metric:ResourceCount Count:2 policy:cloudtrail restype:aws.cloudtrail scope:policy
+2020-11-25 17:35:59,755 - custodian.output - DEBUG - metric:ApiCalls Count:4 policy:cloudtrail restype:aws.cloudtrail
+2020-11-25 17:36:40,485 - custodian.policy - DEBUG - Running policy:CloudTrail resource:aws.cloudtrail region:us-east-1 c7n:0.9.8
+2020-11-25 17:36:40,486 - custodian.cache - DEBUG - Using cache file /Users/noah/.cache/cloud-custodian.cache
+2020-11-25 17:36:40,487 - custodian.resources.cloudtrail - DEBUG - Using cached c7n.resources.cloudtrail.CloudTrail: 2
+2020-11-25 17:36:42,128 - custodian.resources.cloudtrail - DEBUG - Filtered from 2 to 2 cloudtrail
+2020-11-25 17:36:42,128 - custodian.policy - INFO - policy:CloudTrail resource:aws.cloudtrail region:us-east-1 count:2 time:1.64
+2020-11-25 17:36:42,130 - custodian.output - DEBUG - metric:ResourceCount Count:2 policy:cloudtrail restype:aws.cloudtrail scope:policy
+2020-11-25 17:36:42,130 - custodian.output - DEBUG - metric:ApiCalls Count:4 policy:cloudtrail restype:aws.cloudtrail
+2020-11-25 17:37:49,431 - custodian.policy - DEBUG - Running policy:CloudTrail resource:aws.cloudtrail region:us-east-1 c7n:0.9.8
+2020-11-25 17:37:49,439 - custodian.cache - DEBUG - Using cache file /Users/noah/.cache/cloud-custodian.cache
+2020-11-25 17:37:53,445 - custodian.resources.cloudtrail - DEBUG - Filtered from 2 to 2 cloudtrail
+2020-11-25 17:37:53,445 - custodian.policy - INFO - policy:CloudTrail resource:aws.cloudtrail region:us-east-1 count:2 time:4.01
+2020-11-25 17:37:53,447 - custodian.output - DEBUG - metric:ResourceCount Count:2 policy:cloudtrail restype:aws.cloudtrail scope:policy
+2020-11-25 17:37:53,447 - custodian.output - DEBUG - metric:ApiCalls Count:6 policy:cloudtrail restype:aws.cloudtrail
+2020-11-25 17:38:29,121 - custodian.policy - DEBUG - Running policy:CloudTrail resource:aws.cloudtrail region:us-east-1 c7n:0.9.8
+2020-11-25 17:38:29,122 - custodian.cache - DEBUG - Using cache file /Users/noah/.cache/cloud-custodian.cache
+2020-11-25 17:38:29,122 - custodian.resources.cloudtrail - DEBUG - Using cached c7n.resources.cloudtrail.CloudTrail: 2
+2020-11-25 17:38:30,830 - custodian.resources.cloudtrail - DEBUG - Filtered from 2 to 2 cloudtrail
+2020-11-25 17:38:30,830 - custodian.policy - INFO - policy:CloudTrail resource:aws.cloudtrail region:us-east-1 count:2 time:1.71
+2020-11-25 17:38:30,832 - custodian.output - DEBUG - metric:ResourceCount Count:2 policy:cloudtrail restype:aws.cloudtrail scope:policy
+2020-11-25 17:38:30,832 - custodian.output - DEBUG - metric:ApiCalls Count:4 policy:cloudtrail restype:aws.cloudtrail
+2020-11-25 17:39:17,650 - custodian.policy - DEBUG - Running policy:CloudTrail resource:aws.cloudtrail region:us-east-1 c7n:0.9.8
+2020-11-25 17:39:17,653 - custodian.cache - DEBUG - Using cache file /Users/noah/.cache/cloud-custodian.cache
+2020-11-25 17:39:17,653 - custodian.resources.cloudtrail - DEBUG - Using cached c7n.resources.cloudtrail.CloudTrail: 2
+2020-11-25 17:39:20,638 - custodian.resources.cloudtrail - DEBUG - Filtered from 2 to 2 cloudtrail
+2020-11-25 17:39:20,638 - custodian.policy - INFO - policy:CloudTrail resource:aws.cloudtrail region:us-east-1 count:2 time:2.99
+2020-11-25 17:39:20,640 - custodian.output - DEBUG - metric:ResourceCount Count:2 policy:cloudtrail restype:aws.cloudtrail scope:policy
+2020-11-25 17:39:20,640 - custodian.output - DEBUG - metric:ApiCalls Count:4 policy:cloudtrail restype:aws.cloudtrail
+2020-11-25 17:40:46,881 - custodian.policy - DEBUG - Running policy:CloudTrail resource:aws.cloudtrail region:us-east-1 c7n:0.9.8
+2020-11-25 17:40:46,890 - custodian.cache - DEBUG - Using cache file /Users/noah/.cache/cloud-custodian.cache
+2020-11-25 17:40:46,890 - custodian.resources.cloudtrail - DEBUG - Using cached c7n.resources.cloudtrail.CloudTrail: 2
+2020-11-25 17:40:48,684 - custodian.resources.cloudtrail - DEBUG - Filtered from 2 to 2 cloudtrail
+2020-11-25 17:40:48,684 - custodian.policy - INFO - policy:CloudTrail resource:aws.cloudtrail region:us-east-1 count:2 time:1.80
+2020-11-25 17:40:48,685 - custodian.output - DEBUG - metric:ResourceCount Count:2 policy:cloudtrail restype:aws.cloudtrail scope:policy
+2020-11-25 17:40:48,685 - custodian.output - DEBUG - metric:ApiCalls Count:4 policy:cloudtrail restype:aws.cloudtrail
+2020-11-25 17:44:08,385 - custodian.policy - DEBUG - Running policy:CloudTrail resource:aws.cloudtrail region:us-east-1 c7n:0.9.8
+2020-11-25 17:44:08,388 - custodian.cache - DEBUG - Using cache file /Users/noah/.cache/cloud-custodian.cache
+2020-11-25 17:44:08,388 - custodian.resources.cloudtrail - DEBUG - Using cached c7n.resources.cloudtrail.CloudTrail: 2
+2020-11-25 17:44:10,093 - custodian.resources.cloudtrail - DEBUG - Filtered from 2 to 2 cloudtrail
+2020-11-25 17:44:10,093 - custodian.policy - INFO - policy:CloudTrail resource:aws.cloudtrail region:us-east-1 count:2 time:1.71
+2020-11-25 17:44:10,095 - custodian.output - DEBUG - metric:ResourceCount Count:2 policy:cloudtrail restype:aws.cloudtrail scope:policy
+2020-11-25 17:44:10,095 - custodian.output - DEBUG - metric:ApiCalls Count:4 policy:cloudtrail restype:aws.cloudtrail

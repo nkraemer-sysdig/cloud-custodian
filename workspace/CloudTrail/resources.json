@@ -1,0 +1,93 @@
+[
+  {
+    "Name": "default-cloudtrail-059797578166",
+    "S3BucketName": "cloudtrail-logging-059797578166",
+    "S3KeyPrefix": "cloudtrail",
+    "IncludeGlobalServiceEvents": true,
+    "IsMultiRegionTrail": true,
+    "HomeRegion": "us-east-1",
+    "TrailARN": "arn:aws:cloudtrail:us-east-1:059797578166:trail/default-cloudtrail-059797578166",
+    "LogFileValidationEnabled": true,
+    "CloudWatchLogsLogGroupArn": "arn:aws:logs:us-east-1:059797578166:log-group:cloudtrail-logging:*",
+    "CloudWatchLogsRoleArn": "arn:aws:iam::059797578166:role/CloudTrail-CloudWatch-Delivery-Role",
+    "KmsKeyId": "arn:aws:kms:us-east-1:059797578166:key/2c056f7b-13c5-4e6b-aa5c-7d349a680cd9",
+    "HasCustomEventSelectors": false,
+    "HasInsightSelectors": false,
+    "IsOrganizationTrail": false,
+    "Tags": [],
+    "c7n:MatchedFilters": [
+      "IsMultiRegionTrail"
+    ],
+    "c7n:TrailStatus": {
+      "IsLogging": true,
+      "LatestDeliveryTime": "2020-11-25T17:42:22.303000-08:00",
+      "StartLoggingTime": "2020-10-19T12:10:02.957000-07:00",
+      "LatestCloudWatchLogsDeliveryTime": "2020-11-25T17:42:22.309000-08:00",
+      "LatestDigestDeliveryTime": "2020-11-25T17:30:21.299000-08:00",
+      "LatestDeliveryAttemptTime": "2020-11-26T01:42:22Z",
+      "LatestNotificationAttemptTime": "",
+      "LatestNotificationAttemptSucceeded": "",
+      "LatestDeliveryAttemptSucceeded": "2020-11-26T01:42:22Z",
+      "TimeLoggingStarted": "2020-10-19T19:10:02Z",
+      "TimeLoggingStopped": ""
+    },
+    "c7n:TrailEventSelectors": {
+      "TrailARN": "arn:aws:cloudtrail:us-east-1:059797578166:trail/default-cloudtrail-059797578166",
+      "EventSelectors": [
+        {
+          "ReadWriteType": "All",
+          "IncludeManagementEvents": true,
+          "DataResources": [],
+          "ExcludeManagementEventSources": []
+        }
+      ]
+    },
+    "CloudWatchLogsLogGroupName": "cloudtrail-logging"
+  },
+  {
+    "Name": "sysdigcloud-devAccount-trail",
+    "S3BucketName": "draios-infrastructures",
+    "S3KeyPrefix": "cloudtrail",
+    "SnsTopicName": "arn:aws:sns:us-east-1:273107874544:cloudtrail-logs",
+    "SnsTopicARN": "arn:aws:sns:us-east-1:273107874544:cloudtrail-logs",
+    "IncludeGlobalServiceEvents": true,
+    "IsMultiRegionTrail": true,
+    "HomeRegion": "us-east-1",
+    "TrailARN": "arn:aws:cloudtrail:us-east-1:059797578166:trail/sysdigcloud-devAccount-trail",
+    "LogFileValidationEnabled": false,
+    "CloudWatchLogsLogGroupArn": "arn:aws:logs:us-east-1:059797578166:log-group:aws-cloudtrail-logs-059797578166-6a2f190e:*",
+    "CloudWatchLogsRoleArn": "arn:aws:iam::059797578166:role/service-role/CloudTrailRoleForCloudWatchLogs_sysdig-cloudtrail-test",
+    "HasCustomEventSelectors": false,
+    "HasInsightSelectors": false,
+    "IsOrganizationTrail": false,
+    "Tags": [],
+    "c7n:MatchedFilters": [
+      "IsMultiRegionTrail"
+    ],
+    "c7n:TrailStatus": {
+      "IsLogging": true,
+      "LatestDeliveryTime": "2020-11-25T17:42:22.061000-08:00",
+      "LatestNotificationTime": "2020-11-25T17:42:22.061000-08:00",
+      "StartLoggingTime": "2016-08-17T13:49:36.071000-07:00",
+      "LatestCloudWatchLogsDeliveryTime": "2020-11-25T17:42:22.304000-08:00",
+      "LatestDeliveryAttemptTime": "2020-11-26T01:42:22Z",
+      "LatestNotificationAttemptTime": "2020-11-26T01:42:22Z",
+      "LatestNotificationAttemptSucceeded": "2020-11-26T01:42:22Z",
+      "LatestDeliveryAttemptSucceeded": "2020-11-26T01:42:22Z",
+      "TimeLoggingStarted": "2016-08-17T20:49:36Z",
+      "TimeLoggingStopped": ""
+    },
+    "c7n:TrailEventSelectors": {
+      "TrailARN": "arn:aws:cloudtrail:us-east-1:059797578166:trail/sysdigcloud-devAccount-trail",
+      "EventSelectors": [
+        {
+          "ReadWriteType": "All",
+          "IncludeManagementEvents": true,
+          "DataResources": [],
+          "ExcludeManagementEventSources": []
+        }
+      ]
+    },
+    "CloudWatchLogsLogGroupName": "aws-cloudtrail-logs-059797578166-6a2f190e"
+  }
+]
