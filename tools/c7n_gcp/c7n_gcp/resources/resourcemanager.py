@@ -2,14 +2,17 @@
 # SPDX-License-Identifier: Apache-2.0
 
 import itertools
+import logging
 
 from c7n_gcp.actions import SetIamPolicy, MethodAction
 from c7n_gcp.provider import resources
 from c7n_gcp.query import QueryResourceManager, TypeInfo
 
+from c7n.filters.core import ValueFilter
 from c7n.resolver import ValuesFrom
 from c7n.utils import type_schema, local_session
 
+logger = logging.getLogger(__name__)
 
 @resources.register('organization')
 class Organization(QueryResourceManager):
@@ -118,6 +121,29 @@ class Project(QueryResourceManager):
             for child in self.data.get('query'):
                 if 'filter' in child:
                     return {'filter': child['filter']}
+
+
+@Project.filter_registry.register('iam-policy')
+class IamPolicy(ValueFilter):
+    schema = type_schema('iam-policy', rinherit=ValueFilter.schema)
+#     permissions = ('compute.instances.getEffectiveFirewalls',)
+
+    def get_client(self, session, model):
+        return session.client(
+            model.service, model.version, model.component)
+
+    def process(self, resources, event=None):
+        model = self.manager.get_model()
+        session = local_session(self.manager.session_factory)
+        client = self.get_client(session, model)
+
+        for r in resources:
+            iam_policy = client.execute_command('getIamPolicy', {"resource": r["projectId"]})
+            r["iamPolicy"] = iam_policy
+        return super(IamPolicy, self).process(resources)
+
+    def __call__(self, r):
+        return self.match(r['iamPolicy'])
 
 
 @Project.action_registry.register('delete')
