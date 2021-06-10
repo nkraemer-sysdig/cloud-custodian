@@ -113,7 +113,6 @@ class Status(ValueFilter, RegionClientMixin):
     annotation_key = 'c7n:TrailStatus'
 
     def process(self, resources, event=None):
-        region = self.manager.config.region
         grouped_trails = self.group_by_region(resources)
         non_account_trails = set()
         account_trails = set()
@@ -167,7 +166,6 @@ class EventSelectors(ValueFilter, RegionClientMixin):
     annotation_key = 'c7n:TrailEventSelectors'
 
     def process(self, resources, event=None):
-        region = self.manager.config.region
         grouped_trails = self.group_by_region(resources)
         trails = set()
 
