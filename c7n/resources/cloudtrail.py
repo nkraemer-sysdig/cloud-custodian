@@ -22,20 +22,24 @@ class DescribeTrail(DescribeSource):
 
 
 class RegionClientMixin:
+    """Mixin to group an array of trails by region, returning
+       a map from region -> (client, set(trails))"""
     def __init__(self):
         pass
 
-    def get_client_and_trails_for_region(self, region, trails):
-        client = local_session(self.manager.session_factory).client(
-            'cloudtrail', region_name=region)
-
-        trails_in_region = set()
+    def group_by_region(self, trails):
+        grouped_trails = {}
         for t in trails:
-            parsed_arn = Arn.parse(t['TrailARN'])
-            if parsed_arn.region == region:
-                trails_in_region.add(t['TrailARN'])
+            region = Arn.parse(t['TrailARN']).region
 
-        return client, trails_in_region
+            if grouped_trails[region] is None:
+                grouped_trails[region] = {}
+                grouped_trails[region]["client"] = local_session(self.manager.session_factory).client('cloudtrail', region_name=region)
+                grouped_trails[region]["trails"] = set()
+
+            grouped_trails[region]["trails"].add(t)
+
+        return grouped_trails
 
 
 @resources.register('cloudtrail')
@@ -110,28 +114,30 @@ class Status(ValueFilter, RegionClientMixin):
 
     def process(self, resources, event=None):
         region = self.manager.config.region
+        grouped_trails = self.group_by_region(resources)
         non_account_trails = set()
-        client, trails = self.get_client_and_trails_for_region(region, resources)
+        account_trails = set()
 
-        for r in resources:
-            trail_arn = Arn.parse(r['TrailARN'])
-            if (r.get('IsOrganizationTrail') and
-                    self.manager.config.account_id != trail_arn.account_id):
-                non_account_trails.add(r['TrailARN'])
-                continue
-            if self.annotation_key in r:
-                continue
-            if r['TrailARN'] in trails:
-                status = client.get_trail_status(Name=r['Name'])
+        for region in grouped_trails.items():
+            client = region["client"]
+            for t in region["trails"]:
+                trail_arn = Arn.parse(t['TrailARN'])
+                if (t.get('IsOrganizationTrail') and
+                        self.manager.config.account_id != trail_arn.account_id):
+                    non_account_trails.add(t['TrailARN'])
+                    continue
+                if self.annotation_key in t:
+                    continue
+                status = client.get_trail_status(Name=t['Name'])
                 status.pop('ResponseMetadata')
-                r[self.annotation_key] = status
+                t[self.annotation_key] = status
+                account_trails.add(t)
 
         if non_account_trails:
             self.log.warning(
                 'found %d org cloud trail from different account that cant be processed',
                 len(non_account_trails))
-        return super(Status, self).process([
-            r for r in resources if r['TrailARN'] not in non_account_trails])
+        return super(Status, self).process(account_trails)
 
     def __call__(self, r):
         return self.match(r['c7n:TrailStatus'])
@@ -162,15 +168,18 @@ class EventSelectors(ValueFilter, RegionClientMixin):
 
     def process(self, resources, event=None):
         region = self.manager.config.region
-        client, trails = self.get_client_and_trails_for_region(region, resources)
+        grouped_trails = self.group_by_region(resources)
+        trails = set()
 
-        for r in resources:
-            if r['TrailARN'] in trails:
-                selectors = client.get_event_selectors(TrailName=r['TrailARN'])
+        for region in grouped_trails.items():
+            client = region["client"]
+            for t in region["trails"]:
+                selectors = client.get_event_selectors(TrailName=t['TrailARN'])
                 selectors.pop('ResponseMetadata')
-                r[self.annotation_key] = selectors
+                t[self.annotation_key] = selectors
+                trails.add(t)
 
-        return super(EventSelectors, self).process(resources)
+        return super(EventSelectors, self).process(trails)
 
     def __call__(self, r):
         return self.match(r['c7n:TrailEventSelectors'])
