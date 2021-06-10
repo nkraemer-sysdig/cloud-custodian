@@ -22,8 +22,25 @@ class DescribeTrail(DescribeSource):
 
 
 class RegionClientMixin:
-    """Mixin to group an array of trails by region, returning
-       a map from region -> (client, set(trails))"""
+    """Mixin to group an array of trails by region, returning an object like:
+
+       {
+         "us-east-1": {
+           "client": <us-east-1 Client>,
+           "trails": {
+             "arn:aws:cloudtrail:us-east-1:123456789012:trail/CloudTrail1": <trail>,
+             "arn:aws:cloudtrail:us-east-1:123456789012:trail/CloudTrail2": <trail>
+           }
+         },
+         "us-west-2": {
+           "client": <us-west-2 Client>,
+           "trails": {
+             "arn:aws:cloudtrail:us-west-2:123456789012:trail/CloudTrail3": <trail>,
+             "arn:aws:cloudtrail:us-west-2:123456789012:trail/CloudTrail4": <trail>
+           }
+         }
+       }
+    """
     def __init__(self):
         pass
 
@@ -32,12 +49,12 @@ class RegionClientMixin:
         for t in trails:
             region = Arn.parse(t['TrailARN']).region
 
-            if grouped_trails[region] is None:
+            if not region in grouped_trails.keys():
                 grouped_trails[region] = {}
                 grouped_trails[region]["client"] = local_session(self.manager.session_factory).client('cloudtrail', region_name=region)
-                grouped_trails[region]["trails"] = set()
+                grouped_trails[region]["trails"] = {}
 
-            grouped_trails[region]["trails"].add(t)
+            grouped_trails[region]["trails"][t['TrailARN']] = t
 
         return grouped_trails
 
@@ -115,22 +132,22 @@ class Status(ValueFilter, RegionClientMixin):
     def process(self, resources, event=None):
         grouped_trails = self.group_by_region(resources)
         non_account_trails = set()
-        account_trails = set()
+        account_trails = []
 
-        for region in grouped_trails.items():
-            client = region["client"]
-            for t in region["trails"]:
-                trail_arn = Arn.parse(t['TrailARN'])
+        for region, client_and_trails in grouped_trails.items():
+            client = client_and_trails["client"]
+            for arn, t in client_and_trails["trails"].items():
+                parsed_arn = Arn.parse(arn)
                 if (t.get('IsOrganizationTrail') and
-                        self.manager.config.account_id != trail_arn.account_id):
-                    non_account_trails.add(t['TrailARN'])
+                        self.manager.config.account_id != parsed_arn.account_id):
+                    non_account_trails.add(arn)
                     continue
                 if self.annotation_key in t:
                     continue
                 status = client.get_trail_status(Name=t['Name'])
                 status.pop('ResponseMetadata')
                 t[self.annotation_key] = status
-                account_trails.add(t)
+                account_trails.append(t)
 
         if non_account_trails:
             self.log.warning(
@@ -167,15 +184,15 @@ class EventSelectors(ValueFilter, RegionClientMixin):
 
     def process(self, resources, event=None):
         grouped_trails = self.group_by_region(resources)
-        trails = set()
+        trails = []
 
-        for region in grouped_trails.items():
-            client = region["client"]
-            for t in region["trails"]:
-                selectors = client.get_event_selectors(TrailName=t['TrailARN'])
+        for region, client_and_trails in grouped_trails.items():
+            client = client_and_trails["client"]
+            for arn, t in client_and_trails["trails"].items():
+                selectors = client.get_event_selectors(TrailName=arn)
                 selectors.pop('ResponseMetadata')
                 t[self.annotation_key] = selectors
-                trails.add(t)
+                trails.append(t)
 
         return super(EventSelectors, self).process(trails)
 
