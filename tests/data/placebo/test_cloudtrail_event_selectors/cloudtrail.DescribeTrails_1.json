@@ -1,0 +1,23 @@
+{
+    "status_code": 200,
+    "data": {
+        "trailList": [
+            {
+                "Name": "S3-DataEvents",
+                "S3BucketName": "custodian-skunk-trails",
+                "S3KeyPrefix": "DataEvents",
+                "IncludeGlobalServiceEvents": true,
+                "IsMultiRegionTrail": true,
+                "HomeRegion": "us-east-1",
+                "TrailARN": "arn:aws:cloudtrail:us-east-1:644160558196:trail/S3-DataEvents",
+                "LogFileValidationEnabled": true,
+                "CloudWatchLogsLogGroupArn": "arn:aws:logs:us-east-1:644160558196:log-group:cloudtrail-logging:*",
+                "CloudWatchLogsRoleArn": "arn:aws:iam::644160558196:role/CloudTrail-CloudWatch-Delivery-Role",
+                "HasCustomEventSelectors": false,
+                "HasInsightSelectors": false,
+                "IsOrganizationTrail": false
+            }
+        ],
+        "ResponseMetadata": {}
+    }
+}

@@ -21,6 +21,27 @@ class DescribeTrail(DescribeSource):
         return universal_augment(self.manager, resources)
 
 
+class RegionClientMixin:
+    """Mixin to group an array of trails by region, returning
+       a map from region -> (client, set(trails))"""
+    def __init__(self):
+        pass
+
+    def group_by_region(self, trails):
+        grouped_trails = {}
+        for t in trails:
+            region = Arn.parse(t['TrailARN']).region
+
+            if grouped_trails[region] is None:
+                grouped_trails[region] = {}
+                grouped_trails[region]["client"] = local_session(self.manager.session_factory).client('cloudtrail', region_name=region)
+                grouped_trails[region]["trails"] = set()
+
+            grouped_trails[region]["trails"].add(t)
+
+        return grouped_trails
+
+
 @resources.register('cloudtrail')
 class CloudTrail(QueryResourceManager):
 
@@ -70,7 +91,7 @@ class IsShadow(Filter):
 
 
 @CloudTrail.filter_registry.register('status')
-class Status(ValueFilter):
+class Status(ValueFilter, RegionClientMixin):
     """Filter a cloudtrail by its status.
 
     :Example:
@@ -92,36 +113,74 @@ class Status(ValueFilter):
     annotation_key = 'c7n:TrailStatus'
 
     def process(self, resources, event=None):
-
+        grouped_trails = self.group_by_region(resources)
         non_account_trails = set()
+        account_trails = set()
 
-        for r in resources:
-            region = self.manager.config.region
-            trail_arn = Arn.parse(r['TrailARN'])
-
-            if (r.get('IsOrganizationTrail') and
-                    self.manager.config.account_id != trail_arn.account_id):
-                non_account_trails.add(r['TrailARN'])
-                continue
-            if r.get('HomeRegion') and r['HomeRegion'] != region:
-                region = trail_arn.region
-            if self.annotation_key in r:
-                continue
-            client = local_session(self.manager.session_factory).client(
-                'cloudtrail', region_name=region)
-            status = client.get_trail_status(Name=r['Name'])
-            status.pop('ResponseMetadata')
-            r[self.annotation_key] = status
+        for region in grouped_trails.items():
+            client = region["client"]
+            for t in region["trails"]:
+                trail_arn = Arn.parse(t['TrailARN'])
+                if (t.get('IsOrganizationTrail') and
+                        self.manager.config.account_id != trail_arn.account_id):
+                    non_account_trails.add(t['TrailARN'])
+                    continue
+                if self.annotation_key in t:
+                    continue
+                status = client.get_trail_status(Name=t['Name'])
+                status.pop('ResponseMetadata')
+                t[self.annotation_key] = status
+                account_trails.add(t)
 
         if non_account_trails:
             self.log.warning(
                 'found %d org cloud trail from different account that cant be processed',
                 len(non_account_trails))
-        return super(Status, self).process([
-            r for r in resources if r['TrailARN'] not in non_account_trails])
+        return super(Status, self).process(account_trails)
 
     def __call__(self, r):
         return self.match(r['c7n:TrailStatus'])
+
+
+@CloudTrail.filter_registry.register('event-selectors')
+class EventSelectors(ValueFilter, RegionClientMixin):
+    """Filter a cloudtrail by its related Event Selectors.
+
+    :example:
+
+    .. code-block:: yaml
+
+      policies:
+        - name: cloudtrail-event-selectors
+          resource: aws.cloudtrail
+          filters:
+          - type: event-selectors
+            key: EventSelectors[].IncludeManagementEvents
+            op: contains
+            value: True
+    """
+
+    schema = type_schema('event-selectors', rinherit=ValueFilter.schema)
+    schema_alias = False
+    permissions = ('cloudtrail:GetEventSelectors',)
+    annotation_key = 'c7n:TrailEventSelectors'
+
+    def process(self, resources, event=None):
+        grouped_trails = self.group_by_region(resources)
+        trails = set()
+
+        for region in grouped_trails.items():
+            client = region["client"]
+            for t in region["trails"]:
+                selectors = client.get_event_selectors(TrailName=t['TrailARN'])
+                selectors.pop('ResponseMetadata')
+                t[self.annotation_key] = selectors
+                trails.add(t)
+
+        return super(EventSelectors, self).process(trails)
+
+    def __call__(self, r):
+        return self.match(r['c7n:TrailEventSelectors'])
 
 
 @CloudTrail.action_registry.register('update-trail')
