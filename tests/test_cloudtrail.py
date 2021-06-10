@@ -57,13 +57,14 @@ class CloudTrail(BaseTest):
             }]},
             session_factory=factory)
         resources = p.run()
-        self.assertEqual(len(resources), 1)
-        self.assertTrue('c7n:TrailEventSelectors' in resources[0])
+        self.assertEqual(len(resources), 4)
 
-        selectors = resources[0]['c7n:TrailEventSelectors']['EventSelectors']
-        self.assertEqual(len(selectors), 1)
-        self.assertTrue('IncludeManagementEvents' in selectors[0])
-        self.assertTrue(selectors[0]['IncludeManagementEvents'])
+        for resource in resources:
+            self.assertTrue('c7n:TrailEventSelectors' in resource)
+            selectors = resource['c7n:TrailEventSelectors']['EventSelectors']
+            self.assertEqual(len(selectors), 1)
+            self.assertTrue('IncludeManagementEvents' in selectors[0])
+            self.assertTrue(selectors[0]['IncludeManagementEvents'])
 
     def test_trail_update(self):
         factory = self.replay_flight_data('test_cloudtrail_update')
