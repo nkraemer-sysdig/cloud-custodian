@@ -51,9 +51,8 @@ class RegionClientMixin:
 
             if region not in grouped_trails.keys():
                 grouped_trails[region] = {}
-                grouped_trails[region]["client"] = local_session(self.manager.session_factory).client(
-                    'cloudtrail',
-                    region_name=region)
+                grouped_trails[region]["client"] = local_session(
+                    self.manager.session_factory).client('cloudtrail', region_name=region)
                 grouped_trails[region]["trails"] = {}
 
             grouped_trails[region]["trails"][t['TrailARN']] = t
