@@ -41,8 +41,6 @@ class RegionClientMixin:
          }
        }
     """
-    def __init__(self):
-        pass
 
     def group_by_region(self, trails):
         grouped_trails = {}
